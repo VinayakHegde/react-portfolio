@@ -7,6 +7,7 @@ class About extends Component {
         return (
             <article className="profile-content">
                 About
+                Under Construction
             </article>
         );
     }

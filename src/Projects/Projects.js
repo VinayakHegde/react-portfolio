@@ -6,7 +6,8 @@ class Projects extends Component {
     render() {
         return (
             <article className="profile-content">
-                Projects
+                Projects 
+                Under Construction
             </article>
         );
     }
