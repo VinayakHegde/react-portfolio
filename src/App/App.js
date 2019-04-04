@@ -10,7 +10,7 @@ class App extends Component {
   constructor(){
     super();
     this.state= {
-      route : CONST.NAV.ABOUT
+      route : CONST.NAV.EXPERIENCE
     }
   }
   render() {
