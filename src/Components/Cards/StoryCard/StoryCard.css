@@ -1,0 +1,183 @@
+.story-content {
+    position: relative;
+    margin-left: 30px;
+    background: rgb(243, 243, 243);
+    padding: 20px;
+    border-radius: 8px;
+    border:4px solid; 
+}
+.empty .story-content {
+    background: transparent;
+    box-shadow: none;
+}
+.story-content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.story-caption-container {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  background: #ddd;
+  padding: 1px;
+  -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+  height: 52px;
+  box-sizing: border-box;
+  width: calc(100% - 16px);
+}
+.story-caption {
+    background: #e86971;
+    color: #fff;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    border-right-color: transparent;
+    -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+    height: 50px;
+    width: 100%;
+    display: block;
+    line-height: 52px;
+    text-align: center;
+}
+
+.empty .story-content::before {
+    display: none;
+}
+.story {
+    clear: both;
+    text-align: left;
+    position: relative;
+}
+.timeline--animate .story .is-hidden {
+    visibility: hidden;
+}
+.timeline--animate .story .bounce-in {
+    visibility: visible;
+    -webkit-animation: bounce-in 0.4s;
+    -moz-animation: bounce-in 0.4s;
+    animation: bounce-in 0.4s;
+}
+.story .story-caption-wrapper {
+  margin-bottom: 0.5em;
+  float: left;
+  width: calc(33% + 6px);
+  position: relative;
+  height: 32px;
+}
+.story .story-caption-wrapper:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 4px solid;
+  background-color: #ffffff;
+  border-radius: 100%;
+  top: 15%;
+  right: 0;
+  z-index: 99;
+  box-sizing: content-box;
+}
+.story .story-continer {
+  margin: 0 0 0.6em;
+    float: right;
+    width: 66%;
+    color: #333;
+}
+.story .story-continer p {
+    line-height: 1.4em;
+}
+.story .story-continer h1, .story .story-continer h2, .story .story-continer h3, .story .story-continer h4, .story .story-continer h5, .story .story-continer h6 {
+    margin: 0;
+}
+.story .story-continer p:first-child {
+    margin-top: 0;
+    font-weight: 400;
+}
+@-o-keyframes bounce-in {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0.5);
+    }
+  
+    100% {
+      -webkit-transform: scale(1);
+    }
+}
+
+@-webkit-keyframes bounce-in {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0.5);
+    }
+  
+    100% {
+      -webkit-transform: scale(1);
+    }
+}
+@-moz-keyframes bounce-in {
+    0% {
+      opacity: 0;
+      -moz-transform: scale(0.5);
+    }
+  
+    100% {
+      -moz-transform: scale(1);
+    }
+}
+@keyframes bounce-in {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0.5);
+      -moz-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+      -o-transform: scale(0.5);
+      transform: scale(0.5);
+    }
+  
+    100% {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+    }
+}
+
+.project-count {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .story .story-caption-wrapper {
+      float: left;
+      width: 70%;
+    }
+    .story-caption-container {
+      margin-left: 30px;
+    }
+    .story .story-caption-wrapper:before {
+      top: 15%;
+      left: 3px;
+      right: auto;
+      z-index: 99;
+    }
+    .story .story-continer {
+      margin: 20px 0 3em;
+      float: right;
+      width: 99%;
+    }
+}
