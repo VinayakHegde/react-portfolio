@@ -8,13 +8,13 @@ import Skills from '../Skills/Skills';
 
 class Main extends Component {
     render() {
-        if(this.props.route === CONST.NAV.ABOUT){
+        if(this.props.route === CONST.MENU.ABOUT){
             return (<About/>);
-        } else if(this.props.route === CONST.NAV.EXPERIENCE){
+        } else if(this.props.route === CONST.MENU.EXPERIENCE){
             return (<Experience/>);
-        } else if(this.props.route === CONST.NAV.PROJECTS){
+        } else if(this.props.route === CONST.MENU.PROJECTS){
             return (<Projects/>);
-        } else if(this.props.route === CONST.NAV.SKILLS){
+        } else if(this.props.route === CONST.MENU.SKILLS){
             return (<Skills/>);
         } else return null;
     }

@@ -11,10 +11,11 @@ class About extends Component {
         const skillCardBar = false;
         return (
             <article className="profile-content about">
-                <UserCard cssClass="about-user-card"/>
-                <div className="about-content ">
-                    <Description cssClass="about-description"
+                <Description cssClass="about-content about-description"
                         descriptionFor={CONSTANTS.DESCRIPTIONFOR.USERDESCRIPTION}/>
+                <UserCard cssClass="about-content"/>
+                    
+                <div className="about-content">
                     <SkillCard bar={skillCardBar}/>
                 </div>
             </article>

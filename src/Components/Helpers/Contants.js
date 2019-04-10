@@ -1,5 +1,5 @@
 const CONSTANTS = {
-    NAV : {
+    MENU : {
         ABOUT : 'ABOUT',
         EXPERIENCE: 'EXPERIENCE', 
         PROJECTS: 'PROJECTS', 

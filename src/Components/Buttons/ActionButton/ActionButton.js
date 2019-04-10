@@ -28,8 +28,8 @@ class ActionButton extends Component {
                     title={tooltip}
                     onClick={this.stopPropagation}>
                     <FontAwesomeIcon icon={icon}/>
+                    {children}
                 </a>
-                {children}
             </button>
 
         );
