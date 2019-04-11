@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import './Nav.css';
+import './Header.css';
 import DiscMenu from '../DiscMenu/DiscMenu';
 
 class Header extends Component {
@@ -11,12 +11,8 @@ class Header extends Component {
     }
     render() {
         return (
-            <div className="navigation-bar">
-                <ul>
-                    <li> 
-                        {this.props.route}
-                    </li>
-                </ul>
+            <div className="header-bar">
+                {this.props.route}
                 <DiscMenu onItemClick={this.onItemClick.bind(this)}></DiscMenu>
             </div>
         );

@@ -26,6 +26,7 @@ class DiscMenu extends Component {
     });
   }
   _onItemClick(item){
+    this._onClick();
     this.props.onItemClick(item)
   }
 

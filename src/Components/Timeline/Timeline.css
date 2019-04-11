@@ -23,7 +23,16 @@
 }
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+    .timeline{
+        padding: 0;
+    }
+
     .timeline:before {
         left: calc(1% + 6px);
+        content: unset;
+    }
+
+    .timeline:after {
+        content: unset;
     }
 }

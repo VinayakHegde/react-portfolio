@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
-import Header from '../Nav/Nav';
-import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 import Main from '../Main/Main';
+import Footer from '../Footer/Footer';
+
 import './App.css';
 import CONST from '../Helpers/Contants';
 
