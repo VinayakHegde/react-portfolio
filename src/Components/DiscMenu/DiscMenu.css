@@ -8,12 +8,11 @@
   .button {
     position: relative;
     outline: none;
-    background: #6C2EB9;
+    background: transparent;;
     width: 40px;
     height: 40px;
     border: 0;
     border-radius: 100px;
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), 0 2px 0 rgba(108, 46, 185, 0.2);
     margin: 0 10px;
     color: #FFF;
     cursor: pointer;

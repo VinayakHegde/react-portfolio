@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import {faLinkedinIn, faGithub} from '@fortawesome/free-brands-svg-icons';
 
 import CONSTANTS from '../../Helpers/Contants';
 
@@ -19,7 +20,7 @@ class ActionButton extends Component {
 
     render() {
         const {btnClass, linkClass, value, children, type, tooltip} = this.props;
-        let icon = type === CONSTANTS.ICONTYPE.PHONE ? faPhone : faEnvelope;
+        let icon = this.getIcon(type);
         return (
             <button className={btnClass} >
                 <a target="_blank" rel="noopener noreferrer" 
@@ -33,6 +34,20 @@ class ActionButton extends Component {
             </button>
 
         );
+    }
+
+    getIcon(type){
+        switch(type){
+            case CONSTANTS.ICONTYPE.PHONE:
+                return faPhone;
+            case CONSTANTS.ICONTYPE.EMAIL:
+                return faEnvelope;
+            case CONSTANTS.ICONTYPE.GITHUB:
+                return faGithub;
+            case CONSTANTS.ICONTYPE.LINKEDIN:
+                return faLinkedinIn;
+            default: break;
+        }
     }
 }
 

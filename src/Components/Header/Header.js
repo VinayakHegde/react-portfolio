@@ -6,15 +6,14 @@ import DiscMenu from '../DiscMenu/DiscMenu';
 
 class Header extends Component {
     onItemClick(item){
-        console.log(item);
         this.props.setRoute(item);
     }
     render() {
         return (
-            <div className="header-bar">
+            <header className="header-bar">
                 {this.props.route}
                 <DiscMenu onItemClick={this.onItemClick.bind(this)}></DiscMenu>
-            </div>
+            </header>
         );
     }
 }

@@ -50,7 +50,9 @@ class DiscMenu extends Component {
             })}
           >
             {interpolatingStyles =>
-              <ButtonGroup>
+              <ButtonGroup style={{ 
+                background: this.state.active ? '#333' : 'transparent',
+              }}>
                 {interpolatingStyles.map((style, i) =>
                   <Button
                     key={menus[i]}
@@ -121,7 +123,7 @@ const Tooltip = (props) => <span className="tooltip">{props.text}</span>;
 /**
  * <ButtonGroup />
  */
-const ButtonGroup = (props) => <div className="button-group" style={props.style}>{props.children}</div>;
+const ButtonGroup = (props) => <div className={classNames('button-group', props.active)} style={props.style}>{props.children}</div>;
 
 /**
  * <Button />
