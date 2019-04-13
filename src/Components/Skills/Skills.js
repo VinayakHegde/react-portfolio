@@ -7,7 +7,7 @@ class Skills extends Component {
     render() {
         return (
             <article className="profile-content">
-                <div className="skills-wrapper">
+                <div className="content-wrapper">
                     <SkillCard bar={true}/>
                 </div>
             </article>

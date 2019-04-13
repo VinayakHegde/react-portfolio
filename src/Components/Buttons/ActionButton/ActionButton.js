@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {faLinkedinIn, faGithub} from '@fortawesome/free-brands-svg-icons';
 
-import CONSTANTS from '../../Helpers/Contants';
+import {ICONTYPE} from '../../../Helpers/Enums';
 
 class ActionButton extends Component {
     constructor (props){
@@ -38,13 +38,13 @@ class ActionButton extends Component {
 
     getIcon(type){
         switch(type){
-            case CONSTANTS.ICONTYPE.PHONE:
+            case ICONTYPE.PHONE:
                 return faPhone;
-            case CONSTANTS.ICONTYPE.EMAIL:
+            case ICONTYPE.EMAIL:
                 return faEnvelope;
-            case CONSTANTS.ICONTYPE.GITHUB:
+            case ICONTYPE.GITHUB:
                 return faGithub;
-            case CONSTANTS.ICONTYPE.LINKEDIN:
+            case ICONTYPE.LINKEDIN:
                 return faLinkedinIn;
             default: break;
         }

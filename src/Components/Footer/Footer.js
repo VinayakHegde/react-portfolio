@@ -1,49 +1,35 @@
 import React, { Component } from 'react';
 
-// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-// import { faReact, faJsSquare } from '@fortawesome/free-brands-svg-icons';
-// import { faGlobe} from '@fortawesome/free-solid-svg-icons';
- 
 import ActionButton from '../Buttons/ActionButton/ActionButton';
-import CONSTANTS from '../Helpers/Contants';
-import ContactHelper from '../Helpers/Contact';
-import data from '../../Data/profile.json';
+import {UserContacts} from '../../Helpers/DataValidator';
+import {ICONTYPE} from '../../Helpers/Enums';
 
 import './Footer.css';
 
 class Footer extends Component {
-    constructor (props){
-        super(props);
-        this.contact = {
-            phone : new ContactHelper(CONSTANTS.ICONTYPE.PHONE, data),
-            email : new ContactHelper(CONSTANTS.ICONTYPE.EMAIL, data),
-            linkedIn : new ContactHelper(CONSTANTS.ICONTYPE.LINKEDIN, data),
-            github : new ContactHelper(CONSTANTS.ICONTYPE.GITHUB, data)
-        }
-    }
     render() {
         return (
             <footer className="footer">
-                <ActionButton type={CONSTANTS.ICONTYPE.PHONE}
-                                    value={this.contact.phone.link('tel:')} 
+                <ActionButton type={ICONTYPE.PHONE}
+                                    value={'tel:'.concat(UserContacts.Phone)} 
                                     btnClass="button phone" 
                                     linkClass="button-link"
                                     tooltip="Click to ring me">
                     </ActionButton>
-                    <ActionButton type={CONSTANTS.ICONTYPE.EMAIL}
-                                    value={this.contact.email.link('mailto:')} 
+                    <ActionButton type={ICONTYPE.EMAIL}
+                                    value={'mailto:'.concat(UserContacts.Email)} 
                                     btnClass="button email" 
                                     linkClass="button-link"
                                     tooltip="Click to open email client">
                     </ActionButton>
-                    <ActionButton type={CONSTANTS.ICONTYPE.LINKEDIN}
-                                    value={this.contact.linkedIn.raw} 
+                    <ActionButton type={ICONTYPE.LINKEDIN}
+                                    value={UserContacts.LinkedIn} 
                                     btnClass="button linkedin" 
                                     linkClass="button-link"
                                     tooltip="Visit my linkedIn profile">
                     </ActionButton>
-                    <ActionButton type={CONSTANTS.ICONTYPE.GITHUB}
-                                    value={this.contact.github.raw} 
+                    <ActionButton type={ICONTYPE.GITHUB}
+                                    value={UserContacts.Github} 
                                     btnClass="button github" 
                                     linkClass="button-link"
                                     tooltip="Visit my github">

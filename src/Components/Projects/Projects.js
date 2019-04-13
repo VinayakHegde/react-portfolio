@@ -1,19 +1,24 @@
-import './Projects.css';
+import React, { Component } from 'react';
+
 import ProjectCard from '../Cards/ProjectCard/ProjectCard';
 import data from '../../Data/profile.json';
-
-import React, { Component } from 'react';
+import {UserProjects} from '../../Helpers/DataValidator';
 
 class Projects extends Component {
     render() {
         return (
             <article className="profile-content">
-                {this.getProjectCards()}
+                <div className="content-wrapper">
+                    {this.getProjectCards()}
+                </div>            
             </article>
         );
     }
     getProjectCards(){
-        return data.projects.map((project, index) =>{
+        if(!UserProjects.length) return (
+            <span className="no-projects">No projects found!</span>
+        );
+        return UserProjects.map((project, index) =>{
             const options = this.getOptions(project.companyKey);
             return (
                 <ProjectCard key={index+1} index={(index+1).toString()} project={project} theme={options.theme}>

@@ -12,14 +12,3 @@ h2{
     color: white;
     border-radius: 4px;
 }
-.contacts-wrapper{
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    border: 1px solid;
-}
-@media only screen and (max-width: 375px) {
-    .contacts-wrapper{
-        flex-direction: column;
-    }
-}

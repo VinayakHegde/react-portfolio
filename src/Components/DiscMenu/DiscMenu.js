@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faHome, faBriefcase, faProjectDiagram, faTools } from '@fortawesome/free-solid-svg-icons';
  
-import CONST from '../Helpers/Contants';
+import {MENU} from '../../Helpers/Enums';
 import './DiscMenu.css';
 
 class DiscMenu extends Component {
@@ -31,7 +31,7 @@ class DiscMenu extends Component {
   }
 
   render() {
-    const menus = [CONST.MENU.ABOUT, CONST.MENU.EXPERIENCE, CONST.MENU.PROJECTS, CONST.MENU.SKILLS];
+    const menus = Object.keys(MENU).map(key=> MENU[key]);
     const metric =  { x: -45, o: 0 };
     return (
       <div className="container">
@@ -95,15 +95,15 @@ class DiscMenu extends Component {
 
     iconFor(menu){
         switch(menu){
-            case CONST.MENU.PROJECTS:
+            case MENU.PROJECTS:
                 return (
                     <FontAwesomeIcon icon={faProjectDiagram}/>
                 );
-            case CONST.MENU.EXPERIENCE:
+            case MENU.EXPERIENCE:
                 return (
                     <FontAwesomeIcon icon={faBriefcase}/>
                 );
-            case CONST.MENU.SKILLS:
+            case MENU.SKILLS:
                 return (
                     <FontAwesomeIcon icon={faTools}/>
                 );

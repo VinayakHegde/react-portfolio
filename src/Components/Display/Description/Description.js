@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import data from '../../../Data/profile.json';
-import CONSTANTS from '../../Helpers/Contants';
+import {UserDetails} from '../../../Helpers/DataValidator';
+import {DESCRIPTIONFOR} from '../../../Helpers/Enums';
 
 class Description extends Component {
     render() {
@@ -16,8 +16,8 @@ class Description extends Component {
 
     getText(key){
         switch(key){
-            case CONSTANTS.DESCRIPTIONFOR.USERDESCRIPTION:
-            return data.user.description;
+            case DESCRIPTIONFOR.USERDESCRIPTION:
+                return UserDetails.Description;
             default: return key;
         }
     }

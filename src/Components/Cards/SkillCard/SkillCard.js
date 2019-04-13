@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import data from '../../../Data/profile.json';
+import {UserSkills} from '../../../Helpers/DataValidator';
 import Description from '../../Display/Description/Description';
 import './SkillCard.css';
 
@@ -17,30 +17,33 @@ class SkillCard extends Component {
 
     getSkill(bar){
         if(!bar){
-            let skillsText = '<strong>Core Competencies : </strong>'
-            data.skills.forEach((skill, index) => {
-                skillsText = skillsText.concat('<br/><em><u>' ,skill.name, '</u></em>');
+            if(UserSkills.length){
+                let skillsText = '<strong>Core Competencies : </strong>'
+                UserSkills.forEach((skill, index) => {
+                    skillsText = skillsText.concat('<br/><em><u>', skill.header, '</u></em>');
 
-                if(skill.libraries && skill.libraries.length){
-                    let libraries = skill.libraries.map(lib => lib.name);
+                    if(skill.topics && skill.topics.length){
+                        let topics = skill.topics.map(tpcs => tpcs.name);
 
-                    if(libraries.length){
-                        skillsText = skillsText.concat('<em> : </em>', libraries.toString().replace(/,/g, ', '));
+                        if(topics.length){
+                            skillsText = skillsText.concat('<em> : </em>', topics.toString().replace(/,/g, ', '));
+                        }
                     }
-                }
-            });
+                });
 
-            return (
-                <Description cssClass="skills-text" descriptionFor={skillsText}></Description>
-            );
+                return (
+                    <Description cssClass="skills-text" descriptionFor={skillsText}></Description>
+                );
+            } 
+            return null;
         } else {
-            const charts = data.skills.map((skill, index) => {
-                const className = ''.concat('chart ', skill.name.toLowerCase());
+            const charts = UserSkills.map((skill, index) => {
+                const className = ''.concat('chart ', skill.header.toLowerCase());
                 return (
                     <div key={index+1} className={className}>
-                        <span className="chart__title">{skill.name}</span>
+                        <span className="chart__title">{skill.header}</span>
                         <ul className="chart--horiz">
-                            {this.getSkillChips(skill.libraries)}
+                            {this.getSkillTopics(skill)}
                         </ul>
                     </div>
                 );
@@ -49,29 +52,32 @@ class SkillCard extends Component {
             return (
                 <div className="skills">
                     {charts}
-                    {this.getSkillLevels()}
+                    {this.getScoreLevels()}
                 </div>
             );
         }
 
     }
 
-    getSkillChips(libraries){
-        const chips = libraries.map((lib, index) => {
-            const width = lib.score.toString().concat('%');
+    getSkillTopics(skill){
+        const topics = skill.topics.map((tpc, index) => {
+            const width = tpc.score.toString().concat('%');
             return (
                 <li key={index+1} className="chart__bar" style={{width: `${width}`}}>
                     <span className="chart__label">
-                        {lib.name}
+                        {tpc.name}
                     </span>
                 </li>
             );    
         });
 
-        return chips;
+        return topics;
     }
 
-    getSkillLevels(){
+    getScoreLevels(){
+        if(!UserSkills.length) return (
+            <span className="no-skills">Skills not found!</span>
+        );
         return(
             <ul className="lines">
                 <li className="line l--0">

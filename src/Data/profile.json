@@ -3,7 +3,7 @@
         "firstName" : "Vinayak",
         "lastName" : "Hegde",
         "knownAs":"Vinnie",
-        "based":"Manchester",
+        "location":"Manchester",
         "contact":{
             "phone":{
                 "countryCode" : 44,
@@ -19,7 +19,7 @@
         "subTitle":"I also am a proud dad, husband, son, brother and coder",
         "description":"I am an <strong style=\"color:#040FD9;\"><q>Innovative Front End Developer</q></strong> offering 9 years of experience in the full software development life cycle - from concept through delivery of next-generation applications and customisable solutions.</br><hr/><strong style=\"color:#0442BF;\">Expert in advanced development methodologies,</strong> tools and processes contributing to the design and rollout of cutting-edge web applications.</br><hr/><strong style=\"color:#0460D9;\">Known for excellent troubleshooting skills</strong> - able to analyse code and engineer well-researched, cost-effective and responsive solutions.<hr/>"
     },
-    "experience" : [
+    "experiences" : [
         {
             "company":"Playtech Plc",
             "office": "Manchester",
@@ -289,112 +289,84 @@
     ],
     "skills":[
         {
-            "name":"Development",
-            "level":"Expert",
-            "score":95,
-            "libraries":[
+            "header":"Development",
+            "topics":[
                 {
                     "name":"TypeScript",
-                    "level":"Intermediate",
                     "score":60
                 }, {
                     "name":"JavaScript (VanillaJS)",
-                    "level":"Expert",
                     "score":95
                 }, {
                     "name":"HTML5, Templating",
-                    "level":"Expert",
                     "score":90
                 }, {
                     "name":"CSS3, Less, Sass",
-                    "level":"Intermediate",
                     "score":70
                 }, {
                     "name":"AngularJS (1.7x)",
-                    "level":"Expert",
                     "score":95
                 }, {
                     "name":"Angular 2+",
-                    "level":"Intermediate",
                     "score":60
                 }, {
                     "name":"ReactJS",
-                    "level":"Intermediate",
                     "score":65
                 }, {
                     "name":"NodeJS",
-                    "level":"Beginner",
                     "score":30
                 }, {
                     "name":"jQuery",
-                    "level":"Expert",
                     "score":85
                 }, {
                     "name":"VueJS",
-                    "level":"Begginer",
                     "score":20
                 }, {
                     "name":"BackboneJS",
-                    "level":"Intermediate",
                     "score":60
                 }, {
                     "name":"UnderscoreJS",
-                    "level":"Expert",
                     "score":90
                 }, {
                     "name":"RequireJS",
-                    "level":"Expert",
                     "score":90
                 }, {
                     "name":"KendoUI",
-                    "level":"Intermediate",
                     "score":70
                 }, {
                     "name":"JSON, XML",
-                    "level":"Expert",
                     "score":95
                 }, {
                     "name":".Net and .net Core C#",
-                    "level":"Intermediate",
                     "score":60
                 }
             ]
         }, {
-            "name":"Productivity",
-            "level":"Intermediate",
-            "score":60,
-            "libraries":[
+            "header":"Productivity",
+            "topics":[
                 {
                     "name":"Git, TFS, DynamSoft",
-                    "level":"Expert",
                     "score":90
                 }, {
-                    "name":"Microsoft Office",
                     "level":"Intermediate",
                     "score":60
                 }, {
                     "name":"Agile Methodoology",
-                    "level":"Intermediate",
                     "score":80
                 }
             ]
         },
         {
-            "name":"Tools",
-            "level":"Intermediate",
-            "score":70,
-            "libraries":[
+            "header":"Tools",
+            "topics":[
                 {
                     "name":"VS Code, Visual Studio, Sublime Text",
-                    "level":"Intermediate",
                     "score":70
                 }, {
                     "name":"Photoshop",
-                    "level":"Intermediate",
                     "score":50
                 }, {
                     "name":"Wireframing, UML diagrams, flowchars",
-                    "level":"Intermediate",
                     "score":70
                 }
             ]

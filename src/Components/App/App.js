@@ -5,13 +5,13 @@ import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 
 import './App.css';
-import CONST from '../Helpers/Contants';
+import {MENU} from '../../Helpers/Enums';
 
 class App extends Component {
   constructor(){
     super();
     this.state= {
-      route : CONST.MENU.ABOUT
+      route : MENU.ABOUT
     }
   }
   render() {

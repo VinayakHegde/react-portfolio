@@ -1,7 +1,7 @@
 import './Experience.css';
 import Timeline from '../Timeline/Timeline';
 import StoryCard from '../Cards/StoryCard/StoryCard';
-import data from '../../Data/profile.json';
+import {UserExperiences, UserProjects} from '../../Helpers/DataValidator';
 
 import React, { Component } from 'react';
 
@@ -47,7 +47,10 @@ class Experience extends Component {
     }
 
     getStories(){
-        let stories = data.experience.map((exp, ind)=>{
+        if(!UserExperiences.length) return (
+            <span className="no-experiences">No experience found!</span>
+        );
+        let stories = UserExperiences.map((exp, ind)=>{
             let dto = this.dto(exp);
             let when = dto.startDate.concat(' - ', dto.isPresent ? 'Present' : dto.endDate)
             if(dto.startDate.length === 0 && (!dto.endDate || dto.endDate.length === 0)){
@@ -71,7 +74,7 @@ class Experience extends Component {
     }
     getProjectCount(key){
         let count = 0;
-        data.projects.forEach(project => {
+        UserProjects.forEach(project => {
             if(key === project.companyKey){
                 count++;
             }
