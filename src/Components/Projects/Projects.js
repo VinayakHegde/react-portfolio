@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 
 import ProjectCard from '../Cards/ProjectCard/ProjectCard';
-import data from '../../Data/profile.json';
-import {UserProjects} from '../../Helpers/DataValidator';
+import {UserProjects, UserExperiences} from '../../Helpers/DataValidator';
 
 class Projects extends Component {
     render() {
@@ -28,7 +27,7 @@ class Projects extends Component {
         });
     }
     getOptions(companyKey){
-        const experience = data.experience.find(function(exp) {
+        const experience = UserExperiences.find(function(exp) {
             return (exp.misc.key === companyKey);
         });
         
