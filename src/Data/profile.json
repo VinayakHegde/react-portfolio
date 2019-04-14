@@ -17,7 +17,7 @@
         },
         "jobTitle":"Senior Front End Developer",
         "subTitle":"I also am a proud dad, husband, son, brother and coder",
-        "description":"I am an <strong style=\"color:#040FD9;\"><q>Innovative Front End Developer</q></strong> offering 9 years of experience in the full software development life cycle - from concept through delivery of next-generation applications and customisable solutions.</br><hr/><strong style=\"color:#0442BF;\">Expert in advanced development methodologies,</strong> tools and processes contributing to the design and rollout of cutting-edge web applications.</br><hr/><strong style=\"color:#0460D9;\">Known for excellent troubleshooting skills</strong> - able to analyse code and engineer well-researched, cost-effective and responsive solutions.<hr/>"
+        "description":"I am an <strong style=\"color:#040FD9;\"><q>Innovative Front End Developer</q></strong> offering {autoexp} years of experience in the full software development life cycle - from concept through delivery of next-generation applications and customisable solutions.</br><hr/><strong style=\"color:#0442BF;\">Expert in advanced development methodologies,</strong> tools and processes contributing to the design and rollout of cutting-edge web applications.</br><hr/><strong style=\"color:#0460D9;\">Known for excellent troubleshooting skills</strong> - able to analyse code and engineer well-researched, cost-effective and responsive solutions.<hr/>"
     },
     "experiences" : [
         {
@@ -44,7 +44,7 @@
             "jobTitle":"Software Developer",
             "isPresent": false,
             "startDate": "Nov 2013",
-            "endDate" : "June 2018",
+            "endDate" : "Jun 2018",
             "description": "I worked on a project called \"Intuitive Dashboards\" - which is a data visualisation tool and I developed frontend (Single Page web Application) using cutting-edge technologies like JavaScript (VanillaJS, Kendo UI, BackboneJS, UnderscoreJS, RequireJS, jQuery, ReactJS), HTML5 and CSS3.",
             "achievements" : [
                 {"details" : "Facilitated customization of Intuitive Dashboards by encouraging other developers to adopt emerging standards for web app development, architecture and tools."},
@@ -60,7 +60,7 @@
             "office": "Glasgow",
             "jobTitle":"Software Developer",
             "isPresent": false,
-            "startDate": "Sept 2012",
+            "startDate": "Sep 2012",
             "endDate" : "Oct 2013",
             "description": "I assisted in design and development of Patient Appointment Confirmation Service and Telephone Answering Service application for NHS Trusts.",
             "achievements" : [
@@ -175,7 +175,7 @@
             "title":"Neon Mix",
             "companyKey":"06",
             "isPresent":true,
-            "startDate":"Sept 2018",
+            "startDate":"Sep 2018",
             "endDate":null,
             "description":"Neon Mix is browser based app runs on slot machines in kiosk mode. App is developed using Angular and .net Core. <br/>App talks to service fabric microservices and web sockets.",
             "subProjects":[],
@@ -186,7 +186,7 @@
             "companyKey":"06",
             "isPresent":false,
             "startDate":"Jul 2018",
-            "endDate":"Sept 2018",
+            "endDate":"Sep 2018",
             "description":"<q>TableLite</q> is a modern browser based application built using technologies like AngularJS (v1.7) and .Net Core (v2.1). Application can be hosted on any platform (WIndows/Linux/OSX). Front end communicates with server over Restful API (Web API).<br/>The app helps the casinos to track the cash drops on a gambling table.",
             "subProjects":[],
             "programming":"JavaScript (AngularJS, UnderscoreJS), HTML5, CSS3",
@@ -269,17 +269,17 @@
                 {
                     "title":"Chronos Web",
                     "isPresent":false,
-                    "startDate":"Sept 2012",
+                    "startDate":"Sep 2012",
                     "endDate":"Oct 2013"
                 }, {
                     "title":"Chronos Agent",
                     "isPresent":false,
-                    "startDate":"Sept 2012",
+                    "startDate":"Sep 2012",
                     "endDate":"Oct 2013"
                 }, {
                     "title":"Chromos Team",
                     "isPresent":false,
-                    "startDate":"Sept 2012",
+                    "startDate":"Sep 2012",
                     "endDate":"Oct 2013"
                 }
             ],

@@ -22,6 +22,31 @@ const UserExperiences = data.experiences || [];
 const UserProjects = data.projects || [];
 const UserSkills = data.skills || [];
 
+UserDetails.Experience = () =>{
+    let exp = 0;
+    if(UserExperiences.length > 0){
+
+        function monthDiff(d1, d2) {
+            let diff;
+            diff = (d2.getFullYear() - d1.getFullYear()) * 12;
+            diff -= d1.getMonth();
+            diff += d2.getMonth() +1;
+            return diff <= 0 ? 0 : diff;
+        }
+
+        UserExperiences.forEach((uexp)=>{
+            const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+            let d1 = new Date(uexp.startDate.split(' ')[1], months.indexOf(uexp.startDate.split(' ')[0].toUpperCase()));
+            let d2 = uexp.isPresent ? new Date() : new Date(uexp.endDate.split(' ')[1], months.indexOf(uexp.endDate.split(' ')[0].toUpperCase()));
+            console.log(uexp.company, uexp.startDate, uexp.endDate, monthDiff(d1, d2));
+            
+            exp += monthDiff(d1, d2);
+        });
+
+    }
+    return exp ? (exp/12).toFixed(1) : exp;
+}
+
 export { 
     UserDetails, 
     UserContacts,

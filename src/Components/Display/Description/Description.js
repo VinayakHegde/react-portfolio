@@ -17,7 +17,7 @@ class Description extends Component {
     getText(key){
         switch(key){
             case DESCRIPTIONFOR.USERDESCRIPTION:
-                return UserDetails.Description;
+                return UserDetails.Description.replace('{autoexp}', UserDetails.Experience());
             default: return key;
         }
     }
