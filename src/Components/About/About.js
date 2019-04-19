@@ -6,20 +6,32 @@ import {DESCRIPTIONFOR} from '../../Helpers/Enums';
 import SkillCard from '../Cards/SkillCard/SkillCard';
 
 import './About.css';
+import AnimatedVisibility from '../AnimatedVisibility/AnimatedVisibility';
 
 class About extends Component {
+    constructor(props){
+        super(props);
+        this.state = { visible: false };
+    }
+
+    onSensorChange(isVisible){
+        isVisible && this.setState({visible:true});
+    }
     render() {
+        const {visible} = this.state;
         return (
             <article className="profile-content about">
                 <div className="content-wrapper">
-                    <UserCard cssClass="about-content"/>
+                    <AnimatedVisibility notifyChange={(isVisible) => this.onSensorChange(isVisible)}>
+                        <UserCard cssClass={`${visible ? 'about-content bounce-in' : 'about-content is-hidden'}`}/>
 
-                    <Description cssClass="about-content about-description"
-                            descriptionFor={DESCRIPTIONFOR.USERDESCRIPTION}/>
-                        
-                    <div className="about-content">
-                        <SkillCard bar={false}/>
-                    </div>
+                        <Description cssClass={`${visible ? 'about-content about-description bounce-in' : 'about-content about-description is-hidden'}`}
+                                descriptionFor={DESCRIPTIONFOR.USERDESCRIPTION}/>
+                            
+                        <div className={`${visible ? 'about-content bounce-in' : 'about-content is-hidden'}`}>
+                            <SkillCard bar={false}/>
+                        </div>
+                    </AnimatedVisibility>
                 </div>
             </article>
         );

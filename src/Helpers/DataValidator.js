@@ -38,7 +38,6 @@ UserDetails.Experience = () =>{
             const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
             let d1 = new Date(uexp.startDate.split(' ')[1], months.indexOf(uexp.startDate.split(' ')[0].toUpperCase()));
             let d2 = uexp.isPresent ? new Date() : new Date(uexp.endDate.split(' ')[1], months.indexOf(uexp.endDate.split(' ')[0].toUpperCase()));
-            console.log(uexp.company, uexp.startDate, uexp.endDate, monthDiff(d1, d2));
             
             exp += monthDiff(d1, d2);
         });

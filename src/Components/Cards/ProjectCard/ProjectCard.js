@@ -3,20 +3,32 @@ import PropTypes from 'prop-types';
 
 import Description from '../../Display/Description/Description';
 import './ProjectCard.css';
+import AnimatedVisibility from '../../AnimatedVisibility/AnimatedVisibility';
 
 class ProjectCard extends Component {
+    constructor(props){
+        super(props);
+        this.state = {visible : false}
+    }
+    
+    onSensorChange(isVisible){
+        isVisible && this.setState({visible:true});
+    }
+
     render() {
         const {project, theme, children, index} = this.props;
-        console.log(project);
+        const {visible} = this.state;
         return (
-            <div className="project-card" style={{borderColor:`${theme}`}}>
-                {this.getProjectTitle(project, 'project-header project-title', index, theme)}
-                {children}
-                {this.getElementFor('About Project', project.description)}
-                {this.getSubProjects(project)}
-                {this.getElementFor('Programming', project.programming)}
-                {this.getElementFor('Tools', project.tools)}
-            </div>
+            <AnimatedVisibility notifyChange={(isVisible) => this.onSensorChange(isVisible)}>
+                <div className={`${visible ? 'bounce-in project-card' : 'is-hidden project-card'}`} style={{borderColor:`${theme}`}}>
+                    {this.getProjectTitle(project, 'project-header project-title', index, theme)}
+                    {children}
+                    {this.getElementFor('About Project', project.description)}
+                    {this.getSubProjects(project)}
+                    {this.getElementFor('Programming', project.programming)}
+                    {this.getElementFor('Tools', project.tools)}
+                </div>
+            </AnimatedVisibility>
         );
     }
     getProjectTitle(project, className, key, theme){
