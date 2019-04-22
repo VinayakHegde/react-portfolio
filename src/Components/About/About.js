@@ -20,7 +20,7 @@ class About extends Component {
     render() {
         const {visible} = this.state;
         return (
-            <article className="profile-content about">
+            <article className="profile-content">
                 <div className="content-wrapper">
                     <AnimatedVisibility notifyChange={(isVisible) => this.onSensorChange(isVisible)}>
                         <UserCard cssClass={`${visible ? 'about-content bounce-in' : 'about-content is-hidden'}`}/>

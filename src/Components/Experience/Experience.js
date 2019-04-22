@@ -9,9 +9,11 @@ class Experience extends Component {
     render() {
         return (
             <article className="profile-content">
-                <Timeline lineColor={'#ddd'}>
-                    {this.getStories()}
-                </Timeline>
+                <div className="content-wrapper">
+                    <Timeline lineColor={'#ddd'}>
+                        {this.getStories()}
+                    </Timeline>
+                </div>
             </article>
         );
     }

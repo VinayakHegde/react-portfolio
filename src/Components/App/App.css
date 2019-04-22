@@ -10,7 +10,18 @@ body {
   display: flex;
 }
 
+.profile-content{
+    flex-grow: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
 .content-wrapper{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  height: fit-content;
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }

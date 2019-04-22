@@ -3,13 +3,9 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import './Timeline.css';
 
-const Timeline = ({ animate, children, className, lineColor }) => (
-    <div className="timeline-wrapper">
-        <div className={classNames(className, 'timeline', {
-            'timeline--animate': animate,
-            })} style={{ color: `${lineColor}` }}>
-                {children}
-        </div>
+const Timeline = ({ children, className, lineColor }) => (
+    <div className={classNames(className, 'timeline')} style={{ color: `${lineColor}` }}>
+        {children}
     </div>
 );
 
@@ -19,12 +15,10 @@ Timeline.propTypes = {
         PropTypes.node,
     ]).isRequired,
     className: PropTypes.string,
-    lineColor: PropTypes.string,
-    animate: PropTypes.bool
+    lineColor: PropTypes.string
 };
 
 Timeline.defaultProps = {
-    animate: true,
     className: '',
     lineColor: '#000'
 };

@@ -6,8 +6,3 @@
     flex-direction: column;
     background-color: #fff;
 }
-.profile-content {
-  flex-grow: 1;
-  overflow-y: auto;
-  padding: 20px;
-}

@@ -4,6 +4,10 @@ const MENU = {
     PROJECTS: 'PROJECTS', 
     SKILLS: 'SKILLS' 
 };
+const PROJECTSTYPE = {
+    WORK : 'Work',
+    PERSONAL : 'Personal'
+}
 const ICONTYPE = {
     PHONE : 'PHONE',
     EMAIL: 'EMAIL',
@@ -17,6 +21,7 @@ const DESCRIPTIONFOR = {
 
 export {
     MENU,
+    PROJECTSTYPE,
     ICONTYPE,
     DESCRIPTIONFOR
 };
