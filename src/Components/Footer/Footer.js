@@ -11,29 +11,29 @@ class Footer extends Component {
         return (
             <footer className="footer">
                 <ActionButton type={ICONTYPE.PHONE}
-                                    value={'tel:'.concat(UserContacts.Phone)} 
-                                    btnClass="button phone" 
-                                    linkClass="button-link"
-                                    tooltip="Click to ring me">
-                    </ActionButton>
-                    <ActionButton type={ICONTYPE.EMAIL}
-                                    value={'mailto:'.concat(UserContacts.Email)} 
-                                    btnClass="button email" 
-                                    linkClass="button-link"
-                                    tooltip="Click to open email client">
-                    </ActionButton>
-                    <ActionButton type={ICONTYPE.LINKEDIN}
-                                    value={UserContacts.LinkedIn} 
-                                    btnClass="button linkedin" 
-                                    linkClass="button-link"
-                                    tooltip="Visit my linkedIn profile">
-                    </ActionButton>
-                    <ActionButton type={ICONTYPE.GITHUB}
-                                    value={UserContacts.Github} 
-                                    btnClass="button github" 
-                                    linkClass="button-link"
-                                    tooltip="Visit my github">
-                    </ActionButton>
+                            value={'tel:'.concat(UserContacts.Phone)} 
+                            btnClass="disc phone" 
+                            linkClass="button-link"
+                            tooltip="Click to ring me">
+                </ActionButton>
+                <ActionButton type={ICONTYPE.EMAIL}
+                            value={'mailto:'.concat(UserContacts.Email)} 
+                            btnClass="disc email" 
+                            linkClass="button-link"
+                            tooltip="Click to open email client">
+                </ActionButton>
+                <ActionButton type={ICONTYPE.LINKEDIN}
+                            value={UserContacts.LinkedIn} 
+                            btnClass="disc linkedin" 
+                            linkClass="button-link"
+                            tooltip="Visit my linkedIn profile">
+                </ActionButton>
+                <ActionButton type={ICONTYPE.GITHUB}
+                            value={UserContacts.Github} 
+                            btnClass="disc github" 
+                            linkClass="button-link"
+                            tooltip="Visit my github">
+                </ActionButton>
             </footer>
         );
     }

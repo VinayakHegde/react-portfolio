@@ -1,119 +1,13 @@
-.button-group {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  
-  .button {
-    position: relative;
-    outline: none;
-    background: transparent;;
-    width: 40px;
-    height: 40px;
-    border: 0;
-    border-radius: 100px;
-    margin: 0 10px;
-    color: #FFF;
-    cursor: pointer;
-  }
-  .button--large {
-    z-index: 1;
-    position: relative;
-    width: 60px;
-    height: 60px;
-  }
-  .button:hover .tooltip {
-    top: 100%;
-    opacity: 1;
-  }
-  
-  .icon {
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    transition: background 0.3s ease;
-  }
-  .icon, .icon:before, .icon:after {
+.disc-menu-container{
     position: absolute;
-    display: block;
-    background: #FFF;
-    width: 6px;
-    height: 6px;
-    border-radius: 10px;
-  }
-  .icon:before, .icon:after {
-    content: '';
-    transition: all 100ms ease, right 100ms 100ms ease, left 100ms 100ms ease;
-  }
-  .icon:before {
-    left: -11px;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-  .icon:after {
-    right: -11px;
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
-  }
-  .icon.active {
-    background: transparent;
-    transition: background 0.3s ease;
-  }
-  .icon.active, .icon.active:before, .icon.active:after {
-    height: 3px;
-  }
-  .icon.active:before, .icon.active:after {
-    width: 20px;
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    transition: all 100ms ease, width 100ms 100ms ease, -webkit-transform 300ms 200ms cubic-bezier(0.28, 0.55, 0.385, 1.65);
-    transition: all 100ms ease, width 100ms 100ms ease, transform 300ms 200ms cubic-bezier(0.28, 0.55, 0.385, 1.65);
-    transition: all 100ms ease, width 100ms 100ms ease, transform 300ms 200ms cubic-bezier(0.28, 0.55, 0.385, 1.65), -webkit-transform 300ms 200ms cubic-bezier(0.28, 0.55, 0.385, 1.65);
-  }
-  .icon.active:before {
-    left: 50%;
-    -webkit-transform: translateX(-50%) rotate(45deg);
-            transform: translateX(-50%) rotate(45deg);
-  }
-  .icon.active:after {
-    right: 50%;
-    -webkit-transform: translateX(50%) rotate(-45deg);
-            transform: translateX(50%) rotate(-45deg);
-  }
-  
-  .tooltip {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    display: inline-block;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    padding: 4px;
-    box-sizing: border-box;
-    -webkit-transform: translate(-50%, 50%);
-            transform: translate(-50%, 50%);
-    color: #FFF;
-    font-size: 10px;
-    font-weight: 500;
-    opacity: 0;
-    transition: 200ms ease;
-  }
-  
-  body {
-    background: #F3F3F3;
-  }
-  
-  .container {
-    position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
-    display: block;
+    display: flex;
+    z-index: 1;
     -webkit-align-items: center;
     align-items: center;
-    -webkit-flex-direction: row;
-    flex-direction: row;
+    -webkit-flex-direction: column;
+    flex-direction: column;
     -webkit-justify-content: center;
     justify-content: center;
     -webkit-flex-wrap: nowrap;
@@ -123,5 +17,128 @@
     transform-origin: center;
     -webkit-transform: translate(0, 0) scale(1, 1);
     transform: translate(0, 0) scale(1, 1);
-  }
+}
+.disc-group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
   
+.disc-group.inactive {
+    display:none;
+}
+
+.disc {
+    position: relative;
+    outline: none;
+    background: #333;;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 100px;
+    margin: 0 0 10px 0;
+    color: #FFF;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.75em;
+    line-height: 40px;
+}
+
+.disc.large {
+    z-index: 1;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0px;
+    border: 1px solid #fff;
+}
+
+.disc-label {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    display: inline-block;
+    width: 75px;
+    height: 20px;
+    line-height: 1em;
+    background: #333;
+    border-radius: 10px;
+    padding: 4px;
+    box-sizing: border-box;
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    color: #FFF;
+    font-size: 10px;
+    font-weight: 500;
+    transition: 200ms ease;
+}
+
+.main-disc-icon {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: background 0.3s ease;
+}
+
+.main-disc-icon, 
+.main-disc-icon:before, 
+.main-disc-icon:after {
+    position: absolute;
+    display: block;
+    background: #FFF;
+    width: 6px;
+    height: 6px;
+    border-radius: 10px;
+}
+
+.main-disc-icon:before, 
+.main-disc-icon:after {
+    content: '';
+    transition: all 100ms ease, right 100ms 100ms ease, left 100ms 100ms ease;
+}
+
+.main-disc-icon:before {
+    left: -11px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.main-disc-icon:after {
+    right: -11px;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+.main-disc-icon.active {
+    background: transparent;
+    transition: background 0.3s ease;
+}
+
+.main-disc-icon.active, 
+.main-disc-icon.active:before, 
+.main-disc-icon.active:after {
+    height: 3px;
+}
+
+.main-disc-icon.active:before, 
+.main-disc-icon.active:after {
+    width: 20px;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transition: all 100ms ease, width 100ms 100ms ease, -webkit-transform 300ms 200ms cubic-bezier(0.28, 0.55, 0.385, 1.65);
+    transition: all 100ms ease, width 100ms 100ms ease, transform 300ms 200ms cubic-bezier(0.28, 0.55, 0.385, 1.65);
+    transition: all 100ms ease, width 100ms 100ms ease, transform 300ms 200ms cubic-bezier(0.28, 0.55, 0.385, 1.65), -webkit-transform 300ms 200ms cubic-bezier(0.28, 0.55, 0.385, 1.65);
+}
+
+.main-disc-icon.active:before {
+    left: 50%;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+}
+.main-disc-icon.active:after {
+    right: 50%;
+    -webkit-transform: translateX(50%) rotate(-45deg);
+    transform: translateX(50%) rotate(-45deg);
+}

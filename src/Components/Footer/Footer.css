@@ -2,12 +2,16 @@
     flex-shrink: 0;
     background-color: #333;
     color: white;
-    padding: 2px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-.footer .button{
+.footer .disc{
   height: 30px;
   width: 30px;
+  margin: 0 10px;
   background: transparent;
   box-shadow: none;
+  line-height: 30px;
+  font-size: medium;
 }

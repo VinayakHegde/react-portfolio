@@ -21,6 +21,7 @@ const UserContacts = {
 const UserExperiences = data.experiences || [];
 const UserProjects = data.projects || [];
 const UserSkills = data.skills || [];
+const PersonalProjects = data.personalProjects || [];
 
 UserDetails.Experience = () =>{
     let exp = 0;
@@ -51,5 +52,6 @@ export {
     UserContacts,
     UserExperiences,
     UserProjects,
+    PersonalProjects,
     UserSkills
 };

@@ -371,5 +371,27 @@
                 }
             ]
         }
+    ],
+    "personalProjects" : [
+        {
+            "title":"KeyCode Vuewer",
+            "source":"https://github.com/VinayakHegde/KeyCode-Vuewer",
+            "demo":"https://vinayakhegde.github.io/KeyCode-Vuewer/",
+            "tags": [
+                "VueJS",
+                "vue-cli",
+                "Single file components",
+                "HTML5 & CSS3",
+                "git"
+            ]
+        }, {
+            "title":"",
+            "source":"",
+            "demo":"",
+            "tags": [
+                "",
+                ""
+            ]
+        }
     ]
 }

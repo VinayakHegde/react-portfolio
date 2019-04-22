@@ -10,127 +10,100 @@ import {MENU} from '../../Helpers/Enums';
 import './DiscMenu.css';
 
 class DiscMenu extends Component {
-  constructor(props) {
-    super(props);
-    
-    this.state = {
-      active: false,
+    constructor(props) {
+        super(props);
+        
+        this.state = {
+            active: false,
+        }
     }
-    this._onItemClick = this._onItemClick.bind(this);
-    this._onClick = this._onClick.bind(this);
-  }
-  
-  _onClick() {
-    this.setState({ 
-      active: !this.state.active 
-    });
-  }
-  _onItemClick(item){
-    this._onClick();
-    this.props.onItemClick(item)
-  }
+    menuClicked(item){
+        this.setState({ 
+            active: !this.state.active 
+        });
+        if(item)
+            this.props.onItemClick(item)
+    }
+    render() {
+        const menus = Object.keys(MENU).map(key=> MENU[key]);
+        const springOption = { stiffness: 330, damping: 20 };
+        const staggeredMetric =  { bottom: -45, opacity: 0 };
+        
+        const defaultStaggeredMotion = menus.map(() => staggeredMetric);
 
-  render() {
-    const menus = Object.keys(MENU).map(key=> MENU[key]);
-    const metric =  { x: -45, o: 0 };
-    return (
-      <div className="container">
-        <ButtonGroup>
-          <StaggeredMotion
-            defaultStyles={menus.map(() => metric)}
-            styles={prevInterpolatedStyles => prevInterpolatedStyles.map((_, i) => {
-              return i === prevInterpolatedStyles.length - 1
+        const nextStaggeredMotion = prevMotions => prevMotions.map((_, i) => {
+            return i === prevMotions.length - 1
                 ? {
-                  x: spring(this.state.active ? 0 : -45, { stiffness: 330, damping: 20 }),
-                  o: spring(this.state.active ? 1 : 0, { stiffness: 330, damping: 20 }),
+                    bottom: spring(this.state.active ? 0 : staggeredMetric.bottom, springOption),
+                    opacity: spring(this.state.active ? 1 : staggeredMetric.opacity, springOption),
                 } : {
-                  x: spring(prevInterpolatedStyles[i + 1].x, { stiffness: 330, damping: 20 }),
-                  o: spring(prevInterpolatedStyles[i + 1].o, { stiffness: 330, damping: 20 }),
+                    bottom: spring(prevMotions[i + 1].bottom, springOption),
+                    opacity: spring(prevMotions[i + 1].opacity, springOption),
                 };
-            })}
-          >
-            {interpolatingStyles =>
-              <ButtonGroup style={{ 
-                background: this.state.active ? '#333' : 'transparent',
-              }}>
-                {interpolatingStyles.map((style, i) =>
-                  <Button
-                    key={menus[i]}
-                    onClick={() => this._onItemClick(menus[i])} 
-                    style={{
-                      position: 'relative',
-                      right: style.x,
-                      opacity: style.o,
-                      pointerEvents: this.state.active ? 'auto' : 'none',
-                    }}
-                  >
-                    <Tooltip text={menus[i]} />
+            }
+        );
+        const motionMatric = { scale: 0.675 };
+        const styleMotion = { scale: spring(this.state.active ? 1 : motionMatric.scale, springOption) };
+        return (
+            <div className="disc-menu-container">
+                <StaggeredMotion defaultStyles={defaultStaggeredMotion} styles={nextStaggeredMotion}>
+                    {this.getDiscGroup(menus)}
+                </StaggeredMotion>
+                
+                <Motion defaultStyle={motionMatric} style={styleMotion}>
+                    { this.getMainDisc()}
+                </Motion>
+            </div>
+    
+        );
+    }
+    getMainDisc(){
+        return interpolatingStyles =>
+            <Disc className="large" onClick={() => this.menuClicked()} style={{ transform: 'scale(' + interpolatingStyles.scale + ')'}}>
+                <span className={this.state.active ? 'main-disc-icon active' : 'main-disc-icon'} />
+            </Disc>;
+    }
+    getDiscGroup(menus){
+        const getStyle = style =>{
+            return {
+                bottom: style.bottom,
+                opacity: style.opacity,
+                pointerEvents: this.state.active ? 'auto' : 'none',
+            };
+        }
+        return interpolatingStyles =>  <DiscGroup active={this.state.active ? 'active' : 'inactive' }>
+            { interpolatingStyles.map((style, i) =>
+                <Disc key={menus[i]} onClick={() => this.menuClicked(menus[i])} style={getStyle(style)}>
+                    <DiscLabel text={menus[i]}/>
                     {this.iconFor(menus[i])}
-                 </Button>
-                )}
-              </ButtonGroup>
-            }
-          </StaggeredMotion>
-          
-          <Motion
-            defaultStyle={{ s: 0.675 }}
-            style={{ s: spring(this.state.active ? 1 : 0.675, { stiffness: 330, damping: 14 }) }}
-          >
-            {interpolatingStyles =>
-              <Button 
-                className="button--large" 
-                onClick={this._onClick} 
-                style={{ 
-                  transform: 'scale(' + interpolatingStyles.s + ')',
-                }}
-              >
-                <span className={this.state.active ? 'icon active' : 'icon'} />
-              </Button>
-            }
-          </Motion>
-        </ButtonGroup>
-      </div>
-    );
-  }
+                </Disc>
+            )}
+        </DiscGroup>
+        
+    }
 
     iconFor(menu){
         switch(menu){
             case MENU.PROJECTS:
-                return (
-                    <FontAwesomeIcon icon={faProjectDiagram}/>
-                );
+                return <FontAwesomeIcon icon={faProjectDiagram}/>;
             case MENU.EXPERIENCE:
-                return (
-                    <FontAwesomeIcon icon={faBriefcase}/>
-                );
+                return <FontAwesomeIcon icon={faBriefcase}/>;
             case MENU.SKILLS:
-                return (
-                    <FontAwesomeIcon icon={faTools}/>
-                );
+                return <FontAwesomeIcon icon={faTools}/>;
             default: 
-                return(
-                    <FontAwesomeIcon icon={faHome}/>
-                );
+                return <FontAwesomeIcon icon={faHome}/>;
         }
     }
 }
 
-/**
- * <Tooltip />
- */
-const Tooltip = (props) => <span className="tooltip">{props.text}</span>;
+const DiscLabel = (props) => <span className="disc-label" style={props.style}>{props.text}</span>;
 
-/**
- * <ButtonGroup />
- */
-const ButtonGroup = (props) => <div className={classNames('button-group', props.active)} style={props.style}>{props.children}</div>;
+const DiscGroup = (props) => <div className={classNames('disc-group', props.active)} style={props.style}>{props.children}</div>;
 
-/**
- * <Button />
- */
-const Button = (props) => <button className={classNames('button', props.className)} style={props.style} onClick={props.onClick}>{props.children}</button>;
+const Disc = (props) => <div className={classNames('disc', props.className)} style={props.style} onClick={props.onClick}>{props.children}</div>;
 
 DiscMenu.propTypes = {
     onItemClick: PropTypes.func
 }
+
 export default DiscMenu;

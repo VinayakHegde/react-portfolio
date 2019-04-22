@@ -22,7 +22,7 @@ class ActionButton extends Component {
         const {btnClass, linkClass, value, children, type, tooltip} = this.props;
         let icon = this.getIcon(type);
         return (
-            <button className={btnClass} >
+            <div className={btnClass} >
                 <a target="_blank" rel="noopener noreferrer" 
                     className={linkClass}
                     href={value}  
@@ -31,7 +31,7 @@ class ActionButton extends Component {
                     <FontAwesomeIcon icon={icon}/>
                     {children}
                 </a>
-            </button>
+            </div>
 
         );
     }
