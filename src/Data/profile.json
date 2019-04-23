@@ -355,6 +355,24 @@
                 "SQL Studio"
             ]
         }, {
+            "title":"Personal Portfolio",
+            "companyKey": null,
+            "isPresent":false,
+            "startDate":"April 2019",
+            "endDate":"",
+            "description":"The site you viewing is my personal profile. It is made with reactJS",
+            "subProjects":[],
+            "source":"https://github.com/VinayakHegde/react-portfolio",
+            "demo":"",
+            "tags": [
+                "ReactJS",
+                "create-react-app",
+                "JSX",
+                "HTML5 & CSS3",
+                "Visual Studio Code",
+                "git"
+            ]
+        }, {
             "title":"KeyCode Vuewer",
             "companyKey": null,
             "isPresent":false,
@@ -371,9 +389,59 @@
                 "HTML5 & CSS3",
                 "Visual Studio Code",
                 "git"
-            ],
-            "programming":"",
-            "tools":""
+            ]
+        }, {
+            "title":"Multi-Runner Game",
+            "companyKey": null,
+            "isPresent":false,
+            "startDate":"Nov 2018",
+            "endDate":"",
+            "description":"It is a virtual horse race prototype - aim is to extend this app to a full blown racing game",
+            "subProjects":[],
+            "source":"https://github.com/VinayakHegde/multi-runner-time-tracker-app",
+            "demo":"https://vinayakhegde.github.io/multi-runner-time-tracker-app/",
+            "tags": [
+                "Vanilla Javascript",
+                "HTML5 & CSS3",
+                "Visual Studio Code",
+                "git"
+            ]
+        }, {
+            "title":"Clicky Bucky Game",
+            "companyKey": null,
+            "isPresent":false,
+            "startDate":"May 2018",
+            "endDate":"",
+            "description":"It is a game similar to candy crush.",
+            "subProjects":[],
+            "source":"https://github.com/VinayakHegde/clickly-blocky-app",
+            "demo":"https://vinayakhegde.github.io/clickly-blocky-app/",
+            "tags": [
+                "Vanilla Javascript",
+                "HTML5 & LESS",
+                "Gulp",
+                "Mocha",
+                "Visual Studio Code",
+                "git"
+            ]
+        }, {
+            "title":"Image2PDF conveter",
+            "companyKey": null,
+            "isPresent":false,
+            "startDate":"May 2018",
+            "endDate":"",
+            "description":"Web utility to convert selected image (jpeg/jpg) file into a PDF file",
+            "subProjects":[],
+            "source":"https://github.com/VinayakHegde/image-to-pdf-app",
+            "demo":"https://vinayakhegde.github.io/image-to-pdf-app/",
+            "tags": [
+                "Vanilla Javascript",
+                "HTML5 & CSS3",
+                "Kendo UI",
+                "jQuery",
+                "Visual Studio Code",
+                "git"
+            ]
         }
     ],
     "skills":[
