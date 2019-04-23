@@ -11,7 +11,7 @@ class App extends Component {
   constructor(){
     super();
     this.state= {
-      route : MENU.PROJECTS
+      route : MENU.ABOUT
     }
   }
   render() {
