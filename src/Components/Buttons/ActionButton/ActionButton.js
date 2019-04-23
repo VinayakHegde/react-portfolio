@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope, faLaptop, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import {faLinkedinIn, faGithub} from '@fortawesome/free-brands-svg-icons';
 
 import {ICONTYPE} from '../../../Helpers/Enums';
@@ -46,6 +46,10 @@ class ActionButton extends Component {
                 return faGithub;
             case ICONTYPE.LINKEDIN:
                 return faLinkedinIn;
+            case ICONTYPE.DEMO:
+                return faLaptop;
+            case ICONTYPE.CODE:
+                return faLaptopCode;
             default: break;
         }
     }

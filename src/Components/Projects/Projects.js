@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import ProjectCard from '../Cards/ProjectCard/ProjectCard';
-import {UserProjects,  UserExperiences} from '../../Helpers/DataValidator';
+import Work from './Work';
+import Personal from './Personal';
 import {PROJECTSTYPE} from '../../Helpers/Enums';
 
 import './Projects.css';
@@ -23,8 +23,8 @@ class Projects extends Component {
         return (
             <article className="profile-content">
                 <div className="toolbar">
-                    <span onClick={() => this.setProjectType(PROJECTSTYPE.WORK)} className={this.state.type === PROJECTSTYPE.WORK ? "toolbar-button disc active" : "toolbar-button disc"}>Work</span>
-                    <span onClick={() => this.setProjectType(PROJECTSTYPE.PERSONAL)} className={this.state.type === PROJECTSTYPE.PERSONAL ? "toolbar-button disc active" : "toolbar-button disc"}>Personal</span>
+                    <span onClick={() => this.setProjectType(PROJECTSTYPE.WORK)} className={this.state.type === PROJECTSTYPE.WORK ? "toolbar-button active" : "toolbar-button"}>Work</span>
+                    <span onClick={() => this.setProjectType(PROJECTSTYPE.PERSONAL)} className={this.state.type === PROJECTSTYPE.PERSONAL ? "toolbar-button active" : "toolbar-button"}>Personal</span>
                 </div>
                 <div className="content-wrapper">
                     {this.getProjectCards()}
@@ -35,33 +35,11 @@ class Projects extends Component {
     getProjectCards(){
         switch(this.state.type){
             case PROJECTSTYPE.WORK:
-                if(!UserProjects.length) return (
-                    <span className="no-projects">No projects found!</span>
-                );
-                return UserProjects.map((project, index) =>{
-                    const options = this.getOptions(project.companyKey);
-                    return (
-                        <ProjectCard key={index+1} index={(index+1).toString()} project={project} theme={options.theme}>
-                            <div className="project-header project-company" style={{background:`${options.theme}`}}>{options.company}</div>
-                        </ProjectCard>
-                    );
-                });
+                return <Work/>;
             case PROJECTSTYPE.PERSONAL:
-                return (
-                    <span className="under-construction">Under Construction..!</span>
-                );
+                return <Personal/>;
             default: return null;
         }
-    }
-    getOptions(companyKey){
-        const experience = UserExperiences.find(function(exp) {
-            return (exp.misc.key === companyKey);
-        });
-        
-        return { 
-            company: experience ? experience.company : '',
-            theme: experience ? experience.misc.theme : '#000'
-        };
     }
 }
 

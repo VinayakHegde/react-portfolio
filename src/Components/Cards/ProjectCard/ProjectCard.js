@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import Description from '../../Display/Description/Description';
 import './ProjectCard.css';
 import AnimatedVisibility from '../../AnimatedVisibility/AnimatedVisibility';
+import ActionButton from '../../Buttons/ActionButton/ActionButton';
+import {ICONTYPE} from '../../../Helpers/Enums';
 
 class ProjectCard extends Component {
     constructor(props){
@@ -25,18 +27,22 @@ class ProjectCard extends Component {
                     {children}
                     {this.getElementFor('About Project', project.description)}
                     {this.getSubProjects(project)}
-                    {this.getElementFor('Programming', project.programming)}
-                    {this.getElementFor('Tools', project.tools)}
+                    <div className="project-links">
+                        {this.getDemoLink(project.demo)}
+                        {this.getSourceLink(project.source)}
+                    </div>
+                    <Tags tags={project.tags ? project.tags.toString() : null} theme={theme}/>
                 </div>
             </AnimatedVisibility>
         );
     }
     getProjectTitle(project, className, key, theme){
         if(project.title.length && project.startDate.length){
+            const duration = project.companyKey ? ' ('.concat(project.startDate, ' - ', project.isPresent ? 'Present' : project.endDate, ' )') : ' ('.concat(project.startDate, ')');
             return (
                 <div className={className} key={key} style={{background:`${theme}`}}>
                     {project.title}
-                    <small className="project-duration">{' ('.concat(project.startDate, ' - ', project.isPresent ? 'Present' : project.endDate, ' )')}</small>
+                    <small className="project-duration">{duration}</small>
                 </div>
             );
         }
@@ -71,6 +77,36 @@ class ProjectCard extends Component {
 
         return null;
     }
+    getSourceLink(link){
+        if(link && link.length){
+            return (
+                <ActionButton type={ICONTYPE.CODE}
+                            value={link} 
+                            btnClass="project-link code" 
+                            linkClass="button-link"
+                            tooltip="View source">
+                            <span className="action-text">Source</span> 
+                </ActionButton>
+            );
+        }
+        return null;
+    }
+    
+    getDemoLink(link){
+        if(link && link.length){
+            return (
+                <ActionButton type={ICONTYPE.DEMO}
+                            value={link} 
+                            btnClass="project-link demo" 
+                            linkClass="button-link"
+                            tooltip="View demo">
+                            <span className="action-text">Demo</span> 
+                </ActionButton>
+            );
+        }
+
+        return null;
+    }
 
 }
 
@@ -82,6 +118,17 @@ ProjectCard.propTypes = {
         PropTypes.arrayOf(PropTypes.node),
         PropTypes.node
     ])
+}
+
+const Tags = (props) => {
+    if(!props.tags) return null;
+
+    const tags = props.tags.split(',').map((tag, index) => <span className="tag-chips" key={index}  style={{background:`${props.theme}`}}>{tag}</span>);
+    return (
+        <div className="project-tags">
+            {tags}
+        </div>
+    );
 }
 
 export default ProjectCard;

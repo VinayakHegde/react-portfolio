@@ -118,29 +118,38 @@
     ],
     "projects":[
         {
-        "title":"Neon Floors",
-        "companyKey":"06",
-        "isPresent":true,
-        "startDate":"Oct 2018",
-        "endDate":null,
-        "description":"<q>Neon Floors</q> is a web application, will let casinos to setup their attractive floor plan with assets and track players activity on the floor live and more.<br/>App will also allow casino operators to send promotions, alerts and manage player glabling behaviours.",
-        "subProjects":[
-            {
-                "title":"FloorStudio",
-                "isPresent":true,
-                "startDate":"Oct 2018",
-                "endDate":null,
-                "description":"Create and save floor plans"
-            }, {
-                "title":"Floorlens",
-                "isPresent":true,
-                "startDate":"Oct 2018",
-                "endDate":null,
-                "description":"View live player activities and floor operation"
-            }
-        ],
-        "programming":"Javascript (AngularJS, FabricJS, UnderscoreJS, jQuery and plugins), TypeScript",
-        "tools":"VS Code, Visual Studio, SQL Server"
+            "title":"Neon Floors",
+            "companyKey":"06",
+            "isPresent":true,
+            "startDate":"Oct 2018",
+            "endDate":null,
+            "description":"<q>Neon Floors</q> is a web application, will let casinos to setup their attractive floor plan with assets and track players activity on the floor live and more.<br/>App will also allow casino operators to send promotions, alerts and manage player glabling behaviours.",
+            "subProjects":[
+                {
+                    "title":"FloorStudio",
+                    "isPresent":true,
+                    "startDate":"Oct 2018",
+                    "endDate":null,
+                    "description":"Create and save floor plans"
+                }, {
+                    "title":"Floorlens",
+                    "isPresent":true,
+                    "startDate":"Oct 2018",
+                    "endDate":null,
+                    "description":"View live player activities and floor operation"
+                }
+            ],
+            "tags":[
+                "Javascript",
+                "AngularJS",
+                "FabricJS", 
+                "UnderscoreJS", 
+                "jQuery and plugins", 
+                "TypeScript",
+                "VS Code", 
+                "Visual Studio", 
+                "SQL Server"
+            ]
         }, {
             "title":"Neon Analytics",
             "companyKey":"06",
@@ -149,8 +158,16 @@
             "endDate":null,
             "description":"<q>Neon Analytics</q> is a data visualisation platform for casinos using the IGS' Neon service. It  integrates vast amounts of transactional data from disparate casino source cubes. It helps to run casinos business intelligence by retrieving, analyzing, transforming and reporting data.",
             "subProjects":[],
-            "programming":"Javascript (AngularJS, UnderscoreJS, jQuery and plugins)",
-            "tools":"VS Code, Visual Studio, SQL Server"
+            "tags":[
+                "Javascript",
+                "AngularJS", 
+                "UnderscoreJS", 
+                "jQuery and plugins", 
+                "TypeScript",
+                "VS Code", 
+                "Visual Studio", 
+                "SQL Server"
+            ]
         }, {
             "title":"Neon Touch",
             "companyKey":"06",
@@ -159,18 +176,34 @@
             "endDate":null,
             "description":"Neon Touch is browser based app runs on touch device of the slot machines. App is developed using Angular and .net Core. <br/>App talks to service fabric microservices and web sockets.",
             "subProjects":[],
-            "programming":"Javascript (AngularJS, UnderscoreJS, jQuery and plugins), TypeScript",
-            "tools":"VS Code, Visual Studio, SQL Server"
+            "tags":[
+                "Javascript",
+                "AngularJS", 
+                "UnderscoreJS", 
+                "jQuery and plugins", 
+                "TypeScript",
+                "VS Code", 
+                "Visual Studio", 
+                "SQL Server"
+            ]
         }, {
             "title":"Customer Query Builder",
             "companyKey":"06",
             "isPresent":true,
             "startDate":"Oct 2018",
             "endDate":null,
-            "description":"",
+            "description":"Searching tool for large customer base for casinos",
             "subProjects":[],
-            "programming":"Javascript (AngularJS, UnderscoreJS, jQuery and plugins), TypeScript",
-            "tools":"VS Code, Visual Studio, SQL Server"
+            "tags":[
+                "Javascript",
+                "AngularJS", 
+                "UnderscoreJS", 
+                "jQuery and plugins", 
+                "TypeScript",
+                "VS Code", 
+                "Visual Studio", 
+                "SQL Server"
+            ]
         }, {
             "title":"Neon Mix",
             "companyKey":"06",
@@ -179,8 +212,15 @@
             "endDate":null,
             "description":"Neon Mix is browser based app runs on slot machines in kiosk mode. App is developed using Angular and .net Core. <br/>App talks to service fabric microservices and web sockets.",
             "subProjects":[],
-            "programming":"Javascript (AngularJS, UnderscoreJS, jQuery and plugins)",
-            "tools":"VS Code, Visual Studio, SQL Server"
+            "tags":[
+                "Javascript",
+                "AngularJS", 
+                "UnderscoreJS", 
+                "jQuery and plugins",
+                "VS Code", 
+                "Visual Studio", 
+                "SQL Server"
+            ]
         }, {
             "title":"TableLite",
             "companyKey":"06",
@@ -189,8 +229,14 @@
             "endDate":"Sep 2018",
             "description":"<q>TableLite</q> is a modern browser based application built using technologies like AngularJS (v1.7) and .Net Core (v2.1). Application can be hosted on any platform (WIndows/Linux/OSX). Front end communicates with server over Restful API (Web API).<br/>The app helps the casinos to track the cash drops on a gambling table.",
             "subProjects":[],
-            "programming":"JavaScript (AngularJS, UnderscoreJS), HTML5, CSS3",
-            "tools":"Visual Studio 2017, VS Code"
+            "tags":[
+                "JavaScript",
+                "AngularJS", 
+                "UnderscoreJS", 
+                "HTML5 & CSS3",
+                "Visual Studio 2017", 
+                "VS Code"
+            ]
         }, {
             "title":"Intuitive Dashboards",
             "companyKey":"05",
@@ -236,8 +282,19 @@
                     "endDate":"May 2015"
                 }
             ],
-            "programming":"JavaScript (RequireJS, jQuery, BackboneJS, KendoUI, ReactJS), HTML5, CSS3, .Net C#",
-            "tools":"Visual Studio, Sublime Text and Browser Developer Tool"
+            "tags":[
+                "JavaScript", 
+                "RequireJS", 
+                "jQuery", 
+                "BackboneJS", 
+                "KendoUI", 
+                "ReactJS", 
+                "HTML5 & CSS3", 
+                ".Net C#",
+                "Visual Studio", 
+                "Sublime Text",
+                "Browser Developer Tool"
+            ]
         }, {
             "title":"Server Tools",
             "companyKey":"05",
@@ -246,8 +303,12 @@
             "endDate":"Jun 2018",
             "description":"The tool is aimed to perform cloning the dashboard database entities into XML file then migrate them to another dashboard database. This provides entity portability, in turn, helps the existing Business intelligence software users to backup/build/enhance the migrated dashboards on their system.",
             "subProjects":[],
-            "programming":".Net C# (WPF)",
-            "tools":"Visual Studio Premium 2012, SQL Server 2012"
+            "tags":[
+                ".Net C#",
+                "WPF",
+                "Visual Studio Premium 2012", 
+                "SQL Server 2012"
+            ]
         }, {
             "title":"Security Filters and Dashboard API",
             "companyKey":"05",
@@ -256,8 +317,12 @@
             "endDate":"Jul 2014",
             "description":"Aim of the security filter is to provide overall security to the data used by existing Business Intelligence software, where URL parameters are encrypted and passed across the servers and other security features at datasets level. A Test Harness (Windows application) is developed to test these security features. Also an API is developed for other developers of the other software to consume dashboard service.",
             "subProjects":[],
-            "programming":".Net C# (WinForms)",
-            "tools":"Visual Studio Premium 2012, SQL Server 2012"
+            "tags":[
+                ".Net C#",
+                "WinForms",
+                "Visual Studio Premium 2012", 
+                "SQL Server 2012"
+            ]
         }, {
             "title":"Chronos",
             "companyKey":"04",
@@ -283,8 +348,32 @@
                     "endDate":"Oct 2013"
                 }
             ],
-            "programming":".Net C#, JavaScript (jQuery and Ajax)",
-            "tools":"Visual Studio, SQL Studio"
+            "tags":[
+                ".Net C#", 
+                "JavaScript (jQuery and Ajax)",
+                "Visual Studio", 
+                "SQL Studio"
+            ]
+        }, {
+            "title":"KeyCode Vuewer",
+            "companyKey": null,
+            "isPresent":false,
+            "startDate":"2019",
+            "endDate":"",
+            "description":"KeyCode Vuewer is made with VueJS. On keydown it displays related keycode ",
+            "subProjects":[],
+            "source":"https://github.com/VinayakHegde/KeyCode-Vuewer",
+            "demo":"https://vinayakhegde.github.io/KeyCode-Vuewer/",
+            "tags": [
+                "VueJS",
+                "vue-cli",
+                "Single file components",
+                "HTML5 & CSS3",
+                "Visual Studio Code",
+                "git"
+            ],
+            "programming":"",
+            "tools":""
         }
     ],
     "skills":[
@@ -297,12 +386,6 @@
                 }, {
                     "name":"JavaScript (VanillaJS)",
                     "score":95
-                }, {
-                    "name":"HTML5, Templating",
-                    "score":90
-                }, {
-                    "name":"CSS3, Less, Sass",
-                    "score":70
                 }, {
                     "name":"AngularJS (1.7x)",
                     "score":95
@@ -334,6 +417,12 @@
                     "name":"KendoUI",
                     "score":70
                 }, {
+                    "name":"HTML5, Templating",
+                    "score":90
+                }, {
+                    "name":"CSS3, Less, Sass",
+                    "score":70
+                }, {
                     "name":"JSON, XML",
                     "score":95
                 }, {
@@ -347,9 +436,6 @@
                 {
                     "name":"Git, TFS, DynamSoft",
                     "score":90
-                }, {
-                    "level":"Intermediate",
-                    "score":60
                 }, {
                     "name":"Agile Methodoology",
                     "score":80
@@ -369,28 +455,6 @@
                     "name":"Wireframing, UML diagrams, flowchars",
                     "score":70
                 }
-            ]
-        }
-    ],
-    "personalProjects" : [
-        {
-            "title":"KeyCode Vuewer",
-            "source":"https://github.com/VinayakHegde/KeyCode-Vuewer",
-            "demo":"https://vinayakhegde.github.io/KeyCode-Vuewer/",
-            "tags": [
-                "VueJS",
-                "vue-cli",
-                "Single file components",
-                "HTML5 & CSS3",
-                "git"
-            ]
-        }, {
-            "title":"",
-            "source":"",
-            "demo":"",
-            "tags": [
-                "",
-                ""
             ]
         }
     ]
