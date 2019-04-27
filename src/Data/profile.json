@@ -373,6 +373,24 @@
                 "git"
             ]
         }, {
+            "title":"Quote Gun",
+            "companyKey": null,
+            "isPresent":false,
+            "startDate":"2019",
+            "endDate":"",
+            "description":"Quote Gun is made with VueJS. It uses the API from favq.com to display the quote",
+            "subProjects":[],
+            "source":"https://github.com/VinayakHegde/Quote-Gun",
+            "demo":"https://vinayakhegde.github.io/Quote-Gun/",
+            "tags": [
+                "VueJS",
+                "vue-cli",
+                "Single file components",
+                "HTML5 & CSS3",
+                "Visual Studio Code",
+                "git"
+            ]
+        }, {
             "title":"KeyCode Vuewer",
             "companyKey": null,
             "isPresent":false,
