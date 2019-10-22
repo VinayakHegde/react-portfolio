@@ -3,7 +3,7 @@
         "firstName" : "Vinayak",
         "lastName" : "Hegde",
         "knownAs":"Vinnie",
-        "location":"Manchester",
+        "location":"Milton Keynes",
         "contact":{
             "phone":{
                 "countryCode" : 44,
@@ -15,25 +15,40 @@
                 "gitHub":"https://github.com/VinayakHegde"
             }
         },
-        "jobTitle":"Senior Front End Developer",
+        "jobTitle":"Lead React Developer",
         "subTitle":"I also am a proud dad, husband, son, brother and coder",
         "description":"I am an <strong style=\"color:#040FD9;\"><q>Innovative Front End Developer</q></strong> offering {autoexp} years of experience in the full software development life cycle - from concept through delivery of next-generation applications and customisable solutions.</br><hr/><strong style=\"color:#0442BF;\">Expert in advanced development methodologies,</strong> tools and processes contributing to the design and rollout of cutting-edge web applications.</br><hr/><strong style=\"color:#0460D9;\">Known for excellent troubleshooting skills</strong> - able to analyse code and engineer well-researched, cost-effective and responsive solutions.<hr/>"
     },
     "experiences" : [
         {
+            "company":"Santander UK",
+            "office": "Milton Keynes",
+            "jobTitle":"Lead React Developer",
+            "isPresent": true,
+            "startDate": "Jul 2019",
+            "endDate" : null,
+            "description": "I involved in a large banking project called \"Avalon\". Developed many frontend interfaces for banking clients using ReactJS and Redux.",
+            "achievements" : [
+                {"details" : "Contributed frontend expertise in the development of products through the software life cycle, from requirements definition through successful deployment."},
+                {"details" : "Excelled in agile software development and management of technological issues, earning the highest customer satisfaction rating for all software solutions delivered."}
+            ],
+            "other": "Building front end code base and libraries, writing test cases and TDD, team management, monitoring junior developers, post-sale support and maintenance.",
+            "misc":{
+                "key":"07",
+                "theme":"#FF0000"
+            }
+        }, {
             "company":"Playtech Plc",
             "office": "Manchester",
             "jobTitle":"Senior Front End Developer",
-            "isPresent": true,
+            "isPresent": false,
             "startDate": "Jul 2018",
-            "endDate" : null,
+            "endDate" : "Jul 2019",
             "description": "I involved in many client faced apps development for gambling industries. AngularJS, Angular, ReactJS, TypeScript are few to name the technologies used to develop the apps.",
             "achievements" : [
-                {"details" : "Contributed frontend expertise in the development of products through the software life cycle, from requirements definition through successful deployment."},
-                {"details" : "Excelled in agile software development and management of technological issues, earning the highest customer satisfaction rating for all software solutions delivered."},
                 {"details" : "Introduced methodologies and best practices that enhanced product definition, release processes and customization of applications to user needs."}
             ],
-            "other": "Building front end code base and libraries, testing, monitoring junior developers, post-sale support and maintenance.",
+            "other": "Building front end shared components, testing, monitoring, support and maintenance.",
             "misc":{
                 "key":"06",
                 "theme":"#9c27b0"
@@ -112,7 +127,7 @@
             "other": null,
             "misc":{
                 "key":"01",
-                "theme":"#FF0000"
+                "theme":"#000000"
             }
         }
     ],
@@ -120,22 +135,22 @@
         {
             "title":"Neon Floors",
             "companyKey":"06",
-            "isPresent":true,
+            "isPresent":false,
             "startDate":"Oct 2018",
-            "endDate":null,
+            "endDate":"Jul 2019",
             "description":"<q>Neon Floors</q> is a web application, will let casinos to setup their attractive floor plan with assets and track players activity on the floor live and more.<br/>App will also allow casino operators to send promotions, alerts and manage player glabling behaviours.",
             "subProjects":[
                 {
                     "title":"FloorStudio",
-                    "isPresent":true,
+                    "isPresent":false,
                     "startDate":"Oct 2018",
-                    "endDate":null,
+                    "endDate":"Jul 2019",
                     "description":"Create and save floor plans"
                 }, {
                     "title":"Floorlens",
-                    "isPresent":true,
+                    "isPresent":false,
                     "startDate":"Oct 2018",
-                    "endDate":null,
+                    "endDate":"Jul 2019",
                     "description":"View live player activities and floor operation"
                 }
             ],
@@ -153,9 +168,9 @@
         }, {
             "title":"Neon Analytics",
             "companyKey":"06",
-            "isPresent":true,
+            "isPresent":false,
             "startDate":"Oct 2018",
-            "endDate":null,
+            "endDate":"Jul 2019",
             "description":"<q>Neon Analytics</q> is a data visualisation platform for casinos using the IGS' Neon service. It  integrates vast amounts of transactional data from disparate casino source cubes. It helps to run casinos business intelligence by retrieving, analyzing, transforming and reporting data.",
             "subProjects":[],
             "tags":[
@@ -171,9 +186,9 @@
         }, {
             "title":"Neon Touch",
             "companyKey":"06",
-            "isPresent":true,
+            "isPresent":false,
             "startDate":"Feb 2019",
-            "endDate":null,
+            "endDate":"Jul 2019",
             "description":"Neon Touch is browser based app runs on touch device of the slot machines. App is developed using Angular and .net Core. <br/>App talks to service fabric microservices and web sockets.",
             "subProjects":[],
             "tags":[
@@ -189,9 +204,9 @@
         }, {
             "title":"Customer Query Builder",
             "companyKey":"06",
-            "isPresent":true,
+            "isPresent":false,
             "startDate":"Oct 2018",
-            "endDate":null,
+            "endDate":"Jul 2019",
             "description":"Searching tool for large customer base for casinos",
             "subProjects":[],
             "tags":[
@@ -209,7 +224,7 @@
             "companyKey":"06",
             "isPresent":true,
             "startDate":"Sep 2018",
-            "endDate":null,
+            "endDate":"Jul 2019",
             "description":"Neon Mix is browser based app runs on slot machines in kiosk mode. App is developed using Angular and .net Core. <br/>App talks to service fabric microservices and web sockets.",
             "subProjects":[],
             "tags":[
@@ -473,14 +488,14 @@
                     "name":"JavaScript (VanillaJS)",
                     "score":95
                 }, {
+                    "name":"ReactJS",
+                    "score":95
+                }, {
                     "name":"AngularJS (1.7x)",
                     "score":95
                 }, {
                     "name":"Angular 2+",
                     "score":60
-                }, {
-                    "name":"ReactJS",
-                    "score":65
                 }, {
                     "name":"NodeJS",
                     "score":30
@@ -520,10 +535,13 @@
             "header":"Productivity",
             "topics":[
                 {
-                    "name":"Git, TFS, DynamSoft",
+                    "name":"Jira",
                     "score":90
                 }, {
-                    "name":"Agile Methodoology",
+                    "name":"Git, TFS",
+                    "score":90
+                }, {
+                    "name":"Agile Methodology",
                     "score":80
                 }
             ]
@@ -533,7 +551,7 @@
             "topics":[
                 {
                     "name":"VS Code, Visual Studio, Sublime Text",
-                    "score":70
+                    "score":90
                 }, {
                     "name":"Photoshop",
                     "score":50

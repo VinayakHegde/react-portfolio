@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faUserSecret, faMapMarked} from '@fortawesome/free-solid-svg-icons';
 
-import resume from '../../../Data/profile.pdf';
+import resume from '../../../Data/vinayak.nandi@gmail.com.doc';
 import {ICONTYPE} from '../../../Helpers/Enums';
 import {UserDetails} from '../../../Helpers/DataValidator';
 import DownloadButton from '../../Buttons/DownloadButton/DownloadButton';
