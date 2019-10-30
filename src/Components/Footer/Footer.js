@@ -1,42 +1,46 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import ActionButton from '../Buttons/ActionButton/ActionButton';
-import {UserContacts} from '../../Helpers/DataValidator';
-import {ICONTYPE} from '../../Helpers/Enums';
+import ActionButton from "../Buttons/ActionButton/ActionButton";
+import { UserContacts } from "../../Helpers/DataValidator";
+import { ICONTYPE } from "../../Helpers/Enums";
 
-import './Footer.css';
+import "./Footer.css";
 
 class Footer extends Component {
-    render() {
-        return (
-            <footer className="footer">
-                <ActionButton type={ICONTYPE.PHONE}
-                            value={'tel:'.concat(UserContacts.Phone)} 
-                            btnClass="disc phone" 
-                            linkClass="button-link"
-                            tooltip="Click to ring me">
-                </ActionButton>
-                <ActionButton type={ICONTYPE.EMAIL}
-                            value={'mailto:'.concat(UserContacts.Email)} 
-                            btnClass="disc email" 
-                            linkClass="button-link"
-                            tooltip="Click to open email client">
-                </ActionButton>
-                <ActionButton type={ICONTYPE.LINKEDIN}
-                            value={UserContacts.LinkedIn} 
-                            btnClass="disc linkedin" 
-                            linkClass="button-link"
-                            tooltip="Visit my linkedIn profile">
-                </ActionButton>
-                <ActionButton type={ICONTYPE.GITHUB}
-                            value={UserContacts.Github} 
-                            btnClass="disc github" 
-                            linkClass="button-link"
-                            tooltip="Visit my github">
-                </ActionButton>
-            </footer>
-        );
-    }
+  render() {
+    return (
+      <footer className="footer">
+        <ActionButton
+          type={ICONTYPE.PHONE}
+          value={"tel:".concat(UserContacts.Phone)}
+          btnClass="disc phone"
+          linkClass="button-link"
+          tooltip="Click to ring me"
+        ></ActionButton>
+        <ActionButton
+          type={ICONTYPE.EMAIL}
+          value={"mailto:".concat(UserContacts.Email)}
+          btnClass="disc email"
+          linkClass="button-link"
+          tooltip="Click to open email client"
+        ></ActionButton>
+        <ActionButton
+          type={ICONTYPE.LINKEDIN}
+          value={UserContacts.LinkedIn}
+          btnClass="disc linkedin"
+          linkClass="button-link"
+          tooltip="Visit my linkedIn profile"
+        ></ActionButton>
+        <ActionButton
+          type={ICONTYPE.GITHUB}
+          value={UserContacts.Github}
+          btnClass="disc github"
+          linkClass="button-link"
+          tooltip="Visit my github"
+        ></ActionButton>
+      </footer>
+    );
+  }
 }
 
 export default Footer;

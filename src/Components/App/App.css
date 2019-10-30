@@ -10,14 +10,14 @@ body {
   display: flex;
 }
 
-.profile-content{
-    flex-grow: 1;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+.profile-content {
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.content-wrapper{
+.content-wrapper {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   flex: 1;
   overflow: auto;

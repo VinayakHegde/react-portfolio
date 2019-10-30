@@ -1,565 +1,629 @@
 {
-    "user":{
-        "firstName" : "Vinayak",
-        "lastName" : "Hegde",
-        "knownAs":"Vinnie",
-        "location":"Milton Keynes",
-        "contact":{
-            "phone":{
-                "countryCode" : 44,
-                "number": "750-820-7800"
-            },
-            "email":"vinayak.nandi@gmail.com",
-            "social" : {
-                "linkedIn":"https://www.linkedin.com/in/vinayaknandi/",
-                "gitHub":"https://github.com/VinayakHegde"
-            }
-        },
-        "jobTitle":"Lead React Developer",
-        "subTitle":"I also am a proud dad, husband, son, brother and coder",
-        "description":"I am an <strong style=\"color:#040FD9;\"><q>Innovative Front End Developer</q></strong> offering {autoexp} years of experience in the full software development life cycle - from concept through delivery of next-generation applications and customisable solutions.</br><hr/><strong style=\"color:#0442BF;\">Expert in advanced development methodologies,</strong> tools and processes contributing to the design and rollout of cutting-edge web applications.</br><hr/><strong style=\"color:#0460D9;\">Known for excellent troubleshooting skills</strong> - able to analyse code and engineer well-researched, cost-effective and responsive solutions.<hr/>"
+  "user": {
+    "firstName": "Vinayak",
+    "lastName": "Hegde",
+    "knownAs": "Vinnie",
+    "location": "Milton Keynes",
+    "contact": {
+      "phone": {
+        "countryCode": 44,
+        "number": "750-820-7800"
+      },
+      "email": "vinayak.nandi@gmail.com",
+      "social": {
+        "linkedIn": "https://www.linkedin.com/in/vinayaknandi/",
+        "gitHub": "https://github.com/VinayakHegde"
+      }
     },
-    "experiences" : [
+    "jobTitle": "Lead React Developer",
+    "subTitle": "I also am a proud dad, husband, son, brother and coder",
+    "description": "I am an <strong style=\"color:#040FD9;\"><q>Innovative Front End Developer</q></strong> offering {autoexp} years of experience in the full software development life cycle - from concept through delivery of next-generation applications and customisable solutions.</br><hr/><strong style=\"color:#0442BF;\">Expert in advanced development methodologies,</strong> tools and processes contributing to the design and rollout of cutting-edge web applications.</br><hr/><strong style=\"color:#0460D9;\">Known for excellent troubleshooting skills</strong> - able to analyse code and engineer well-researched, cost-effective and responsive solutions.<hr/>"
+  },
+  "experiences": [
+    {
+      "company": "Santander UK",
+      "office": "Milton Keynes",
+      "jobTitle": "Lead React Developer",
+      "isPresent": true,
+      "startDate": "Jul 2019",
+      "endDate": null,
+      "description": "I involved in a large banking project called \"Avalon\". Developed many frontend interfaces for banking clients using ReactJS and Redux.",
+      "achievements": [
         {
-            "company":"Santander UK",
-            "office": "Milton Keynes",
-            "jobTitle":"Lead React Developer",
-            "isPresent": true,
-            "startDate": "Jul 2019",
-            "endDate" : null,
-            "description": "I involved in a large banking project called \"Avalon\". Developed many frontend interfaces for banking clients using ReactJS and Redux.",
-            "achievements" : [
-                {"details" : "Contributed frontend expertise in the development of products through the software life cycle, from requirements definition through successful deployment."},
-                {"details" : "Excelled in agile software development and management of technological issues, earning the highest customer satisfaction rating for all software solutions delivered."}
-            ],
-            "other": "Building front end code base and libraries, writing test cases and TDD, team management, monitoring junior developers, post-sale support and maintenance.",
-            "misc":{
-                "key":"07",
-                "theme":"#FF0000"
-            }
-        }, {
-            "company":"Playtech Plc",
-            "office": "Manchester",
-            "jobTitle":"Senior Front End Developer",
-            "isPresent": false,
-            "startDate": "Jul 2018",
-            "endDate" : "Jul 2019",
-            "description": "I involved in many client faced apps development for gambling industries. AngularJS, Angular, ReactJS, TypeScript are few to name the technologies used to develop the apps.",
-            "achievements" : [
-                {"details" : "Introduced methodologies and best practices that enhanced product definition, release processes and customization of applications to user needs."}
-            ],
-            "other": "Building front end shared components, testing, monitoring, support and maintenance.",
-            "misc":{
-                "key":"06",
-                "theme":"#9c27b0"
-            }
-        }, {
-            "company":"Intuitive Business Intelligence Ltd",
-            "office": "Manchester",
-            "jobTitle":"Software Developer",
-            "isPresent": false,
-            "startDate": "Nov 2013",
-            "endDate" : "Jun 2018",
-            "description": "I worked on a project called \"Intuitive Dashboards\" - which is a data visualisation tool and I developed frontend (Single Page web Application) using cutting-edge technologies like JavaScript (VanillaJS, Kendo UI, BackboneJS, UnderscoreJS, RequireJS, jQuery, ReactJS), HTML5 and CSS3.",
-            "achievements" : [
-                {"details" : "Facilitated customization of Intuitive Dashboards by encouraging other developers to adopt emerging standards for web app development, architecture and tools."},
-                {"details" : "Participated in partners’ conference due to ability to translate user needs into easy-to-understand software solutions. Helped sales/professional delivery team close major deals generating more than £100K in revenue over years."}
-            ],
-            "other": "Decoupling front-end from back end, prototyping, UI/UX design and development, testing, database management, client management, post-sale support and maintenance.",
-            "misc":{
-                "key":"05",
-                "theme":"#61b8ff"
-            }
-        }, {
-            "company":"ERS Connect",
-            "office": "Glasgow",
-            "jobTitle":"Software Developer",
-            "isPresent": false,
-            "startDate": "Sep 2012",
-            "endDate" : "Oct 2013",
-            "description": "I assisted in design and development of Patient Appointment Confirmation Service and Telephone Answering Service application for NHS Trusts.",
-            "achievements" : [
-                {"details" : "Provided user requirements analysis, design and programming support for enhancement of web application accessed by roughly 25k NHS users every day."},
-                {"details" : "Fuelled additional revenue stream through responsive customer support, generating £20K in new license sales within first few weeks of new product release."}
-            ],
-            "other": "Brand development, web site functionality and UI enhancement using JavaScript/HTML/CSS, application development using C# and deployment and support.",
-            "misc":{
-                "key":"04",
-                "theme":"#76bb7f"
-            }
-        }, {
-            "company":"Cormorant Engineering Pvt Ltd",
-            "office":"India",
-            "jobTitle":"Software Engineer",
-            "isPresent": false,
-            "startDate": "Jul 2009",
-            "endDate" : "Aug 2010",
-            "description": "I worked on the project Customer Loyalty Solution. The former software application was targeted to small retailers. I was responsible for requirement analysis, impact analysis, application development using C# and testing, install and configuration, post-sale support and maintenance.",
-            "achievements" : [],
-            "other": null,
-            "misc":{
-                "key":"03",
-                "theme":"#000080"
-            }
-        }, {
-            "company":"IBS Software",
-            "office":"India",
-            "jobTitle":"UI Design Intern",
-            "isPresent": false,
-            "startDate": "Jan 2009",
-            "endDate" : "Jun 2009",
-            "description": "I worked on UI Design for developing Rich Internet Applications (m-RIA) framework and mobile applications. I was responsible for prototyping, pictographs, research on User Interface Design Process and Usability Standards.",
-            "achievements" : [],
-            "other": null,
-            "misc":{
-                "key":"02",
-                "theme":"#00FF00"
-            }
-        }, {
-            "company":"TSS Ltd",
-            "office":"India",
-            "jobTitle":"Junior Networks Admin",
-            "isPresent": false,
-            "startDate": "Jul 2009",
-            "endDate" : "Aug 2010",
-            "description": "I worked along with Network and Systems maintenance team to provide the best service, supported about 75 networked systems, phone systems in the organisation.",
-            "achievements" : [],
-            "other": null,
-            "misc":{
-                "key":"01",
-                "theme":"#000000"
-            }
-        }
-    ],
-    "projects":[
-        {
-            "title":"Neon Floors",
-            "companyKey":"06",
-            "isPresent":false,
-            "startDate":"Oct 2018",
-            "endDate":"Jul 2019",
-            "description":"<q>Neon Floors</q> is a web application, will let casinos to setup their attractive floor plan with assets and track players activity on the floor live and more.<br/>App will also allow casino operators to send promotions, alerts and manage player glabling behaviours.",
-            "subProjects":[
-                {
-                    "title":"FloorStudio",
-                    "isPresent":false,
-                    "startDate":"Oct 2018",
-                    "endDate":"Jul 2019",
-                    "description":"Create and save floor plans"
-                }, {
-                    "title":"Floorlens",
-                    "isPresent":false,
-                    "startDate":"Oct 2018",
-                    "endDate":"Jul 2019",
-                    "description":"View live player activities and floor operation"
-                }
-            ],
-            "tags":[
-                "Javascript",
-                "AngularJS",
-                "FabricJS", 
-                "UnderscoreJS", 
-                "jQuery and plugins", 
-                "TypeScript",
-                "VS Code", 
-                "Visual Studio", 
-                "SQL Server"
-            ]
-        }, {
-            "title":"Neon Analytics",
-            "companyKey":"06",
-            "isPresent":false,
-            "startDate":"Oct 2018",
-            "endDate":"Jul 2019",
-            "description":"<q>Neon Analytics</q> is a data visualisation platform for casinos using the IGS' Neon service. It  integrates vast amounts of transactional data from disparate casino source cubes. It helps to run casinos business intelligence by retrieving, analyzing, transforming and reporting data.",
-            "subProjects":[],
-            "tags":[
-                "Javascript",
-                "AngularJS", 
-                "UnderscoreJS", 
-                "jQuery and plugins", 
-                "TypeScript",
-                "VS Code", 
-                "Visual Studio", 
-                "SQL Server"
-            ]
-        }, {
-            "title":"Neon Touch",
-            "companyKey":"06",
-            "isPresent":false,
-            "startDate":"Feb 2019",
-            "endDate":"Jul 2019",
-            "description":"Neon Touch is browser based app runs on touch device of the slot machines. App is developed using Angular and .net Core. <br/>App talks to service fabric microservices and web sockets.",
-            "subProjects":[],
-            "tags":[
-                "Javascript",
-                "AngularJS", 
-                "UnderscoreJS", 
-                "jQuery and plugins", 
-                "TypeScript",
-                "VS Code", 
-                "Visual Studio", 
-                "SQL Server"
-            ]
-        }, {
-            "title":"Customer Query Builder",
-            "companyKey":"06",
-            "isPresent":false,
-            "startDate":"Oct 2018",
-            "endDate":"Jul 2019",
-            "description":"Searching tool for large customer base for casinos",
-            "subProjects":[],
-            "tags":[
-                "Javascript",
-                "AngularJS", 
-                "UnderscoreJS", 
-                "jQuery and plugins", 
-                "TypeScript",
-                "VS Code", 
-                "Visual Studio", 
-                "SQL Server"
-            ]
-        }, {
-            "title":"Neon Mix",
-            "companyKey":"06",
-            "isPresent":true,
-            "startDate":"Sep 2018",
-            "endDate":"Jul 2019",
-            "description":"Neon Mix is browser based app runs on slot machines in kiosk mode. App is developed using Angular and .net Core. <br/>App talks to service fabric microservices and web sockets.",
-            "subProjects":[],
-            "tags":[
-                "Javascript",
-                "AngularJS", 
-                "UnderscoreJS", 
-                "jQuery and plugins",
-                "VS Code", 
-                "Visual Studio", 
-                "SQL Server"
-            ]
-        }, {
-            "title":"TableLite",
-            "companyKey":"06",
-            "isPresent":false,
-            "startDate":"Jul 2018",
-            "endDate":"Sep 2018",
-            "description":"<q>TableLite</q> is a modern browser based application built using technologies like AngularJS (v1.7) and .Net Core (v2.1). Application can be hosted on any platform (WIndows/Linux/OSX). Front end communicates with server over Restful API (Web API).<br/>The app helps the casinos to track the cash drops on a gambling table.",
-            "subProjects":[],
-            "tags":[
-                "JavaScript",
-                "AngularJS", 
-                "UnderscoreJS", 
-                "HTML5 & CSS3",
-                "Visual Studio 2017", 
-                "VS Code"
-            ]
-        }, {
-            "title":"Intuitive Dashboards",
-            "companyKey":"05",
-            "isPresent":false,
-            "startDate":"Aug 2014",
-            "endDate":"Jun 2018",
-            "description":"<q>Intuitive Dashboards</q> is a data visualisation tool developed using cutting-edge technologies like JavaScript (VanillaJS, Kendo UI, BackboneJS, UnderscoreJS, RequireJS, jQuery, ReactJS), HTML5 and CSS3. Web application consumes RESTful API (WCF service) built on.Net framework on top of SQL database - which is the backbone for the whole application. Dashboard Web Client is a targeting the current Mobile users and PC users - the aim is to make one application compatible with all screen sized devices in the market without using any browser plug-ins.",
-            "subProjects":[
-                {
-                    "title":"Dashboard Entity Builders-3",
-                    "isPresent":false,
-                    "startDate":"Jan 2018",
-                    "endDate":"Jun 2018"
-                }, {
-                    "title":"Dashboard Entity Builders-2",
-                    "isPresent":false,
-                    "startDate":"Oct 2017",
-                    "endDate":"Dec 2017"
-                },{
-                    "title":"Dashboard Entity Builders-1",
-                    "isPresent":false,
-                    "startDate":"Mar 2017",
-                    "endDate":"Sep 2017"
-                },{
-                    "title":"Dashboard Filters",
-                    "isPresent":false,
-                    "startDate":"Nov 2016",
-                    "endDate":"Feb 2017"
-                },{
-                    "title":"Dashboard Globalisation",
-                    "isPresent":false,
-                    "startDate":"Apr 2016",
-                    "endDate":"Oct 2016"
-                }, {
-                    "title":"Dashboard PC Client",
-                    "isPresent":false,
-                    "startDate":"May 2015",
-                    "endDate":"Mar 2016"
-                }, {
-                    "title":"Dashboard Mobile Client",
-                    "isPresent":false,
-                    "startDate":"Aug 2014",
-                    "endDate":"May 2015"
-                }
-            ],
-            "tags":[
-                "JavaScript", 
-                "RequireJS", 
-                "jQuery", 
-                "BackboneJS", 
-                "KendoUI", 
-                "ReactJS", 
-                "HTML5 & CSS3", 
-                ".Net C#",
-                "Visual Studio", 
-                "Sublime Text",
-                "Browser Developer Tool"
-            ]
-        }, {
-            "title":"Server Tools",
-            "companyKey":"05",
-            "isPresent":false,
-            "startDate":"Dec 2013",
-            "endDate":"Jun 2018",
-            "description":"The tool is aimed to perform cloning the dashboard database entities into XML file then migrate them to another dashboard database. This provides entity portability, in turn, helps the existing Business intelligence software users to backup/build/enhance the migrated dashboards on their system.",
-            "subProjects":[],
-            "tags":[
-                ".Net C#",
-                "WPF",
-                "Visual Studio Premium 2012", 
-                "SQL Server 2012"
-            ]
-        }, {
-            "title":"Security Filters and Dashboard API",
-            "companyKey":"05",
-            "isPresent":false,
-            "startDate":"Mar 2014",
-            "endDate":"Jul 2014",
-            "description":"Aim of the security filter is to provide overall security to the data used by existing Business Intelligence software, where URL parameters are encrypted and passed across the servers and other security features at datasets level. A Test Harness (Windows application) is developed to test these security features. Also an API is developed for other developers of the other software to consume dashboard service.",
-            "subProjects":[],
-            "tags":[
-                ".Net C#",
-                "WinForms",
-                "Visual Studio Premium 2012", 
-                "SQL Server 2012"
-            ]
-        }, {
-            "title":"Chronos",
-            "companyKey":"04",
-            "isPresent":false,
-            "startDate":"Dec 2012",
-            "endDate":"Oct 2013",
-            "description":"<q>Chronos</q> is the Patient Appointment Confirmation Service for NHS - which is a unique blend of agent calls, IVR calls, SMS and emails to remind and confirm the intentions of the NHS patients to drive down Did-Not-Attend (DNAs) rate. IVR and agent calling uses Linux free switches concept on mono run-time. Clients (NHS Trusts) use Web App, Callers use Agent App to make live calls and Supervisors use Team Leader App to monitor the agents on shift.",
-            "subProjects":[
-                {
-                    "title":"Chronos Web",
-                    "isPresent":false,
-                    "startDate":"Sep 2012",
-                    "endDate":"Oct 2013"
-                }, {
-                    "title":"Chronos Agent",
-                    "isPresent":false,
-                    "startDate":"Sep 2012",
-                    "endDate":"Oct 2013"
-                }, {
-                    "title":"Chromos Team",
-                    "isPresent":false,
-                    "startDate":"Sep 2012",
-                    "endDate":"Oct 2013"
-                }
-            ],
-            "tags":[
-                ".Net C#", 
-                "JavaScript (jQuery and Ajax)",
-                "Visual Studio", 
-                "SQL Studio"
-            ]
-        }, {
-            "title":"Personal Portfolio",
-            "companyKey": null,
-            "isPresent":false,
-            "startDate":"April 2019",
-            "endDate":"",
-            "description":"The site you viewing is my personal profile. It is made with reactJS",
-            "subProjects":[],
-            "source":"https://github.com/VinayakHegde/react-portfolio",
-            "demo":"",
-            "tags": [
-                "ReactJS",
-                "create-react-app",
-                "JSX",
-                "HTML5 & CSS3",
-                "Visual Studio Code",
-                "git"
-            ]
-        }, {
-            "title":"Quote Gun",
-            "companyKey": null,
-            "isPresent":false,
-            "startDate":"2019",
-            "endDate":"",
-            "description":"Quote Gun is made with VueJS. It uses the API from favq.com to display the quote",
-            "subProjects":[],
-            "source":"https://github.com/VinayakHegde/Quote-Gun",
-            "demo":"https://vinayakhegde.github.io/Quote-Gun/",
-            "tags": [
-                "VueJS",
-                "vue-cli",
-                "Single file components",
-                "HTML5 & CSS3",
-                "Visual Studio Code",
-                "git"
-            ]
-        }, {
-            "title":"KeyCode Vuewer",
-            "companyKey": null,
-            "isPresent":false,
-            "startDate":"2019",
-            "endDate":"",
-            "description":"KeyCode Vuewer is made with VueJS. On keydown it displays related keycode ",
-            "subProjects":[],
-            "source":"https://github.com/VinayakHegde/KeyCode-Vuewer",
-            "demo":"https://vinayakhegde.github.io/KeyCode-Vuewer/",
-            "tags": [
-                "VueJS",
-                "vue-cli",
-                "Single file components",
-                "HTML5 & CSS3",
-                "Visual Studio Code",
-                "git"
-            ]
-        }, {
-            "title":"Multi-Runner Game",
-            "companyKey": null,
-            "isPresent":false,
-            "startDate":"Nov 2018",
-            "endDate":"",
-            "description":"It is a virtual horse race prototype - aim is to extend this app to a full blown racing game",
-            "subProjects":[],
-            "source":"https://github.com/VinayakHegde/multi-runner-time-tracker-app",
-            "demo":"https://vinayakhegde.github.io/multi-runner-time-tracker-app/",
-            "tags": [
-                "Vanilla Javascript",
-                "HTML5 & CSS3",
-                "Visual Studio Code",
-                "git"
-            ]
-        }, {
-            "title":"Clicky Bucky Game",
-            "companyKey": null,
-            "isPresent":false,
-            "startDate":"May 2018",
-            "endDate":"",
-            "description":"It is a game similar to candy crush.",
-            "subProjects":[],
-            "source":"https://github.com/VinayakHegde/clickly-blocky-app",
-            "demo":"https://vinayakhegde.github.io/clickly-blocky-app/",
-            "tags": [
-                "Vanilla Javascript",
-                "HTML5 & LESS",
-                "Gulp",
-                "Mocha",
-                "Visual Studio Code",
-                "git"
-            ]
-        }, {
-            "title":"Image2PDF conveter",
-            "companyKey": null,
-            "isPresent":false,
-            "startDate":"May 2018",
-            "endDate":"",
-            "description":"Web utility to convert selected image (jpeg/jpg) file into a PDF file",
-            "subProjects":[],
-            "source":"https://github.com/VinayakHegde/image-to-pdf-app",
-            "demo":"https://vinayakhegde.github.io/image-to-pdf-app/",
-            "tags": [
-                "Vanilla Javascript",
-                "HTML5 & CSS3",
-                "Kendo UI",
-                "jQuery",
-                "Visual Studio Code",
-                "git"
-            ]
-        }
-    ],
-    "skills":[
-        {
-            "header":"Development",
-            "topics":[
-                {
-                    "name":"TypeScript",
-                    "score":60
-                }, {
-                    "name":"JavaScript (VanillaJS)",
-                    "score":95
-                }, {
-                    "name":"ReactJS",
-                    "score":95
-                }, {
-                    "name":"AngularJS (1.7x)",
-                    "score":95
-                }, {
-                    "name":"Angular 2+",
-                    "score":60
-                }, {
-                    "name":"NodeJS",
-                    "score":30
-                }, {
-                    "name":"jQuery",
-                    "score":85
-                }, {
-                    "name":"VueJS",
-                    "score":20
-                }, {
-                    "name":"BackboneJS",
-                    "score":60
-                }, {
-                    "name":"UnderscoreJS",
-                    "score":90
-                }, {
-                    "name":"RequireJS",
-                    "score":90
-                }, {
-                    "name":"KendoUI",
-                    "score":70
-                }, {
-                    "name":"HTML5, Templating",
-                    "score":90
-                }, {
-                    "name":"CSS3, Less, Sass",
-                    "score":70
-                }, {
-                    "name":"JSON, XML",
-                    "score":95
-                }, {
-                    "name":".Net and .net Core C#",
-                    "score":60
-                }
-            ]
-        }, {
-            "header":"Productivity",
-            "topics":[
-                {
-                    "name":"Jira",
-                    "score":90
-                }, {
-                    "name":"Git, TFS",
-                    "score":90
-                }, {
-                    "name":"Agile Methodology",
-                    "score":80
-                }
-            ]
+          "details": "Contributed frontend expertise in the development of products through the software life cycle, from requirements definition through successful deployment."
         },
         {
-            "header":"Tools",
-            "topics":[
-                {
-                    "name":"VS Code, Visual Studio, Sublime Text",
-                    "score":90
-                }, {
-                    "name":"Photoshop",
-                    "score":50
-                }, {
-                    "name":"Wireframing, UML diagrams, flowchars",
-                    "score":70
-                }
-            ]
+          "details": "Excelled in agile software development and management of technological issues, earning the highest customer satisfaction rating for all software solutions delivered."
         }
-    ]
+      ],
+      "other": "Building front end code base and libraries, writing test cases and TDD, team management, monitoring junior developers, post-sale support and maintenance.",
+      "misc": {
+        "key": "07",
+        "theme": "#FF0000"
+      }
+    },
+    {
+      "company": "Playtech Plc",
+      "office": "Manchester",
+      "jobTitle": "Senior Front End Developer",
+      "isPresent": false,
+      "startDate": "Jul 2018",
+      "endDate": "Jul 2019",
+      "description": "I involved in many client faced apps development for gambling industries. AngularJS, Angular, ReactJS, TypeScript are few to name the technologies used to develop the apps.",
+      "achievements": [
+        {
+          "details": "Introduced methodologies and best practices that enhanced product definition, release processes and customization of applications to user needs."
+        }
+      ],
+      "other": "Building front end shared components, testing, monitoring, support and maintenance.",
+      "misc": {
+        "key": "06",
+        "theme": "#9c27b0"
+      }
+    },
+    {
+      "company": "Intuitive Business Intelligence Ltd",
+      "office": "Manchester",
+      "jobTitle": "Software Developer",
+      "isPresent": false,
+      "startDate": "Nov 2013",
+      "endDate": "Jun 2018",
+      "description": "I worked on a project called \"Intuitive Dashboards\" - which is a data visualisation tool and I developed frontend (Single Page web Application) using cutting-edge technologies like JavaScript (VanillaJS, Kendo UI, BackboneJS, UnderscoreJS, RequireJS, jQuery, ReactJS), HTML5 and CSS3.",
+      "achievements": [
+        {
+          "details": "Facilitated customization of Intuitive Dashboards by encouraging other developers to adopt emerging standards for web app development, architecture and tools."
+        },
+        {
+          "details": "Participated in partners’ conference due to ability to translate user needs into easy-to-understand software solutions. Helped sales/professional delivery team close major deals generating more than £100K in revenue over years."
+        }
+      ],
+      "other": "Decoupling front-end from back end, prototyping, UI/UX design and development, testing, database management, client management, post-sale support and maintenance.",
+      "misc": {
+        "key": "05",
+        "theme": "#61b8ff"
+      }
+    },
+    {
+      "company": "ERS Connect",
+      "office": "Glasgow",
+      "jobTitle": "Software Developer",
+      "isPresent": false,
+      "startDate": "Sep 2012",
+      "endDate": "Oct 2013",
+      "description": "I assisted in design and development of Patient Appointment Confirmation Service and Telephone Answering Service application for NHS Trusts.",
+      "achievements": [
+        {
+          "details": "Provided user requirements analysis, design and programming support for enhancement of web application accessed by roughly 25k NHS users every day."
+        },
+        {
+          "details": "Fuelled additional revenue stream through responsive customer support, generating £20K in new license sales within first few weeks of new product release."
+        }
+      ],
+      "other": "Brand development, web site functionality and UI enhancement using JavaScript/HTML/CSS, application development using C# and deployment and support.",
+      "misc": {
+        "key": "04",
+        "theme": "#76bb7f"
+      }
+    },
+    {
+      "company": "Cormorant Engineering Pvt Ltd",
+      "office": "India",
+      "jobTitle": "Software Engineer",
+      "isPresent": false,
+      "startDate": "Jul 2009",
+      "endDate": "Aug 2010",
+      "description": "I worked on the project Customer Loyalty Solution. The former software application was targeted to small retailers. I was responsible for requirement analysis, impact analysis, application development using C# and testing, install and configuration, post-sale support and maintenance.",
+      "achievements": [],
+      "other": null,
+      "misc": {
+        "key": "03",
+        "theme": "#000080"
+      }
+    },
+    {
+      "company": "IBS Software",
+      "office": "India",
+      "jobTitle": "UI Design Intern",
+      "isPresent": false,
+      "startDate": "Jan 2009",
+      "endDate": "Jun 2009",
+      "description": "I worked on UI Design for developing Rich Internet Applications (m-RIA) framework and mobile applications. I was responsible for prototyping, pictographs, research on User Interface Design Process and Usability Standards.",
+      "achievements": [],
+      "other": null,
+      "misc": {
+        "key": "02",
+        "theme": "#00FF00"
+      }
+    },
+    {
+      "company": "TSS Ltd",
+      "office": "India",
+      "jobTitle": "Junior Networks Admin",
+      "isPresent": false,
+      "startDate": "Jul 2009",
+      "endDate": "Aug 2010",
+      "description": "I worked along with Network and Systems maintenance team to provide the best service, supported about 75 networked systems, phone systems in the organisation.",
+      "achievements": [],
+      "other": null,
+      "misc": {
+        "key": "01",
+        "theme": "#000000"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "title": "Neon Floors",
+      "companyKey": "06",
+      "isPresent": false,
+      "startDate": "Oct 2018",
+      "endDate": "Jul 2019",
+      "description": "<q>Neon Floors</q> is a web application, will let casinos to setup their attractive floor plan with assets and track players activity on the floor live and more.<br/>App will also allow casino operators to send promotions, alerts and manage player glabling behaviours.",
+      "subProjects": [
+        {
+          "title": "FloorStudio",
+          "isPresent": false,
+          "startDate": "Oct 2018",
+          "endDate": "Jul 2019",
+          "description": "Create and save floor plans"
+        },
+        {
+          "title": "Floorlens",
+          "isPresent": false,
+          "startDate": "Oct 2018",
+          "endDate": "Jul 2019",
+          "description": "View live player activities and floor operation"
+        }
+      ],
+      "tags": [
+        "Javascript",
+        "AngularJS",
+        "FabricJS",
+        "UnderscoreJS",
+        "jQuery and plugins",
+        "TypeScript",
+        "VS Code",
+        "Visual Studio",
+        "SQL Server"
+      ]
+    },
+    {
+      "title": "Neon Analytics",
+      "companyKey": "06",
+      "isPresent": false,
+      "startDate": "Oct 2018",
+      "endDate": "Jul 2019",
+      "description": "<q>Neon Analytics</q> is a data visualisation platform for casinos using the IGS' Neon service. It  integrates vast amounts of transactional data from disparate casino source cubes. It helps to run casinos business intelligence by retrieving, analyzing, transforming and reporting data.",
+      "subProjects": [],
+      "tags": [
+        "Javascript",
+        "AngularJS",
+        "UnderscoreJS",
+        "jQuery and plugins",
+        "TypeScript",
+        "VS Code",
+        "Visual Studio",
+        "SQL Server"
+      ]
+    },
+    {
+      "title": "Neon Touch",
+      "companyKey": "06",
+      "isPresent": false,
+      "startDate": "Feb 2019",
+      "endDate": "Jul 2019",
+      "description": "Neon Touch is browser based app runs on touch device of the slot machines. App is developed using Angular and .net Core. <br/>App talks to service fabric microservices and web sockets.",
+      "subProjects": [],
+      "tags": [
+        "Javascript",
+        "AngularJS",
+        "UnderscoreJS",
+        "jQuery and plugins",
+        "TypeScript",
+        "VS Code",
+        "Visual Studio",
+        "SQL Server"
+      ]
+    },
+    {
+      "title": "Customer Query Builder",
+      "companyKey": "06",
+      "isPresent": false,
+      "startDate": "Oct 2018",
+      "endDate": "Jul 2019",
+      "description": "Searching tool for large customer base for casinos",
+      "subProjects": [],
+      "tags": [
+        "Javascript",
+        "AngularJS",
+        "UnderscoreJS",
+        "jQuery and plugins",
+        "TypeScript",
+        "VS Code",
+        "Visual Studio",
+        "SQL Server"
+      ]
+    },
+    {
+      "title": "Neon Mix",
+      "companyKey": "06",
+      "isPresent": true,
+      "startDate": "Sep 2018",
+      "endDate": "Jul 2019",
+      "description": "Neon Mix is browser based app runs on slot machines in kiosk mode. App is developed using Angular and .net Core. <br/>App talks to service fabric microservices and web sockets.",
+      "subProjects": [],
+      "tags": [
+        "Javascript",
+        "AngularJS",
+        "UnderscoreJS",
+        "jQuery and plugins",
+        "VS Code",
+        "Visual Studio",
+        "SQL Server"
+      ]
+    },
+    {
+      "title": "TableLite",
+      "companyKey": "06",
+      "isPresent": false,
+      "startDate": "Jul 2018",
+      "endDate": "Sep 2018",
+      "description": "<q>TableLite</q> is a modern browser based application built using technologies like AngularJS (v1.7) and .Net Core (v2.1). Application can be hosted on any platform (WIndows/Linux/OSX). Front end communicates with server over Restful API (Web API).<br/>The app helps the casinos to track the cash drops on a gambling table.",
+      "subProjects": [],
+      "tags": [
+        "JavaScript",
+        "AngularJS",
+        "UnderscoreJS",
+        "HTML5 & CSS3",
+        "Visual Studio 2017",
+        "VS Code"
+      ]
+    },
+    {
+      "title": "Intuitive Dashboards",
+      "companyKey": "05",
+      "isPresent": false,
+      "startDate": "Aug 2014",
+      "endDate": "Jun 2018",
+      "description": "<q>Intuitive Dashboards</q> is a data visualisation tool developed using cutting-edge technologies like JavaScript (VanillaJS, Kendo UI, BackboneJS, UnderscoreJS, RequireJS, jQuery, ReactJS), HTML5 and CSS3. Web application consumes RESTful API (WCF service) built on.Net framework on top of SQL database - which is the backbone for the whole application. Dashboard Web Client is a targeting the current Mobile users and PC users - the aim is to make one application compatible with all screen sized devices in the market without using any browser plug-ins.",
+      "subProjects": [
+        {
+          "title": "Dashboard Entity Builders-3",
+          "isPresent": false,
+          "startDate": "Jan 2018",
+          "endDate": "Jun 2018"
+        },
+        {
+          "title": "Dashboard Entity Builders-2",
+          "isPresent": false,
+          "startDate": "Oct 2017",
+          "endDate": "Dec 2017"
+        },
+        {
+          "title": "Dashboard Entity Builders-1",
+          "isPresent": false,
+          "startDate": "Mar 2017",
+          "endDate": "Sep 2017"
+        },
+        {
+          "title": "Dashboard Filters",
+          "isPresent": false,
+          "startDate": "Nov 2016",
+          "endDate": "Feb 2017"
+        },
+        {
+          "title": "Dashboard Globalisation",
+          "isPresent": false,
+          "startDate": "Apr 2016",
+          "endDate": "Oct 2016"
+        },
+        {
+          "title": "Dashboard PC Client",
+          "isPresent": false,
+          "startDate": "May 2015",
+          "endDate": "Mar 2016"
+        },
+        {
+          "title": "Dashboard Mobile Client",
+          "isPresent": false,
+          "startDate": "Aug 2014",
+          "endDate": "May 2015"
+        }
+      ],
+      "tags": [
+        "JavaScript",
+        "RequireJS",
+        "jQuery",
+        "BackboneJS",
+        "KendoUI",
+        "ReactJS",
+        "HTML5 & CSS3",
+        ".Net C#",
+        "Visual Studio",
+        "Sublime Text",
+        "Browser Developer Tool"
+      ]
+    },
+    {
+      "title": "Server Tools",
+      "companyKey": "05",
+      "isPresent": false,
+      "startDate": "Dec 2013",
+      "endDate": "Jun 2018",
+      "description": "The tool is aimed to perform cloning the dashboard database entities into XML file then migrate them to another dashboard database. This provides entity portability, in turn, helps the existing Business intelligence software users to backup/build/enhance the migrated dashboards on their system.",
+      "subProjects": [],
+      "tags": [
+        ".Net C#",
+        "WPF",
+        "Visual Studio Premium 2012",
+        "SQL Server 2012"
+      ]
+    },
+    {
+      "title": "Security Filters and Dashboard API",
+      "companyKey": "05",
+      "isPresent": false,
+      "startDate": "Mar 2014",
+      "endDate": "Jul 2014",
+      "description": "Aim of the security filter is to provide overall security to the data used by existing Business Intelligence software, where URL parameters are encrypted and passed across the servers and other security features at datasets level. A Test Harness (Windows application) is developed to test these security features. Also an API is developed for other developers of the other software to consume dashboard service.",
+      "subProjects": [],
+      "tags": [
+        ".Net C#",
+        "WinForms",
+        "Visual Studio Premium 2012",
+        "SQL Server 2012"
+      ]
+    },
+    {
+      "title": "Chronos",
+      "companyKey": "04",
+      "isPresent": false,
+      "startDate": "Dec 2012",
+      "endDate": "Oct 2013",
+      "description": "<q>Chronos</q> is the Patient Appointment Confirmation Service for NHS - which is a unique blend of agent calls, IVR calls, SMS and emails to remind and confirm the intentions of the NHS patients to drive down Did-Not-Attend (DNAs) rate. IVR and agent calling uses Linux free switches concept on mono run-time. Clients (NHS Trusts) use Web App, Callers use Agent App to make live calls and Supervisors use Team Leader App to monitor the agents on shift.",
+      "subProjects": [
+        {
+          "title": "Chronos Web",
+          "isPresent": false,
+          "startDate": "Sep 2012",
+          "endDate": "Oct 2013"
+        },
+        {
+          "title": "Chronos Agent",
+          "isPresent": false,
+          "startDate": "Sep 2012",
+          "endDate": "Oct 2013"
+        },
+        {
+          "title": "Chromos Team",
+          "isPresent": false,
+          "startDate": "Sep 2012",
+          "endDate": "Oct 2013"
+        }
+      ],
+      "tags": [
+        ".Net C#",
+        "JavaScript (jQuery and Ajax)",
+        "Visual Studio",
+        "SQL Studio"
+      ]
+    },
+    {
+      "title": "Personal Portfolio",
+      "companyKey": null,
+      "isPresent": false,
+      "startDate": "April 2019",
+      "endDate": "",
+      "description": "The site you viewing is my personal profile. It is made with reactJS",
+      "subProjects": [],
+      "source": "https://github.com/VinayakHegde/react-portfolio",
+      "demo": "",
+      "tags": [
+        "ReactJS",
+        "create-react-app",
+        "JSX",
+        "HTML5 & CSS3",
+        "Visual Studio Code",
+        "git"
+      ]
+    },
+    {
+      "title": "Quote Gun",
+      "companyKey": null,
+      "isPresent": false,
+      "startDate": "2019",
+      "endDate": "",
+      "description": "Quote Gun is made with VueJS. It uses the API from favq.com to display the quote",
+      "subProjects": [],
+      "source": "https://github.com/VinayakHegde/Quote-Gun",
+      "demo": "https://vinayakhegde.github.io/Quote-Gun/",
+      "tags": [
+        "VueJS",
+        "vue-cli",
+        "Single file components",
+        "HTML5 & CSS3",
+        "Visual Studio Code",
+        "git"
+      ]
+    },
+    {
+      "title": "KeyCode Vuewer",
+      "companyKey": null,
+      "isPresent": false,
+      "startDate": "2019",
+      "endDate": "",
+      "description": "KeyCode Vuewer is made with VueJS. On keydown it displays related keycode ",
+      "subProjects": [],
+      "source": "https://github.com/VinayakHegde/KeyCode-Vuewer",
+      "demo": "https://vinayakhegde.github.io/KeyCode-Vuewer/",
+      "tags": [
+        "VueJS",
+        "vue-cli",
+        "Single file components",
+        "HTML5 & CSS3",
+        "Visual Studio Code",
+        "git"
+      ]
+    },
+    {
+      "title": "Multi-Runner Game",
+      "companyKey": null,
+      "isPresent": false,
+      "startDate": "Nov 2018",
+      "endDate": "",
+      "description": "It is a virtual horse race prototype - aim is to extend this app to a full blown racing game",
+      "subProjects": [],
+      "source": "https://github.com/VinayakHegde/multi-runner-time-tracker-app",
+      "demo": "https://vinayakhegde.github.io/multi-runner-time-tracker-app/",
+      "tags": [
+        "Vanilla Javascript",
+        "HTML5 & CSS3",
+        "Visual Studio Code",
+        "git"
+      ]
+    },
+    {
+      "title": "Clicky Bucky Game",
+      "companyKey": null,
+      "isPresent": false,
+      "startDate": "May 2018",
+      "endDate": "",
+      "description": "It is a game similar to candy crush.",
+      "subProjects": [],
+      "source": "https://github.com/VinayakHegde/clickly-blocky-app",
+      "demo": "https://vinayakhegde.github.io/clickly-blocky-app/",
+      "tags": [
+        "Vanilla Javascript",
+        "HTML5 & LESS",
+        "Gulp",
+        "Mocha",
+        "Visual Studio Code",
+        "git"
+      ]
+    },
+    {
+      "title": "Image2PDF conveter",
+      "companyKey": null,
+      "isPresent": false,
+      "startDate": "May 2018",
+      "endDate": "",
+      "description": "Web utility to convert selected image (jpeg/jpg) file into a PDF file",
+      "subProjects": [],
+      "source": "https://github.com/VinayakHegde/image-to-pdf-app",
+      "demo": "https://vinayakhegde.github.io/image-to-pdf-app/",
+      "tags": [
+        "Vanilla Javascript",
+        "HTML5 & CSS3",
+        "Kendo UI",
+        "jQuery",
+        "Visual Studio Code",
+        "git"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "header": "Development",
+      "topics": [
+        {
+          "name": "TypeScript",
+          "score": 60
+        },
+        {
+          "name": "JavaScript (VanillaJS)",
+          "score": 95
+        },
+        {
+          "name": "ReactJS",
+          "score": 95
+        },
+        {
+          "name": "AngularJS (1.7x)",
+          "score": 95
+        },
+        {
+          "name": "Angular 2+",
+          "score": 60
+        },
+        {
+          "name": "NodeJS",
+          "score": 30
+        },
+        {
+          "name": "jQuery",
+          "score": 85
+        },
+        {
+          "name": "VueJS",
+          "score": 20
+        },
+        {
+          "name": "BackboneJS",
+          "score": 60
+        },
+        {
+          "name": "UnderscoreJS",
+          "score": 90
+        },
+        {
+          "name": "RequireJS",
+          "score": 90
+        },
+        {
+          "name": "KendoUI",
+          "score": 70
+        },
+        {
+          "name": "HTML5, Templating",
+          "score": 90
+        },
+        {
+          "name": "CSS3, Less, Sass",
+          "score": 70
+        },
+        {
+          "name": "JSON, XML",
+          "score": 95
+        },
+        {
+          "name": ".Net and .net Core C#",
+          "score": 60
+        }
+      ]
+    },
+    {
+      "header": "Productivity",
+      "topics": [
+        {
+          "name": "Jira",
+          "score": 90
+        },
+        {
+          "name": "Git, TFS",
+          "score": 90
+        },
+        {
+          "name": "Agile Methodology",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "header": "Tools",
+      "topics": [
+        {
+          "name": "VS Code, Visual Studio, Sublime Text",
+          "score": 90
+        },
+        {
+          "name": "Photoshop",
+          "score": 50
+        },
+        {
+          "name": "Wireframing, UML diagrams, flowchars",
+          "score": 70
+        }
+      ]
+    }
+  ]
 }

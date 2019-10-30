@@ -1,12 +1,12 @@
 .footer {
-    flex-shrink: 0;
-    background-color: #333;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  flex-shrink: 0;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.footer .disc{
+.footer .disc {
   height: 30px;
   width: 30px;
   margin: 0 10px;

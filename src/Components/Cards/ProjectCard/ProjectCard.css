@@ -1,22 +1,22 @@
-.project-card{
-    border:4px solid;
-    border-radius: 4px;
-    margin-bottom: 20px;
+.project-card {
+  border: 4px solid;
+  border-radius: 4px;
+  margin-bottom: 20px;
 }
 .project-header {
-    font-weight: bold;
-    color: #fff;
-    padding: 5px;
+  font-weight: bold;
+  color: #fff;
+  padding: 5px;
 }
-.project-title{
-    font-size: 1.25em;
+.project-title {
+  font-size: 1.25em;
 }
 .project-content {
-    padding: 0 20px;
+  padding: 0 20px;
 }
-.project-duration{
-    font-size: 0.7em;
+.project-duration {
+  font-size: 0.7em;
 }
-.project-company{
-    font-size: 0.9em;
+.project-company {
+  font-size: 0.9em;
 }

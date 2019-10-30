@@ -11,7 +11,9 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
+importScripts(
+  "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js"
+);
 
 importScripts(
   "/react-portfolio/precache-manifest.46c54c4081275afbef569f457354e023.js"
@@ -29,6 +31,5 @@ workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerNavigationRoute("/react-portfolio/index.html", {
-  
-  blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
+  blacklist: [/^\/_/, /\/[^\/]+\.[^\/]+$/]
 });
