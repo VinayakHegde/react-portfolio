@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vinayakhegde.github.io/react-portfolio/",
+  "homepage": "http://vinayakhegde.github.io/react-portfolio",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
@@ -23,7 +23,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "npm run predeploy && git subtree push --prefix build origin gh-pages",
+    "deploy": "npm run predeploy && gh-pages -d build -b master",
     "lint": "eslint --fix src",
     "prettify": "prettier --write \"src/**/*.+(js|jsx|json|css|scss|md)\""
   },
