@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { UserDetails } from "Helpers/DataValidator";
 import { DESCRIPTIONFOR } from "Helpers/Enums";
 
-const Description = ({cssClass, descriptionFor}) => {
+const Description = ({ cssClass, descriptionFor }) => {
   const getText = key => {
     switch (key) {
       case DESCRIPTIONFOR.USERDESCRIPTION:
@@ -15,12 +15,14 @@ const Description = ({cssClass, descriptionFor}) => {
       default:
         return key;
     }
-  }  
+  };
   return (
     <div className={cssClass}>
-      <p dangerouslySetInnerHTML={{
-        __html: `${getText(descriptionFor)}`
-      }}></p>
+      <p
+        dangerouslySetInnerHTML={{
+          __html: `${getText(descriptionFor)}`
+        }}
+      ></p>
     </div>
   );
 };

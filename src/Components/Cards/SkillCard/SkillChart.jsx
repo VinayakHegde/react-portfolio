@@ -1,5 +1,5 @@
-import React from 'react';
-import {UserSkills} from "Helpers/DataValidator";
+import React from "react";
+import { UserSkills } from "Helpers/DataValidator";
 
 const SkillChart = () => (
   <div className="skills">
@@ -15,7 +15,8 @@ const SkillChart = () => (
                 <li
                   key={index + 1}
                   className="chart__bar"
-                  style={{ width: `${width}` }}>
+                  style={{ width: `${width}` }}
+                >
                   <span className="chart__label">{tpc.name}</span>
                 </li>
               );
@@ -25,7 +26,7 @@ const SkillChart = () => (
       );
     })}
     {!UserSkills.length && <span className="no-skills">Skills not found!</span>}
-    {UserSkills.length &&
+    {UserSkills.length && (
       <ul className="lines">
         <li className="line l--0">
           <span className="line__label">Started</span>
@@ -43,7 +44,7 @@ const SkillChart = () => (
           <span className="line__label">Expert</span>
         </li>
       </ul>
-    }
+    )}
   </div>
 );
 

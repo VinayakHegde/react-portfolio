@@ -5,10 +5,7 @@
     "knownAs": "Vinnie",
     "location": "Milton Keynes",
     "contact": {
-      "phone": {
-        "countryCode": 44,
-        "number": "750-820-7800"
-      },
+      "phone": "447508207800",
       "email": "vinayak.nandi@gmail.com",
       "social": {
         "linkedIn": "https://www.linkedin.com/in/vinayaknandi/",

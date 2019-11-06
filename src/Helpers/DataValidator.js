@@ -1,4 +1,4 @@
-import data from "../Data/profile.json";
+import data from "Data/profile.json";
 
 const UserDetails = {
   FirstName: data.user ? data.user.firstName || "" : "",
@@ -14,15 +14,7 @@ const UserDetails = {
 };
 
 const UserContacts = {
-  Mobile: data.user
-    ? "".concat(
-        data.user.contact
-          ? ("+",
-            data.user.contact.phone.countryCode || "",
-            data.user.contact.phone.number || "")
-          : ""
-      )
-    : "",
+  Mobile: data.user && data.user.contact ? data.user.contact.phone || "" : "",
   Email: data.user && data.user.contact ? data.user.contact.email || "" : "",
   LinkedIn:
     data.user && data.user.contact && data.user.contact.social
@@ -42,13 +34,12 @@ const PersonalProjects = data.personalProjects || [];
 UserDetails.Experience = () => {
   let exp = 0;
   if (UserExperiences.length > 0) {
-    function monthDiff(d1, d2) {
-      let diff;
-      diff = (d2.getFullYear() - d1.getFullYear()) * 12;
+    const monthDiff = (d1, d2) => {
+      let diff = (d2.getFullYear() - d1.getFullYear()) * 12;
       diff -= d1.getMonth();
       diff += d2.getMonth() + 1;
       return diff <= 0 ? 0 : diff;
-    }
+    };
 
     UserExperiences.forEach(uexp => {
       const months = [
@@ -65,11 +56,11 @@ UserDetails.Experience = () => {
         "NOV",
         "DEC"
       ];
-      let d1 = new Date(
+      const d1 = new Date(
         uexp.startDate.split(" ")[1],
         months.indexOf(uexp.startDate.split(" ")[0].toUpperCase())
       );
-      let d2 = uexp.isPresent
+      const d2 = uexp.isPresent
         ? new Date()
         : new Date(
             uexp.endDate.split(" ")[1],

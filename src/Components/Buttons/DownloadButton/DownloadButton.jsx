@@ -3,11 +3,13 @@ import PropTypes from "prop-types";
 
 const Download = ({ btnClass, linkClass, value, tooltip, children }) => (
   <button className={btnClass}>
-    <a target="_blank"
+    <a
+      target="_blank"
       rel="noopener noreferrer"
       className={linkClass}
       href={value}
-      title={tooltip}>
+      title={tooltip}
+    >
       {children}
     </a>
   </button>

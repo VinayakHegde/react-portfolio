@@ -1,8 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Icon from 'Components/Icon';
+import Icon from "Components/Icon";
 
-const ActionButton = ({btnClass, linkClass, value, children, type, tooltip}) => {
+const ActionButton = ({
+  btnClass,
+  linkClass,
+  value,
+  children,
+  type,
+  tooltip
+}) => {
   return (
     <div className={btnClass}>
       <a
@@ -11,8 +18,9 @@ const ActionButton = ({btnClass, linkClass, value, children, type, tooltip}) => 
         className={linkClass}
         href={value}
         title={tooltip}
-        onClick={e => e.stopPropagation()}>
-        {type && <Icon {...{type}} />}
+        onClick={e => e.stopPropagation()}
+      >
+        {type && <Icon {...{ type }} />}
         {children}
       </a>
     </div>

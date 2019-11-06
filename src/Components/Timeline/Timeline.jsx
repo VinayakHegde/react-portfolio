@@ -4,8 +4,10 @@ import classNames from "classnames";
 import "./Timeline.scss";
 
 const Timeline = ({ children, className, lineColor }) => (
-  <div className={classNames(className, "timeline")}
-    style={{ color: `${lineColor}` }}>
+  <div
+    className={classNames(className, "timeline")}
+    style={{ color: `${lineColor}` }}
+  >
     {children}
   </div>
 );

@@ -1,14 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import {ICONTYPE} from "Helpers/Enums";
-import {UserDetails} from "Helpers/DataValidator";
+import { ICONTYPE } from "Helpers/Enums";
+import { UserDetails } from "Helpers/DataValidator";
 import resume from "Data/vinayak.nandi@gmail.com.doc";
 import DownloadButton from "Components/Buttons/DownloadButton";
-import Icon from 'Components/Icon';
+import Icon from "Components/Icon";
 import "./UserCard.scss";
 
-const UserCard = ({cssClass}) => {
+const UserCard = ({ cssClass }) => {
   const cssClassName = "user-card ".concat(cssClass);
   const knownAs = UserDetails.KnownAs.length
     ? "(Known as ".concat(UserDetails.KnownAs, ")")
@@ -35,7 +35,8 @@ const UserCard = ({cssClass}) => {
           value={resume}
           btnClass="download-button resume"
           linkClass="button-link"
-          tooltip="Download resume">
+          tooltip="Download resume"
+        >
           <Icon type={ICONTYPE.FILEDOWNLOAD} />
           <span className="iconed-label">Download Resume</span>
         </DownloadButton>
@@ -43,7 +44,6 @@ const UserCard = ({cssClass}) => {
     </div>
   );
 };
-
 
 UserCard.propTypes = {
   cssClass: PropTypes.string

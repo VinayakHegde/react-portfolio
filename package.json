@@ -23,7 +23,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "npm run predeploy && gh-pages -d build -b master",
+    "deploy": "npm run predeploy && gh-pages -d build",
     "lint": "eslint --fix src",
     "prettify": "prettier --write \"src/**/*.+(js|jsx|json|css|scss|md)\""
   },

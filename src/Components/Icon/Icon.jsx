@@ -1,10 +1,13 @@
-import React from 'react';
+import React from "react";
 import PropTypes from "prop-types";
 
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faPhone,
+  faLinkedinIn,
+  faGithub,
+  faWhatsapp
+} from "@fortawesome/free-brands-svg-icons";
+import {
   faEnvelope,
   faLaptop,
   faLaptopCode,
@@ -17,13 +20,13 @@ import {
   faFileDownload
 } from "@fortawesome/free-solid-svg-icons";
 
-import {ICONTYPE, MENU} from "Helpers/Enums";
+import { ICONTYPE, MENU } from "Helpers/Enums";
 
-const Icon = ({type}) => {
-  let icon = '';
+const Icon = ({ type }) => {
+  let icon = "";
   switch (type) {
     case ICONTYPE.PHONE:
-      icon = faPhone;
+      icon = faWhatsapp;
       break;
     case ICONTYPE.EMAIL:
       icon = faEnvelope;
@@ -50,21 +53,20 @@ const Icon = ({type}) => {
       icon = faFileDownload;
       break;
     case MENU.PROJECTS:
-      icon= faProjectDiagram;
+      icon = faProjectDiagram;
       break;
     case MENU.EXPERIENCE:
-      icon= faBriefcase;
+      icon = faBriefcase;
       break;
     case MENU.SKILLS:
-      icon= faTools;
+      icon = faTools;
       break;
     default:
-      icon= faHome;
+      icon = faHome;
       break;
   }
 
-  return (<FontAwesomeIcon {...{icon}} />);
-        
+  return <FontAwesomeIcon {...{ icon }} />;
 };
 
 Icon.propTypes = {

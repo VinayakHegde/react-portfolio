@@ -2,10 +2,8 @@ import React from "react";
 import classNames from "classnames";
 import PropTypes from "prop-types";
 
-const Disc = ({className, style, onClick, children}) => (
-  <div
-    className={classNames("disc", className)}
-    {...{style, onClick}}>
+const Disc = ({ className, style, onClick, children }) => (
+  <div className={classNames("disc", className)} {...{ style, onClick }}>
     {children}
   </div>
 );
