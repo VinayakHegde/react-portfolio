@@ -150,6 +150,64 @@
   ],
   "projects": [
     {
+      "title": "Avalon Adjustment",
+      "companyKey": "07",
+      "isPresent": true,
+      "startDate": "Jul 2019",
+      "endDate": null,
+      "description": "<q>Avalon Adjustment</q> is a web application prowered by ReactJS/Redux. Application integrates several internal accounting devisions and helps them to collaborate and communicate on a single platform. Accountant will be able to raise their month end or year end journals for approval process. Application features available to system users based on the users role. Jest/Enzyme is used for TDD and unit testing. Selenium webDrivers enables e2e testing. SonarCube is used to identify/detect code smells, redundancies and duplication etc. Coding patter enforced by linters. Jenkins used for CI/CD. Jira is used as ticketing system in the agile environment. Git is the source control system.",
+      "subProjects": [
+        {
+          "title": "Journal Raiser",
+          "isPresent": true,
+          "startDate": "Jul 2019",
+          "endDate": null,
+          "description": "Allows accountant to raise month end and year end journals for approvals"
+        },
+        {
+          "title": "Journal Approvals",
+          "isPresent": true,
+          "startDate": "Jul 2019",
+          "endDate": null,
+          "description": "Allows approver to validate the approve journals for further accounting"
+        },
+        {
+          "title": "User Adminstration",
+          "isPresent": true,
+          "startDate": "Jul 2019",
+          "endDate": null,
+          "description": "Manage users and user roles etc"
+        },
+        {
+          "title": "System Adminstration",
+          "isPresent": true,
+          "startDate": "Jul 2019",
+          "endDate": null,
+          "description": "Manage system settings, journal template settings, toggle system features etc"
+        },
+        {
+          "title": "Dashboards",
+          "isPresent": true,
+          "startDate": "Jul 2019",
+          "endDate": null,
+          "description": "Allows system users to view activities and more detailed analysis on journals"
+        }
+      ],
+      "tags": [
+        "Javascript",
+        "ReactJS",
+        "Redux",
+        "Jest/Enzyme",
+        "ESLints",
+        "Webpack",
+        "Jenkins",
+        "VS Code",
+        "SonarCube",
+        "Selenium",
+        "Jira"
+      ]
+    },
+    {
       "title": "Neon Floors",
       "companyKey": "06",
       "isPresent": false,
@@ -523,16 +581,16 @@
       "header": "Development",
       "topics": [
         {
+          "name": "ReactJS/Redux",
+          "score": 95
+        },
+        {
+          "name": "JavaScript - ES6/7",
+          "score": 95
+        },
+        {
           "name": "TypeScript",
           "score": 60
-        },
-        {
-          "name": "JavaScript (VanillaJS)",
-          "score": 95
-        },
-        {
-          "name": "ReactJS",
-          "score": 95
         },
         {
           "name": "AngularJS (1.7x)",
@@ -552,7 +610,7 @@
         },
         {
           "name": "VueJS",
-          "score": 20
+          "score": 50
         },
         {
           "name": "BackboneJS",
@@ -602,6 +660,14 @@
         {
           "name": "Agile Methodology",
           "score": 80
+        },
+        {
+          "name": "Jenkins (CI/CD)",
+          "score": 45
+        },
+        {
+          "name": "Webpack",
+          "score": 45
         }
       ]
     },
@@ -609,7 +675,7 @@
       "header": "Tools",
       "topics": [
         {
-          "name": "VS Code, Visual Studio, Sublime Text",
+          "name": "VS Code, Visual Studio",
           "score": 90
         },
         {

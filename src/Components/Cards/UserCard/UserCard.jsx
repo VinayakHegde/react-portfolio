@@ -15,9 +15,6 @@ const UserCard = ({ cssClass }) => {
     : "";
   return (
     <div className={cssClassName}>
-      <div className="user-icon" title={UserDetails.KnownAs}>
-        <Icon type={ICONTYPE.USER} />
-      </div>
       <div className="user-details user-name user-friendly-name">
         {UserDetails.FriendlyName}
       </div>
