@@ -1,14 +1,22 @@
 {
-  "main.css": "/react-portfolio/static/css/main.57fdcc59.chunk.css",
-  "main.js": "/react-portfolio/static/js/main.3dabc656.chunk.js",
-  "main.js.map": "/react-portfolio/static/js/main.3dabc656.chunk.js.map",
-  "runtime~main.js": "/react-portfolio/static/js/runtime~main.f974a8eb.js",
-  "runtime~main.js.map": "/react-portfolio/static/js/runtime~main.f974a8eb.js.map",
-  "static/js/2.3ba92eae.chunk.js": "/react-portfolio/static/js/2.3ba92eae.chunk.js",
-  "static/js/2.3ba92eae.chunk.js.map": "/react-portfolio/static/js/2.3ba92eae.chunk.js.map",
-  "index.html": "/react-portfolio/index.html",
-  "precache-manifest.3564b4c6f251f7a6d3c82f64664b8510.js": "/react-portfolio/precache-manifest.3564b4c6f251f7a6d3c82f64664b8510.js",
-  "service-worker.js": "/react-portfolio/service-worker.js",
-  "static/css/main.57fdcc59.chunk.css.map": "/react-portfolio/static/css/main.57fdcc59.chunk.css.map",
-  "static/media/vinayak.nandi@gmail.com.doc": "/react-portfolio/static/media/vinayak.nandi@gmail.com.a790ae30.doc"
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.a50cb1b1.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.c76d2d5d.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.c76d2d5d.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.98c53087.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.98c53087.js.map",
+    "static/js/2.8389e9d1.chunk.js": "/react-portfolio/static/js/2.8389e9d1.chunk.js",
+    "static/js/2.8389e9d1.chunk.js.map": "/react-portfolio/static/js/2.8389e9d1.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "precache-manifest.3938f8e6fe1da5de5ef884f0a2ee608f.js": "/react-portfolio/precache-manifest.3938f8e6fe1da5de5ef884f0a2ee608f.js",
+    "service-worker.js": "/react-portfolio/service-worker.js",
+    "static/css/main.a50cb1b1.chunk.css.map": "/react-portfolio/static/css/main.a50cb1b1.chunk.css.map",
+    "static/media/vinayak.nandi@gmail.com.doc": "/react-portfolio/static/media/vinayak.nandi@gmail.com.a790ae30.doc"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.98c53087.js",
+    "static/js/2.8389e9d1.chunk.js",
+    "static/css/main.a50cb1b1.chunk.css",
+    "static/js/main.c76d2d5d.chunk.js"
+  ]
 }
