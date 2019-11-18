@@ -1,0 +1,110 @@
+{
+  "Development": {
+    "topics": [
+      {
+        "name": "ReactJS/Redux",
+        "score": 95
+      },
+      {
+        "name": "JavaScript - ES6/7",
+        "score": 95
+      },
+      {
+        "name": "TypeScript",
+        "score": 60
+      },
+      {
+        "name": "AngularJS (1.7x)",
+        "score": 95
+      },
+      {
+        "name": "Angular 2+",
+        "score": 60
+      },
+      {
+        "name": "NodeJS",
+        "score": 30
+      },
+      {
+        "name": "jQuery",
+        "score": 85
+      },
+      {
+        "name": "VueJS",
+        "score": 50
+      },
+      {
+        "name": "BackboneJS",
+        "score": 60
+      },
+      {
+        "name": "UnderscoreJS",
+        "score": 90
+      },
+      {
+        "name": "RequireJS",
+        "score": 90
+      },
+      {
+        "name": "KendoUI",
+        "score": 70
+      },
+      {
+        "name": "HTML5, Templating",
+        "score": 90
+      },
+      {
+        "name": "CSS3, Less, Sass",
+        "score": 70
+      },
+      {
+        "name": "JSON, XML",
+        "score": 95
+      },
+      {
+        "name": ".Net and .net Core C#",
+        "score": 60
+      }
+    ]
+  },
+  "Productivity": {
+    "topics": [
+      {
+        "name": "Jira",
+        "score": 90
+      },
+      {
+        "name": "Git, TFS",
+        "score": 90
+      },
+      {
+        "name": "Agile Methodology",
+        "score": 80
+      },
+      {
+        "name": "Jenkins (CI/CD)",
+        "score": 45
+      },
+      {
+        "name": "Webpack",
+        "score": 45
+      }
+    ]
+  },
+  "Tools": {
+    "topics": [
+      {
+        "name": "VS Code, Visual Studio",
+        "score": 90
+      },
+      {
+        "name": "Photoshop",
+        "score": 50
+      },
+      {
+        "name": "Wireframing, UML diagrams, flowchars",
+        "score": 70
+      }
+    ]
+  }
+}

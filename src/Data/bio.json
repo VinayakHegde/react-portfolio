@@ -1,0 +1,17 @@
+{
+  "firstName": "Vinayak",
+  "lastName": "Hegde",
+  "knownAs": "Vinnie",
+  "location": "Milton Keynes",
+  "contact": {
+    "phone": "447508207800",
+    "email": "vinayak.nandi@gmail.com",
+    "social": {
+      "linkedIn": "https://www.linkedin.com/in/vinayaknandi/",
+      "gitHub": "https://github.com/VinayakHegde"
+    }
+  },
+  "jobTitle": "Lead React Developer",
+  "subTitle": "I also am a proud dad, husband, son, brother and coder",
+  "description": "I am an <strong style=\"color:#040FD9;\"><q>Innovative Front End Developer</q></strong> offering {autoexp} years of experience in the full software development life cycle - from concept through delivery of next-generation applications and customisable solutions.</br><hr/><strong style=\"color:#0442BF;\">Expert in advanced development methodologies,</strong> tools and processes contributing to the design and rollout of cutting-edge web applications.</br><hr/><strong style=\"color:#0460D9;\">Known for excellent troubleshooting skills</strong> - able to analyse code and engineer well-researched, cost-effective and responsive solutions.<hr/>"
+}

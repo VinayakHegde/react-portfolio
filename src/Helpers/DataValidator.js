@@ -1,35 +1,46 @@
-import data from "Data/profile.json";
+import * as bio from "Data/bio.json";
+import experience from "Data/experience.json";
+import project from "Data/project.json";
+import skill from "Data/skill.json";
 
 const UserDetails = {
-  FirstName: data.user ? data.user.firstName || "" : "",
-  LastName: data.user ? data.user.lastName || "" : "",
-  FriendlyName: data.user
-    ? (data.user.firstName || "").concat(" ", data.user.lastName || "")
-    : "",
-  KnownAs: data.user ? data.user.knownAs || "" : "",
-  Location: data.user ? data.user.location || "" : "",
-  JobTitle: data.user ? data.user.jobTitle || "" : "",
-  SubTitle: data.user ? data.user.subTitle || "" : "",
-  Description: data.user ? data.user.description || "" : ""
+  FirstName: bio.firstName || "",
+  LastName: bio.lastName || "",
+  FriendlyName: `${bio.firstName || ""} ${bio.lastName || ""}`,
+  KnownAs: bio.knownAs || "",
+  Location: bio.location || "",
+  JobTitle: bio.jobTitle || "",
+  SubTitle: bio.subTitle || "",
+  Description: bio.description || ""
 };
 
 const UserContacts = {
-  Mobile: data.user && data.user.contact ? data.user.contact.phone || "" : "",
-  Email: data.user && data.user.contact ? data.user.contact.email || "" : "",
-  LinkedIn:
-    data.user && data.user.contact && data.user.contact.social
-      ? data.user.contact.social.linkedIn || ""
-      : "",
-  Github:
-    data.user && data.user.contact && data.user.contact.social
-      ? data.user.contact.social.gitHub || ""
-      : ""
+  Mobile: bio.contact.phone || "",
+  Email: bio.contact.email || "",
+  LinkedIn: bio.contact.social.linkedIn || "",
+  Github: bio.contact.social.gitHub || ""
 };
 
-const UserExperiences = data.experiences || [];
-const UserProjects = data.projects || [];
-const UserSkills = data.skills || [];
-const PersonalProjects = data.personalProjects || [];
+const UserExperiences = Object.keys(experience).map(key => {
+  const exp = experience[key];
+  return Object.assign({}, exp, { misc: { ...exp.misc, key } });
+});
+
+const UserProjects = [].concat(
+  ...Object.keys(project).map(key => {
+    const projects = project[key];
+    return [].concat(
+      ...projects.map(proj => ({
+        ...proj,
+        companyKey: Number(key) > 0 ? key : null
+      }))
+    );
+  })
+);
+
+const UserSkills = Object.keys(skill).map(key =>
+  Object.assign({}, skill[key], { header: key })
+);
 
 UserDetails.Experience = () => {
   let exp = 0;
@@ -73,11 +84,4 @@ UserDetails.Experience = () => {
   return exp ? (exp / 12).toFixed(1) : exp;
 };
 
-export {
-  UserDetails,
-  UserContacts,
-  UserExperiences,
-  UserProjects,
-  PersonalProjects,
-  UserSkills
-};
+export { UserDetails, UserContacts, UserExperiences, UserProjects, UserSkills };

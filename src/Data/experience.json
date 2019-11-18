@@ -1,0 +1,125 @@
+{
+  "07": {
+    "company": "Santander UK",
+    "office": "Milton Keynes",
+    "jobTitle": "Lead React Developer",
+    "isPresent": true,
+    "startDate": "Jul 2019",
+    "endDate": null,
+    "description": "I involved in a large banking project called \"Avalon\". Developed many frontend interfaces for banking clients using ReactJS and Redux.",
+    "achievements": [
+      {
+        "details": "Contributed frontend expertise in the development of products through the software life cycle, from requirements definition through successful deployment."
+      },
+      {
+        "details": "Excelled in agile software development and management of technological issues, earning the highest customer satisfaction rating for all software solutions delivered."
+      }
+    ],
+    "other": "Building front end code base and libraries, writing test cases and TDD, team management, monitoring junior developers, post-sale support and maintenance.",
+    "misc": {
+      "theme": "#FF0000"
+    }
+  },
+  "06": {
+    "company": "Playtech Plc",
+    "office": "Manchester",
+    "jobTitle": "Senior Front End Developer",
+    "isPresent": false,
+    "startDate": "Jul 2018",
+    "endDate": "Jul 2019",
+    "description": "I involved in many client faced apps development for gambling industries. AngularJS, Angular, ReactJS, TypeScript are few to name the technologies used to develop the apps.",
+    "achievements": [
+      {
+        "details": "Introduced methodologies and best practices that enhanced product definition, release processes and customization of applications to user needs."
+      }
+    ],
+    "other": "Building front end shared components, testing, monitoring, support and maintenance.",
+    "misc": {
+      "theme": "#9c27b0"
+    }
+  },
+  "05": {
+    "company": "Intuitive Business Intelligence Ltd",
+    "office": "Manchester",
+    "jobTitle": "Software Developer",
+    "isPresent": false,
+    "startDate": "Nov 2013",
+    "endDate": "Jun 2018",
+    "description": "I worked on a project called \"Intuitive Dashboards\" - which is a data visualisation tool and I developed frontend (Single Page web Application) using cutting-edge technologies like JavaScript (VanillaJS, Kendo UI, BackboneJS, UnderscoreJS, RequireJS, jQuery, ReactJS), HTML5 and CSS3.",
+    "achievements": [
+      {
+        "details": "Facilitated customization of Intuitive Dashboards by encouraging other developers to adopt emerging standards for web app development, architecture and tools."
+      },
+      {
+        "details": "Participated in partners’ conference due to ability to translate user needs into easy-to-understand software solutions. Helped sales/professional delivery team close major deals generating more than £100K in revenue over years."
+      }
+    ],
+    "other": "Decoupling front-end from back end, prototyping, UI/UX design and development, testing, database management, client management, post-sale support and maintenance.",
+    "misc": {
+      "theme": "#61b8ff"
+    }
+  },
+  "04": {
+    "company": "ERS Connect",
+    "office": "Glasgow",
+    "jobTitle": "Software Developer",
+    "isPresent": false,
+    "startDate": "Sep 2012",
+    "endDate": "Oct 2013",
+    "description": "I assisted in design and development of Patient Appointment Confirmation Service and Telephone Answering Service application for NHS Trusts.",
+    "achievements": [
+      {
+        "details": "Provided user requirements analysis, design and programming support for enhancement of web application accessed by roughly 25k NHS users every day."
+      },
+      {
+        "details": "Fuelled additional revenue stream through responsive customer support, generating £20K in new license sales within first few weeks of new product release."
+      }
+    ],
+    "other": "Brand development, web site functionality and UI enhancement using JavaScript/HTML/CSS, application development using C# and deployment and support.",
+    "misc": {
+      "theme": "#76bb7f"
+    }
+  },
+  "03": {
+    "company": "Cormorant Engineering Pvt Ltd",
+    "office": "India",
+    "jobTitle": "Software Engineer",
+    "isPresent": false,
+    "startDate": "Jul 2009",
+    "endDate": "Aug 2010",
+    "description": "I worked on the project Customer Loyalty Solution. The former software application was targeted to small retailers. I was responsible for requirement analysis, impact analysis, application development using C# and testing, install and configuration, post-sale support and maintenance.",
+    "achievements": [],
+    "other": null,
+    "misc": {
+      "theme": "#000080"
+    }
+  },
+  "02": {
+    "company": "IBS Software",
+    "office": "India",
+    "jobTitle": "UI Design Intern",
+    "isPresent": false,
+    "startDate": "Jan 2009",
+    "endDate": "Jun 2009",
+    "description": "I worked on UI Design for developing Rich Internet Applications (m-RIA) framework and mobile applications. I was responsible for prototyping, pictographs, research on User Interface Design Process and Usability Standards.",
+    "achievements": [],
+    "other": null,
+    "misc": {
+      "theme": "#00FF00"
+    }
+  },
+  "01": {
+    "company": "TSS Ltd",
+    "office": "India",
+    "jobTitle": "Junior Networks Admin",
+    "isPresent": false,
+    "startDate": "Jul 2009",
+    "endDate": "Aug 2010",
+    "description": "I worked along with Network and Systems maintenance team to provide the best service, supported about 75 networked systems, phone systems in the organisation.",
+    "achievements": [],
+    "other": null,
+    "misc": {
+      "theme": "#000000"
+    }
+  }
+}
