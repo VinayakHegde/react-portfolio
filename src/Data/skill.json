@@ -94,6 +94,10 @@
   "Tools": {
     "topics": [
       {
+        "name": "Storybook",
+        "score": 90
+      },
+      {
         "name": "VS Code, Visual Studio",
         "score": 90
       },

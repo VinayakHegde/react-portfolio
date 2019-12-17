@@ -59,11 +59,16 @@ const Experience = () => (
                 {dto.achievements && dto.achievements.length > 0 && (
                   <div>
                     <h4>Achievement highlights</h4>
-                    <ol>
-                      {dto.achievements.map((achievement, index) => (
-                        <li key={index.toString()}>{achievement.details}</li>
-                      ))}
-                    </ol>
+                    {dto.achievements.length > 1 &&
+                      <ol>
+                        {dto.achievements.map((achievement, index) => (
+                          <li key={index.toString()}>{achievement.details}</li>
+                        ))}
+                      </ol>
+                    }
+                    {dto.achievements.length === 1 &&
+                      <p>{dto.achievements[0].details}</p>
+                    }
                   </div>
                 )}
                 {dto.other.length > 0 && (
