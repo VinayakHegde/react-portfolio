@@ -26,7 +26,7 @@ const Work = () => {
           theme={options.theme}
         >
           <div
-            className="project-header project-company"
+            className="project__header project__company"
             style={{ background: `${options.theme}` }}
           >
             {options.company}

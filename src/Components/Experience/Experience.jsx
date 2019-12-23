@@ -4,15 +4,9 @@ import StoryCard from "Components/Cards/StoryCard";
 import { UserExperiences, UserProjects } from "Helpers/DataValidator";
 import "./Experience.scss";
 
-const getProjectCount = key => {
-  let count = 0;
-  UserProjects.forEach(project => {
-    if (key === project.companyKey) {
-      count++;
-    }
-  });
-  return count;
-};
+const getProjectCount = key => ({ count: UserProjects.filter(
+  project => (key === project.companyKey)
+).length});
 
 const dataToObject = exp => ({
   company: exp.company || "",
@@ -52,7 +46,7 @@ const Experience = () => (
                   who,
                   whom,
                   where,
-                  count: getProjectCount(dto.key)
+                  ...getProjectCount(dto.key)
                 }}
               >
                 <p>{dto.description}</p>

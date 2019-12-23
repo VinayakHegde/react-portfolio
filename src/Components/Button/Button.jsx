@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Icon from "Components/Icon";
 
-const ActionButton = ({
+const Button = ({
   btnClass,
   linkClass,
   value,
@@ -27,7 +27,7 @@ const ActionButton = ({
   );
 };
 
-ActionButton.propTypes = {
+Button.propTypes = {
   type: PropTypes.string,
   value: PropTypes.string,
   btnClass: PropTypes.string,
@@ -39,4 +39,4 @@ ActionButton.propTypes = {
   ])
 };
 
-export default ActionButton;
+export default Button;

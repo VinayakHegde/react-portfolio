@@ -1,11 +1,12 @@
+@import 'Styles/color.scss';
 .footer {
   flex-shrink: 0;
-  background-color: #333;
-  color: white;
+  background-color: $mine-shaft;
+  color: $white;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  .disc {
+  &__disc {
     height: 30px;
     width: 30px;
     margin: 0 10px;

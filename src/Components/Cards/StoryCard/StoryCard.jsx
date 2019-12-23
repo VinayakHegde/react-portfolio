@@ -1,21 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 import AnimatedVisibility from "Components/AnimatedVisibility";
+import useCssClass from 'hooks/useCssClass';
+
 import "./StoryCard.scss";
 
 const StoryCard = ({ when, where, who, whom, count, theme, children }) => {
-  const [visible, setVisible] = useState(false);
-
+  const [cssClass, setCssClass] = useCssClass();
+  
   return (
-    <AnimatedVisibility
-      notifyChange={isVisible => isVisible && setVisible(true)}
-    >
-      <div className="story-caption-wrapper" style={{ color: `${theme}` }}>
-        <div className={`${visible ? "bounce-in" : "is-hidden"}`}>
-          <span className="story-caption-container">
+    <AnimatedVisibility {...{setCssClass}}>
+      <div className={`storycard__caption__wrapper ${cssClass}`} style={{ color: `${theme}` }}>
+        <div>
+          <span className="storycard__caption__container">
             <time
-              className="story-caption"
+              className="storycard__caption"
               style={{ background: `${theme}` }}
               title={when}
             >
@@ -24,9 +24,9 @@ const StoryCard = ({ when, where, who, whom, count, theme, children }) => {
           </span>
         </div>
       </div>
-      <div className="story-continer">
+      <div className={`storycard__continer ${cssClass}`}>
         <div
-          className={`story-content ${visible ? "bounce-in" : "is-hidden"} ${
+          className={`storycard__content ${
             !children ? "empty" : ""
           }`}
           style={{ borderColor: `${theme}` }}

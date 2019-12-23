@@ -15,7 +15,7 @@ const Personal = () => {
           theme="#000"
         >
           <div
-            className="project-header project-company"
+            className="project__header project__company"
             style={{ background: "#000" }}
           >
             Personal

@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 import Description from "Components/Description";
 import AnimatedVisibility from "Components/AnimatedVisibility";
-import ActionButton from "Components/Buttons/ActionButton";
-import Icon from "Components/Icon";
+import Button from "Components/Button";
 import { ICONTYPE } from "Helpers/Enums";
-import Tags from "./Tags";
+import Tags from "Components/Tags";
+import useCssClass from 'hooks/useCssClass';
+
 import "./ProjectCard.scss";
 
 const getProjectTitle = (project, className, key, theme) => {
@@ -15,7 +16,7 @@ const getProjectTitle = (project, className, key, theme) => {
     return (
       <div className={className} key={key} style={{ background: `${theme}` }}>
         {project.title}
-        <small className="project-duration">
+        <small className="project__duration">
           {` (${project.startDate}${project.companyKey ? d1 : ""})`}
         </small>
       </div>
@@ -26,33 +27,31 @@ const getProjectTitle = (project, className, key, theme) => {
 };
 
 const ProjectCard = ({ project, theme, children, index }) => {
-  const [visible, setVisible] = useState(false);
+  const [cssClass, setCssClass] = useCssClass();
 
   return (
-    <AnimatedVisibility
-      notifyChange={isVisible => isVisible && setVisible(true)}
-    >
+    <AnimatedVisibility {...{setCssClass}}>
       <div
-        className={`project-card ${visible ? "bounce-in " : "is-hidden"}`}
+        className={`project__card ${cssClass}`}
         style={{ borderColor: `${theme}` }}
       >
-        {getProjectTitle(project, "project-header project-title", index, theme)}
+        {getProjectTitle(project, "project__header project__title", index, theme)}
         {children}
         {project.description.length && (
           <Description
             {...{
-              cssClass: `about-project project-content`,
+              cssClass: `about-project project__content`,
               descriptionFor: `<strong>About Project : </strong> ${project.description}`
             }}
           />
         )}
-        <div className="project-content sub-projects">
+        <div className="project__content sub-projects">
           {project.subProjects.map((subProjs, index) => {
-            const title = getProjectTitle(subProjs, "sub-project-title", index);
+            const title = getProjectTitle(subProjs, "sub-project__title", index);
             if (title) {
               if (index === 0) {
                 return [
-                  <div key="-1" className="sub-project-header">
+                  <div key="-1" className="sub-project__header">
                     <strong>Sub-projects</strong>
                   </div>,
                   title
@@ -63,28 +62,28 @@ const ProjectCard = ({ project, theme, children, index }) => {
             return null;
           })}
         </div>
-        <div className="project-links">
+        <div className="project__links">
           {project.demo && project.demo.length && (
-            <ActionButton
-              value={project.demo}
-              btnClass="project-link demo"
-              linkClass="button-link"
-              tooltip="View demo"
-            >
-              <Icon type={ICONTYPE.DEMO} />
+            <Button {...{
+              value: project.demo,
+              btnClass: "project__link demo",
+              linkClass: "button-link",
+              tooltip: "View demo",
+              type: ICONTYPE.DEMO
+            }}>
               <span className="action-text">Demo</span>
-            </ActionButton>
+            </Button>
           )}
           {project.source && project.source.length && (
-            <ActionButton
-              value={project.source}
-              btnClass="project-link code"
-              linkClass="button-link"
-              tooltip="View source"
-            >
-              <Icon type={ICONTYPE.CODE} />
+            <Button {...{
+              value: project.source,
+              btnClass: "project__link code",
+              linkClass: "button-link",
+              tooltip: "View source",
+              type: ICONTYPE.CODE 
+            }}>
               <span className="action-text">Source</span>
-            </ActionButton>
+            </Button>
           )}
         </div>
         <Tags

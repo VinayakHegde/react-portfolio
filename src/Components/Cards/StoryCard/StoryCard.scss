@@ -1,99 +1,97 @@
-.story-content {
-  position: relative;
-  margin-left: 30px;
-  background: rgb(243, 243, 243);
-  padding: 20px;
-  border-radius: 8px;
-  border: 4px solid;
-}
-.empty.story-content {
-  background: transparent;
-  box-shadow: none;
-}
-.story-content:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.story-caption-container {
-  position: absolute;
-  top: -12px;
-  left: 0;
-  background: #ddd;
-  padding: 1px;
-  -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
-  height: 52px;
-  box-sizing: border-box;
-  width: calc(100% - 16px);
-}
-.story-caption {
-  background: #e86971;
-  color: #fff;
-  padding: 0;
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-  border-right-color: transparent;
-  -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
-  height: 50px;
-  width: 100%;
-  display: block;
-  line-height: 52px;
-  text-align: center;
-}
+@import 'Styles/color.scss';
 
-.empty.story-content::before {
-  display: none;
-}
-.story-caption-wrapper {
-  margin-bottom: 0.5em;
-  float: left;
-  width: calc(33% + 6px);
-  position: relative;
-  height: 32px;
-}
-.story-caption-wrapper:before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border: 4px solid;
-  background-color: #ffffff;
-  border-radius: 100%;
-  top: 15%;
-  right: 0;
-  z-index: 99;
-  box-sizing: content-box;
-}
-.story-continer {
-  margin: 0 0 0.6em;
-  float: right;
-  width: 66%;
-  color: #333;
-}
-.story-continer p {
-  line-height: 1.4em;
-}
-.story-continer h1,
-.story-continer h2,
-.story-continer h3,
-.story-continer h4,
-.story-continer h5,
-.story-continer h6 {
-  margin: 0;
-}
-.story-continer p:first-child {
-  margin-top: 0;
-  font-weight: 400;
+.storycard{
+  &__content {
+    position: relative;
+    margin-left: 30px;
+    background: $concrete;
+    padding: 20px;
+    border-radius: 8px;
+    border: 4px solid;
+    &.empty {
+      background: transparent;
+      box-shadow: none;
+      &:before {
+        display: none;
+      }
+    }
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  &__caption {
+    background: $sunglo;
+    color: $white;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    border-right-color: transparent;
+    -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+    height: 50px;
+    width: 100%;
+    display: block;
+    line-height: 52px;
+    text-align: center;
+    &__wrapper {
+      margin-bottom: 0.5em;
+      float: left;
+      width: calc(33% + 6px);
+      position: relative;
+      height: 32px;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border: 4px solid;
+        background-color: $white;
+        border-radius: 100%;
+        top: 15%;
+        right: 0;
+        z-index: 99;
+        box-sizing: content-box;
+      }
+    }
+    &__container {
+      position: absolute;
+      top: -12px;
+      left: 0;
+      background: $alto;
+      padding: 1px;
+      -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+      clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+      height: 52px;
+      box-sizing: border-box;
+      width: calc(100% - 16px);
+    }
+  }
+  &__continer {
+    margin: 0 0 0.6em;
+    float: right;
+    width: 66%;
+    color: $mine-shaft;
+    p {
+      line-height: 1.4em;
+      &:first-child {
+        margin-top: 0;
+        font-weight: 400;
+      }
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+    }
+  }
 }
 
 .project-count {
   position: absolute;
   top: 20px;
   right: 20px;
-  color: #fff;
+  color: $white;
   padding: 5px;
   border-radius: 50%;
   height: 20px;
@@ -104,33 +102,35 @@
 }
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  .story-caption-wrapper {
-    float: unset;
-    width: 100%;
-  }
-  .story-caption-container {
-    margin-left: 0;
-    top: 0;
-    width: 100%;
-    clip-path: unset;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-  }
-  .story-caption-wrapper:before {
-    content: unset;
-  }
-  .story-caption {
-    clip-path: unset;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-  }
-  .story-continer {
-    margin: 0 0 20px 0;
-    float: unset;
-    width: 100%;
-  }
+  .storycard {
+    &__caption {
+      clip-path: unset;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      &__wrapper {
+        float: unset;
+        width: 100%;
+        &:before {
+          content: unset;
+        }
+      }
+      &__container {
+        margin-left: 0;
+        top: 0;
+        width: 100%;
+        clip-path: unset;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+      }
+    }
+    &__continer {
+      margin: 0 0 20px 0;
+      float: unset;
+      width: 100%;
+    }
 
-  .story-content {
-    margin-left: 0;
+    &__content {
+      margin-left: 0;
+    }
   }
 }
