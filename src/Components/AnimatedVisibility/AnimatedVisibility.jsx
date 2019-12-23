@@ -4,24 +4,22 @@ import VisibilitySensor from "react-visibility-sensor";
 
 import "./AnimatedVisibility.scss";
 
-const AnimatedVisibility = ({ children, notifyChange }) => (
-  <div className="animated-visibility-container">
-    <VisibilitySensor
-      {...{
-        partialVisibility: true,
-        offset: {
-          bottom: 50
-        },
-        onChange: notifyChange
-      }}
-    >
+const AnimatedVisibility = ({ children, setCssClass }) => (
+  <div className="animation__container">
+    <VisibilitySensor {...{
+      partialVisibility: true,
+      offset: {
+        bottom: 50
+      },
+      onChange: isSet => isSet && setCssClass('bounce-in')
+    }}>
       <Fragment>{children}</Fragment>
     </VisibilitySensor>
   </div>
 );
 
 AnimatedVisibility.propTypes = {
-  notifyChange: PropTypes.func,
+  setCssClass: PropTypes.func,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node

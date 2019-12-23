@@ -1,35 +1,32 @@
-import React, { useState } from "react";
+import React from "react";
 import { DESCRIPTIONFOR } from "Helpers/Enums";
 import AnimatedVisibility from "Components/AnimatedVisibility";
 import UserCard from "Components/Cards/UserCard/UserCard";
 import Description from "Components/Description";
 import SkillCard from "Components/Cards/SkillCard/SkillCard";
+import useCssClass from 'hooks/useCssClass';
 
 import "./About.scss";
 
 const About = () => {
-  const [visible, setVisible] = useState(false);
-  const animationClass = visible ? "bounce-in" : "is-hidden";
+  const [cssClass, setCssClass] = useCssClass();
+  
   return (
     <div className="content-wrapper">
-      <AnimatedVisibility
-        {...{
-          notifyChange: isVisible => setVisible({ visible: isVisible })
-        }}
-      >
+      <AnimatedVisibility {...{setCssClass}}>
         <UserCard
           {...{
-            cssClass: `about-content ${animationClass}`
+            cssClass: `about-content ${cssClass}`
           }}
         />
         <Description
           {...{
-            cssClass: `about-content about-description ${animationClass}`,
+            cssClass: `about-content about-description ${cssClass}`,
             descriptionFor: DESCRIPTIONFOR.USERDESCRIPTION
           }}
         />
 
-        <div className={`about-content ${animationClass}`}>
+        <div className={`about-content ${cssClass}`}>
           <SkillCard />
         </div>
       </AnimatedVisibility>

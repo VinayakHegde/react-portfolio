@@ -1,16 +1,16 @@
-.animated-visibility-container {
+.animation__container {
   clear: both;
   text-align: left;
   position: relative;
-}
-.animated-visibility-container .is-hidden {
-  visibility: hidden;
-}
-.animated-visibility-container .bounce-in {
-  visibility: visible;
-  -webkit-animation: bounce-in 0.4s;
-  -moz-animation: bounce-in 0.4s;
-  animation: bounce-in 0.4s;
+  > div {
+    visibility: hidden;
+    &.bounce-in {
+      visibility: visible;
+      -webkit-animation: bounce-in 0.4s;
+      -moz-animation: bounce-in 0.4s;
+      animation: bounce-in 0.4s;
+    }
+  }
 }
 
 @-o-keyframes bounce-in {
