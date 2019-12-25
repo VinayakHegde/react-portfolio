@@ -5,7 +5,7 @@
     position: relative;
     margin-left: 30px;
     background: $concrete;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     border-radius: 8px;
     border: 4px solid;
     &.empty {
@@ -36,6 +36,15 @@
     display: block;
     line-height: 52px;
     text-align: center;
+    position: absolute;
+    left: 0;
+    background: $alto;
+    padding: 1px;
+    -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+    height: 52px;
+    box-sizing: border-box;
+    width: calc(100% - 16px);
     &__wrapper {
       margin-bottom: 0.5em;
       float: left;
@@ -50,23 +59,11 @@
         border: 4px solid;
         background-color: $white;
         border-radius: 100%;
-        top: 15%;
+        top: 20px;
         right: 0;
         z-index: 99;
         box-sizing: content-box;
       }
-    }
-    &__container {
-      position: absolute;
-      top: -12px;
-      left: 0;
-      background: $alto;
-      padding: 1px;
-      -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
-      clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
-      height: 52px;
-      box-sizing: border-box;
-      width: calc(100% - 16px);
     }
   }
   &__continer {
@@ -85,21 +82,32 @@
       margin: 0;
     }
   }
+
+  &__toggler {
+    margin: 20px 0 -1px -20px;
+    color: $white;
+    padding: 5px 10px;
+    width: calc(100% + 21px);
+    text-align: right;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  &__project__count {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: $white;
+    padding: 5px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
 }
 
-.project-count {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  color: $white;
-  padding: 5px;
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
-  text-align: center;
-  font-weight: bold;
-  cursor: pointer;
-}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .storycard {
@@ -107,6 +115,16 @@
       clip-path: unset;
       border-top-right-radius: 8px;
       border-top-left-radius: 8px;
+      margin-left: 0;
+      top: 0;
+      width: 100%;
+      clip-path: unset;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      line-height: 42px;
+      text-align: left;
+      text-indent: 20px;
+      font-size: 18px;
       &__wrapper {
         float: unset;
         width: 100%;
@@ -114,21 +132,12 @@
           content: unset;
         }
       }
-      &__container {
-        margin-left: 0;
-        top: 0;
-        width: 100%;
-        clip-path: unset;
-        border-top-right-radius: 8px;
-        border-top-left-radius: 8px;
-      }
     }
     &__continer {
       margin: 0 0 20px 0;
       float: unset;
       width: 100%;
     }
-
     &__content {
       margin-left: 0;
     }

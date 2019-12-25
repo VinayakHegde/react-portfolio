@@ -6,7 +6,7 @@ import AnimatedVisibility from "Components/AnimatedVisibility";
 import Button from "Components/Button";
 import { ICONTYPE } from "Helpers/Enums";
 import Tags from "Components/Tags";
-import useCssClass from 'hooks/useCssClass';
+import useCustomState from 'hooks/useCustomState';
 
 import "./ProjectCard.scss";
 
@@ -27,7 +27,7 @@ const getProjectTitle = (project, className, key, theme) => {
 };
 
 const ProjectCard = ({ project, theme, children, index }) => {
-  const [cssClass, setCssClass] = useCssClass();
+  const [cssClass, setCssClass] = useCustomState();
 
   return (
     <AnimatedVisibility {...{setCssClass}}>

@@ -2,27 +2,24 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import AnimatedVisibility from "Components/AnimatedVisibility";
-import useCssClass from 'hooks/useCssClass';
+import useCustomState from 'hooks/useCustomState';
 
 import "./StoryCard.scss";
 
 const StoryCard = ({ when, where, who, whom, count, theme, children }) => {
-  const [cssClass, setCssClass] = useCssClass();
+  const [cssClass, setCssClass] = useCustomState();
+  const [child, setChild] = useCustomState(null);
   
   return (
     <AnimatedVisibility {...{setCssClass}}>
       <div className={`storycard__caption__wrapper ${cssClass}`} style={{ color: `${theme}` }}>
-        <div>
-          <span className="storycard__caption__container">
-            <time
-              className="storycard__caption"
-              style={{ background: `${theme}` }}
-              title={when}
-            >
-              {when}
-            </time>
-          </span>
-        </div>
+        <time
+          className="storycard__caption"
+          style={{ background: `${theme}` }}
+          title={when}
+        >
+          {when}
+        </time>
       </div>
       <div className={`storycard__continer ${cssClass}`}>
         <div
@@ -31,21 +28,26 @@ const StoryCard = ({ when, where, who, whom, count, theme, children }) => {
           }`}
           style={{ borderColor: `${theme}` }}
         >
-          <h3 style={{ color: `${theme}` }}>{who}</h3>
+          <h3 style={{ color: `${theme}` }} >{who}</h3>
           <h4 style={{ color: `${theme}` }}>
             {whom.length ? `@ ${whom}, ${where}` : ""}
           </h4>
-          <hr />
+          {child && <hr /> }
           {count > 0 && (
             <div
-              className="project-count"
+              className="storycard__project__count"
               style={{ background: `${theme}` }}
               title="Number of projects undertaken"
             >
               {count}
             </div>
           )}
-          {children}
+          {child}
+          <div className="storycard__toggler"
+            style={{ background: `${theme}` }}
+            onClick={() => setChild(child ? null : children)}>
+            {!child ? 'Show details' : 'Hide Details' }
+          </div>
         </div>
       </div>
     </AnimatedVisibility>

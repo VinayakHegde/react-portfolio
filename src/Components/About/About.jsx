@@ -4,12 +4,12 @@ import AnimatedVisibility from "Components/AnimatedVisibility";
 import UserCard from "Components/Cards/UserCard/UserCard";
 import Description from "Components/Description";
 import SkillCard from "Components/Cards/SkillCard/SkillCard";
-import useCssClass from 'hooks/useCssClass';
+import useCustomState from 'hooks/useCustomState';
 
 import "./About.scss";
 
 const About = () => {
-  const [cssClass, setCssClass] = useCssClass();
+  const [cssClass, setCssClass] = useCustomState();
   
   return (
     <div className="content-wrapper">

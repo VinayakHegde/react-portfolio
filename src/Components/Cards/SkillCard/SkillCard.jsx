@@ -6,7 +6,7 @@ import SkillDescription from "./SkillDescription";
 import "./SkillCard.scss";
 
 const SkillCard = ({ chart }) => (
-  <div className="skill-card">
+  <div className="skill__card">
     {chart && <SkillChart />}
     {!chart && <SkillDescription />}
   </div>

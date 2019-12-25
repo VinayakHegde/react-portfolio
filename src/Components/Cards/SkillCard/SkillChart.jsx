@@ -2,45 +2,42 @@ import React from "react";
 import { UserSkills } from "Helpers/DataValidator";
 
 const SkillChart = () => (
-  <div className="skills">
+  <div className="skill">
     {UserSkills.map((skill, index) => {
-      const className = "".concat("chart ", skill.header.toLowerCase());
+      const className = `skill__chart ${skill.header.toLowerCase()}`;
       return (
         <div key={`skill-${index}`} className={className}>
-          <span className="chart__title">{skill.header}</span>
-          <ul className="chart--horiz">
-            {skill.topics.map((tpc, index) => {
-              const width = tpc.score.toString().concat("%");
-              return (
-                <li
-                  key={index + 1}
-                  className="chart__bar"
-                  style={{ width: `${width}` }}
-                >
-                  <span className="chart__label">{tpc.name}</span>
-                </li>
-              );
-            })}
+          <span className="skill__chart__title">{skill.header}</span>
+          <ul className="skill__chart--horiz">
+            {skill.topics.map((tpc, index) => (
+              <li
+                key={index + 1}
+                className="skill__chart__bar"
+                style={{ width: `${tpc.score.toString()}%` }}
+              >
+                <span className="skill__chart__label">{tpc.name}</span>
+              </li>
+            ))}
           </ul>
         </div>
       );
     })}
     {!UserSkills.length && <span className="no-skills">Skills not found!</span>}
     {UserSkills.length && (
-      <ul className="lines">
-        <li className="line l--0">
+      <ul className="line__wrapper">
+        <li className="line strength__000">
           <span className="line__label">Started</span>
         </li>
-        <li className="line l--25">
+        <li className="line strength__025">
           <span className="line__label">Beginner</span>
         </li>
-        <li className="line l--50">
+        <li className="line strength__050">
           <span className="line__label">Itermediate</span>
         </li>
-        <li className="line l--75">
+        <li className="line strength__075">
           <span className="line__label">Advanced</span>
         </li>
-        <li className="line l--100">
+        <li className="line strength__100">
           <span className="line__label">Expert</span>
         </li>
       </ul>
