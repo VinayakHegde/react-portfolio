@@ -3,6 +3,7 @@ import React from "react";
 import Header from "Components/Header";
 import Main from "Components/Main";
 import Footer from "Components/Footer";
+import DiscMenu from "Components/DiscMenu";
 import useLocalStorage from 'hooks/useLocalStorage';
 
 import "./App.scss";
@@ -13,9 +14,10 @@ const App = () => {
     initialValue: "ABOUT"
   });
   return (
-    <div className="personal-profile">
-      <Header {...{ route, setRoute }} />
-      <Main {...{ route }} />
+    <div className="app__content">
+      <Header {...{route}} />
+      <DiscMenu onItemClick={setRoute} />
+      <Main {...{route}} />
       <Footer />
     </div>
   );

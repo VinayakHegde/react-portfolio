@@ -12,7 +12,7 @@ const About = () => {
   const [cssClass, setCssClass] = useCustomState();
   
   return (
-    <div className="content-wrapper">
+    <div className="content__wrapper">
       <AnimatedVisibility {...{setCssClass}}>
         <UserCard
           {...{

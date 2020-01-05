@@ -23,63 +23,61 @@ const dataToObject = exp => ({
 });
 
 const Experience = () => (
-  <article className="profile-content">
-    <div className="content-wrapper">
-      <Timeline lineColor={"#ddd"}>
-        {UserExperiences.length &&
-          UserExperiences.map((exp, ind) => {
-            const dto = dataToObject(exp);
-            const when =
-              dto.startDate.length === 0 &&
-              (!dto.endDate || dto.endDate.length === 0)
-                ? ""
-                : `${dto.startDate} - ${
-                    dto.isPresent ? "Present" : dto.endDate
-                  }`;
-            const { theme, jobTitle: who, company: whom, office: where } = dto;
-            return (
-              <StoryCard
-                key={ind}
-                {...{
-                  theme,
-                  when,
-                  who,
-                  whom,
-                  where,
-                  ...getProjectCount(dto.key)
-                }}
-              >
-                <p>{dto.description}</p>
-                {dto.achievements && dto.achievements.length > 0 && (
-                  <div>
-                    <h4>Achievement highlights</h4>
-                    {dto.achievements.length > 1 &&
-                      <ol>
-                        {dto.achievements.map((achievement, index) => (
-                          <li key={index.toString()}>{achievement.details}</li>
-                        ))}
-                      </ol>
-                    }
-                    {dto.achievements.length === 1 &&
-                      <p>{dto.achievements[0].details}</p>
-                    }
-                  </div>
-                )}
-                {dto.other.length > 0 && (
-                  <div>
-                    <h5>Other responsibilities</h5>
-                    <p>{dto.other}</p>
-                  </div>
-                )}
-              </StoryCard>
-            );
-          })}
-        {!UserExperiences.length && (
-          <span className="no-experiences">No experience found!</span>
-        )}
-      </Timeline>
-    </div>
-  </article>
+  <div className="content__wrapper">
+    <Timeline lineColor={"#ddd"}>
+      {UserExperiences.length &&
+        UserExperiences.map((exp, ind) => {
+          const dto = dataToObject(exp);
+          const when =
+            dto.startDate.length === 0 &&
+            (!dto.endDate || dto.endDate.length === 0)
+              ? ""
+              : `${dto.startDate} - ${
+                  dto.isPresent ? "Present" : dto.endDate
+                }`;
+          const { theme, jobTitle: who, company: whom, office: where } = dto;
+          return (
+            <StoryCard
+              key={ind}
+              {...{
+                theme,
+                when,
+                who,
+                whom,
+                where,
+                ...getProjectCount(dto.key)
+              }}
+            >
+              <p>{dto.description}</p>
+              {dto.achievements && dto.achievements.length > 0 && (
+                <div>
+                  <h4>Achievement highlights</h4>
+                  {dto.achievements.length > 1 &&
+                    <ol>
+                      {dto.achievements.map((achievement, index) => (
+                        <li key={index.toString()}>{achievement.details}</li>
+                      ))}
+                    </ol>
+                  }
+                  {dto.achievements.length === 1 &&
+                    <p>{dto.achievements[0].details}</p>
+                  }
+                </div>
+              )}
+              {dto.other.length > 0 && (
+                <div>
+                  <h5>Other responsibilities</h5>
+                  <p>{dto.other}</p>
+                </div>
+              )}
+            </StoryCard>
+          );
+        })}
+      {!UserExperiences.length && (
+        <span className="no-experiences">No experience found!</span>
+      )}
+    </Timeline>
+  </div>
 );
 
 export default Experience;

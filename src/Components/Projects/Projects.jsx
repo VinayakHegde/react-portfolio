@@ -1,39 +1,26 @@
-import React, { useState } from "react";
-
-import Work from "./Work";
-import Personal from "./Personal";
+import React from "react";
+import useCustomState from 'hooks/useCustomState';
+import useProjects from 'hooks/useProjects';
+import { UserProjects } from "Helpers/DataValidator";
 import { PROJECTSTYPE } from "Helpers/Enums";
-
-import "./Projects.scss";
+import Toolbar from 'Components/Toolbar';
+import Work from "./Work";
+import getItems from "./utils";
 
 const Projects = () => {
-  const [type, setType] = useState(PROJECTSTYPE.WORK);
-
+  const [type, setType] = useCustomState(PROJECTSTYPE.WORK);
+  const [projects, setProjects] = useProjects(type, UserProjects);
+  const onSwitch = newType => {
+    if(type !== newType) {
+      setType(newType);
+      setProjects(newType);
+    }
+  };
   return (
-    <article className="profile-content">
-      <div className="toolbar">
-        <span
-          onClick={() => setType(PROJECTSTYPE.WORK)}
-          className={`toolbar-button ${
-            type === PROJECTSTYPE.WORK ? "active" : ""
-          }`}
-        >
-          Work
-        </span>
-        <span
-          onClick={() => setType(PROJECTSTYPE.PERSONAL)}
-          className={`toolbar-button ${
-            type === PROJECTSTYPE.PERSONAL ? "active" : ""
-          }`}
-        >
-          Personal
-        </span>
-      </div>
-      <div className="content-wrapper">
-        {type === PROJECTSTYPE.WORK && <Work />}
-        {type === PROJECTSTYPE.PERSONAL && <Personal />}
-      </div>
-    </article>
+    <>
+      <Toolbar {...getItems({type, onSwitch})} />
+      <Work {...{projects}} />
+    </>
   );
 };
 

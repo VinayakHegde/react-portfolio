@@ -3,11 +3,9 @@ import SkillCard from "Components/Cards/SkillCard";
 import "./Skills.scss";
 
 const Skills = () => (
-  <article className="profile-content">
-    <div className="content-wrapper">
-      <SkillCard chart />
+    <div className="content__wrapper">
+      <SkillCard isChart />
     </div>
-  </article>
 );
 
 export default Skills;

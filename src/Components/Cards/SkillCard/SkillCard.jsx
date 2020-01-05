@@ -5,14 +5,19 @@ import SkillChart from "./SkillChart";
 import SkillDescription from "./SkillDescription";
 import "./SkillCard.scss";
 
-const SkillCard = ({ chart }) => (
+const SkillCard = ({ isChart }) => (
   <div className="skill__card">
-    {chart && <SkillChart />}
-    {!chart && <SkillDescription />}
+    {isChart 
+      ? <SkillChart />
+      : <SkillDescription />
+    }
   </div>
 );
 
 SkillCard.propTypes = {
-  chart: PropTypes.bool
+  isChart: PropTypes.bool
 };
-export default SkillCard;
+SkillCard.defaultProps = {
+  isChart: false
+};
+export default React.memo(SkillCard);

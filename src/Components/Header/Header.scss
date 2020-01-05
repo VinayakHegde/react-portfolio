@@ -1,8 +1,10 @@
-.header-bar {
+@import 'Styles/color.scss';
+
+.header {
   display: inline-flex;
   flex-shrink: 0;
-  background-color: #333;
-  color: #fff;
+  background-color: $mine-shaft;
+  color: $white;
   padding: 20px 0px 10px 25px;
   font-weight: bold;
   font-size: 1.5em;

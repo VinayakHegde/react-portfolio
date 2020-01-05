@@ -8,11 +8,15 @@ import Skills from "Components/Skills/Skills";
 import "./Main.scss";
 
 const Main = ({ route }) => (
-  <article className="profile-content">
-    {route === MENU.ABOUT && <About />}
-    {route === MENU.EXPERIENCE && <Experience />}
-    {route === MENU.PROJECTS && <Projects />}
-    {route === MENU.SKILLS && <Skills />}
+  <article className="main__content">
+    { route === MENU.EXPERIENCE 
+      ? <Experience />
+      : route === MENU.PROJECTS 
+      ? <Projects />
+      : route === MENU.SKILLS
+      ? <Skills />
+      : <About />
+    }
   </article>
 );
 

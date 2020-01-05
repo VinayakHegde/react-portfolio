@@ -1,7 +1,15 @@
-.personal-profile {
-  height: 100vh;
-  width: 100vw;
+
+.main__content {
+  flex-grow: 1;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  .content__wrapper {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
 }

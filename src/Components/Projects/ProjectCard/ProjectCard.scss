@@ -19,7 +19,20 @@
   &__duration {
     font-size: 0.7em;
   }
-  &__company {
-    font-size: 0.9em;
+  &__link {
+    background: $black;
+    padding: 5px 10px;
+    font-weight: 700;
+    width: fit-content;
+    border-radius: 5px;
+    border: 2px solid $white;
+    text-align: center;
+    &__wrapper {
+      display: flex;
+      padding: 0 15px;
+    }
+    &__action__text {
+      padding-left: 10px;
+    }
   }
 }

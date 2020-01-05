@@ -17,13 +17,11 @@ const Description = ({ cssClass, descriptionFor }) => {
     }
   };
   return (
-    <div className={cssClass}>
-      <p
-        dangerouslySetInnerHTML={{
-          __html: `${getText(descriptionFor)}`
-        }}
-      ></p>
-    </div>
+    <p className={cssClass}
+      dangerouslySetInnerHTML={{
+        __html: `${getText(descriptionFor)}`
+      }}
+    ></p>
   );
 };
 
