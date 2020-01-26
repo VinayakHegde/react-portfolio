@@ -1,16 +1,18 @@
 @import 'Styles/keyframe.scss';
 
-.animation__container {
-  clear: both;
-  text-align: left;
-  position: relative;
-  > div {
-    visibility: hidden;
-    &.bounce-in {
-      visibility: visible;
-      -webkit-animation: bounce-in 0.4s;
-      -moz-animation: bounce-in 0.4s;
-      animation: bounce-in 0.4s;
+.animation {
+  &__container {
+    clear: both;
+    text-align: left;
+    position: relative;
+    > * {
+      visibility: hidden;
     }
+  }
+  &--bounceIn {
+    visibility: visible !important;
+    -webkit-animation: anim-bounce-in 0.4s;
+    -moz-animation: anim-bounce-in 0.4s;
+    animation: anim-bounce-in 0.4s;
   }
 }

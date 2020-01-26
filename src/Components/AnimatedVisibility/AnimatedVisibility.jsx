@@ -11,7 +11,7 @@ const AnimatedVisibility = ({ children, setCssClass }) => (
       offset: {
         bottom: 50
       },
-      onChange: isSet => isSet && setCssClass('bounce-in')
+      onChange: isSet => isSet && setCssClass('animation--bounceIn')
     }}>
       <Fragment>{children}</Fragment>
     </VisibilitySensor>
