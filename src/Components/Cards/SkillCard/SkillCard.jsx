@@ -5,13 +5,9 @@ import SkillChart from "./SkillChart";
 import SkillDescription from "./SkillDescription";
 import "./SkillCard.scss";
 
-const SkillCard = ({ isChart }) => (
-  <div className="skill__card">
-    {isChart 
-      ? <SkillChart />
-      : <SkillDescription />
-    }
-  </div>
+const SkillCard = ({ isChart }) => (isChart 
+  ? <SkillChart />
+  : <SkillDescription />
 );
 
 SkillCard.propTypes = {
