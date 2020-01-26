@@ -1,7 +1,7 @@
-import * as bio from "Data/bio.json";
-import experience from "Data/experience.json";
-import project from "Data/project.json";
-import skill from "Data/skill.json";
+import * as bio from "Assets/Data/bio.json";
+import experience from "Assets/Data/experience.json";
+import project from "Assets/Data/project.json";
+import skill from "Assets/Data/skill.json";
 
 const UserDetails = {
   FirstName: bio.firstName || "",
