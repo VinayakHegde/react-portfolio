@@ -1,0 +1,8 @@
+@import 'Styles/color.scss';
+
+.button {
+  &__link {
+    text-decoration: none;
+    color: $white;
+  }
+}

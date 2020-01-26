@@ -1,25 +1,29 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Icon from "Components/Icon";
+import './Button.scss';
 
 const Button = ({
   btnClass,
-  linkClass,
   value,
   children,
   type,
-  tooltip
+  tooltip,
+  fnCallback
 }) => {
+  const props = {
+    title: tooltip,
+    className: "button__link",
+    onClick: () => {
+      fnCallback && fnCallback();
+    },
+    ...(!fnCallback && {target: "_blank"}),
+    ...(!fnCallback && {rel: "noopener noreferrer"}),
+    ...(!fnCallback && {href: value})
+  };
   return (
     <div className={btnClass}>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        className={linkClass}
-        href={value}
-        title={tooltip}
-        onClick={e => e.stopPropagation()}
-      >
+      <a {...props}>
         {type && <Icon {...{ type }} />}
         {children}
       </a>
@@ -31,12 +35,12 @@ Button.propTypes = {
   type: PropTypes.string,
   value: PropTypes.string,
   btnClass: PropTypes.string,
-  linkClass: PropTypes.string,
   tooltip: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
-  ])
+  ]),
+  fnCallback: PropTypes.func
 };
 
 export default Button;
