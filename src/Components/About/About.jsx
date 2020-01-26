@@ -9,28 +9,33 @@ import useCustomState from 'hooks/useCustomState';
 import "./About.scss";
 
 const About = () => {
-  const [cssClass, setCssClass] = useCustomState();
+  const [userClass, setUserClass] = useCustomState();
+  const [descClass, setDescClass] = useCustomState();
+  const [skillClass, setSkillClass] = useCustomState();
   
   return (
-    <div className="content__wrapper">
-      <AnimatedVisibility {...{setCssClass}}>
+    <>
+      <AnimatedVisibility {...{setCssClass: setUserClass}}>
         <UserCard
           {...{
-            cssClass: `about-content ${cssClass}`
+            cssClass: `about__content ${userClass}`
           }}
         />
+      </AnimatedVisibility>
+      <AnimatedVisibility {...{setCssClass: setDescClass}}>
         <Description
           {...{
-            cssClass: `about-content about-description ${cssClass}`,
+            cssClass: `about__content about__description ${descClass}`,
             descriptionFor: DESCRIPTIONFOR.USERDESCRIPTION
           }}
         />
-
-        <div className={`about-content ${cssClass}`}>
+      </AnimatedVisibility>
+      <AnimatedVisibility {...{setCssClass: setSkillClass}}>
+        <div className={`about__content ${skillClass}`}>
           <SkillCard />
         </div>
       </AnimatedVisibility>
-    </div>
+    </>
   );
 };
 
