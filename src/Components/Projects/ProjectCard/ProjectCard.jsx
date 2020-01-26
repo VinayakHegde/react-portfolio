@@ -63,7 +63,6 @@ const ProjectCard = ({ project, theme, children }) => {
             <Button {...{
               value: project.demo,
               btnClass: "project__link demo",
-              linkClass: "button-link",
               tooltip: "View demo",
               type: ICONTYPE.DEMO
             }}>
@@ -74,7 +73,6 @@ const ProjectCard = ({ project, theme, children }) => {
             <Button {...{
               value: project.source,
               btnClass: "project__link code",
-              linkClass: "button-link",
               tooltip: "View source",
               type: ICONTYPE.CODE 
             }}>
