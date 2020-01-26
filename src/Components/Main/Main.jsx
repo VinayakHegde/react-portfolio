@@ -1,23 +1,23 @@
-import React from "react";
+import React, {Suspense} from "react";
 import PropTypes from "prop-types";
 import { MENU } from "Helpers/Enums";
-import About from "Components/About/About";
-import Experience from "Components/Experience/Experience";
-import Projects from "Components/Projects/Projects";
-import Skills from "Components/Skills/Skills";
+import {About, Experience, Projects, Skills} from 'Components/Lazy';
+import Spinner from 'Components/Spinner';
 import "./Main.scss";
 
 const Main = ({ route }) => (
-  <article className="main__content">
-    { route === MENU.EXPERIENCE 
-      ? <Experience />
-      : route === MENU.PROJECTS 
-      ? <Projects />
-      : route === MENU.SKILLS
-      ? <Skills />
-      : <About />
-    }
-  </article>
+  <main className={`main__content main__content--${route.toLowerCase()}`}>
+    <Suspense fallback={<Spinner />}>
+      { route === MENU.EXPERIENCE 
+        ? <Experience />
+        : route === MENU.PROJECTS 
+        ? <Projects />
+        : route === MENU.SKILLS
+        ? <Skills />
+        : <About />
+      }
+    </Suspense>
+  </main>
 );
 
 Main.propTypes = {
