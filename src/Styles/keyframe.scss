@@ -1,4 +1,4 @@
-@-o-keyframes bounce-in {
+@-o-keyframes anim-bounce-in {
   0% {
     opacity: 0;
     -webkit-transform: scale(0.5);
@@ -9,7 +9,7 @@
   }
 }
 
-@-webkit-keyframes bounce-in {
+@-webkit-keyframes anim-bounce-in {
   0% {
     opacity: 0;
     -webkit-transform: scale(0.5);
@@ -19,7 +19,7 @@
     -webkit-transform: scale(1);
   }
 }
-@-moz-keyframes bounce-in {
+@-moz-keyframes anim-bounce-in {
   0% {
     opacity: 0;
     -moz-transform: scale(0.5);
@@ -29,7 +29,7 @@
     -moz-transform: scale(1);
   }
 }
-@keyframes bounce-in {
+@keyframes anim-bounce-in {
   0% {
     opacity: 0;
     -webkit-transform: scale(0.5);
@@ -57,4 +57,15 @@
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+
+@keyframes anim-spinner {
+	50%{
+		filter: blur(2px);
+	}
+	90%, 100%{ 
+		transform: rotate(1turn);
+		filter: blur(0);
+	}
 }
