@@ -36,7 +36,7 @@ const DiscMenu = ({ onItemClick }) => {
           }
     );
   return (
-    <div className="disc-menu-container">
+    <menu className="disc-menu-container">
       <StaggeredMotion
         defaultStyles={defaultStaggeredMotion}
         styles={nextStaggeredMotion}
@@ -72,7 +72,7 @@ const DiscMenu = ({ onItemClick }) => {
           </Disc>
         )}
       </Motion>
-    </div>
+    </menu>
   );
 };
 
