@@ -1,5 +1,5 @@
 import React from "react";
-import { DESCRIPTIONFOR } from "Helpers/Enums";
+import { DESCRIPTIONFOR } from "Models/Enums";
 import AnimatedVisibility from "Components/AnimatedVisibility";
 import UserCard from "Components/Cards/UserCard/UserCard";
 import Description from "Components/Description";

@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { ICONTYPE } from "Helpers/Enums";
+import { ICONTYPE } from "Models/Enums";
 import { UserDetails } from "Helpers/DataValidator";
 import Button from "Components/Button";
 import Spinner from "Components/Spinner";
 import Icon from "Components/Icon";
-import {pause} from 'Helpers/utils';
+import {pause} from 'Helpers/pause';
 import useCustomState from 'hooks/useCustomState';
 import "./UserCard.scss";
 

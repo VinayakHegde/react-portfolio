@@ -2,7 +2,7 @@ import React from "react";
 
 import Button from "Components/Button";
 import { UserContacts } from "Helpers/DataValidator";
-import { ICONTYPE } from "Helpers/Enums";
+import { ICONTYPE } from "Models/Enums";
 
 import "./Footer.scss";
 

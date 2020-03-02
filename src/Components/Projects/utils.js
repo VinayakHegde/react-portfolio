@@ -1,4 +1,4 @@
-import { PROJECTSTYPE } from "Helpers/Enums";
+import { PROJECTSTYPE } from "Models/Enums";
 import { UserExperiences } from "Helpers/DataValidator";
 
 const getItems = ({type, onSwitch}) => ({

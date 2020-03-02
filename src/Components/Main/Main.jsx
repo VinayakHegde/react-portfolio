@@ -1,6 +1,6 @@
 import React, {Suspense} from "react";
 import PropTypes from "prop-types";
-import { MENU } from "Helpers/Enums";
+import { MENU } from "Models/Enums";
 import {About, Experience, Projects, Skills} from 'Components/Lazy';
 import Spinner from 'Components/Spinner';
 import "./Main.scss";

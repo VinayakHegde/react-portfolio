@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { UserDetails } from "Helpers/DataValidator";
-import { DESCRIPTIONFOR } from "Helpers/Enums";
+import { DESCRIPTIONFOR } from "Models/Enums";
 
 const Description = ({ cssClass, descriptionFor }) => {
   const getText = key => {
@@ -10,7 +10,7 @@ const Description = ({ cssClass, descriptionFor }) => {
       case DESCRIPTIONFOR.USERDESCRIPTION:
         return UserDetails.Description.replace(
           "{autoexp}",
-          UserDetails.Experience()
+          UserDetails.Experience
         );
       default:
         return key;

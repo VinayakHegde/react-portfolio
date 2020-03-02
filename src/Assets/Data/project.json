@@ -1,45 +1,87 @@
 {
+  "08": [
+    {
+      "title": "Calvin Klein - ecommerce website",
+      "isPresent": true,
+      "startDate": "Dec 2019",
+      "endDate": null,
+      "description": "<q>Calvin Klein</q>",
+      "subProjects": [],
+      "tags": [
+        "JavaScript",
+        "TypeScript",
+        "ReactJS",
+        "Redux",
+        "Jest/Enzyme",
+        "ESLints",
+        "Webpack",
+        "Jenkins",
+        "VS Code",
+        "Jira"
+      ]
+    }, 
+    {
+      "title": "Tommy Hilfiger - ecommerce website",
+      "isPresent": true,
+      "startDate": "Dec 2019",
+      "endDate": null,
+      "description": "<q>Tommy Hilfiger</q>",
+      "subProjects": [],
+      "tags": [
+        "JavaScript",
+        "TypeScript",
+        "ReactJS",
+        "Redux",
+        "Jest/Enzyme",
+        "ESLints",
+        "Webpack",
+        "Jenkins",
+        "VS Code",
+        "Jira"
+      ]
+    }
+  ],
   "07": [
     {
       "title": "Avalon Adjustment",
       "isPresent": true,
       "startDate": "Jul 2019",
-      "endDate": null,
+      "endDate": "Dec 2019",
       "description": "<q>Avalon Adjustment</q> is a web application prowered by ReactJS/Redux. Application integrates several internal accounting devisions and helps them to collaborate and communicate on a single platform. Accountant will be able to raise their month end or year end journals for approval process. Application features available to system users based on the users role. Jest/Enzyme is used for TDD and unit testing. Selenium webDrivers enables e2e testing. SonarCube is used to identify/detect code smells, redundancies and duplication etc. Coding patter enforced by linters. Jenkins used for CI/CD. Jira is used as ticketing system in the agile environment. Git is the source control system.",
       "subProjects": [
         {
           "title": "Journal Raiser",
-          "isPresent": true,
+          "isPresent": false,
           "startDate": "Jul 2019",
-          "endDate": null,
+          "endDate": "Dec 2019",
           "description": "Allows accountant to raise month end and year end journals for approvals"
         },
         {
           "title": "Journal Approvals",
-          "isPresent": true,
+          "isPresent": false,
           "startDate": "Jul 2019",
-          "endDate": null,
+          "endDate": "Dec 2019",
           "description": "Allows approver to validate the approve journals for further accounting"
         },
         {
           "title": "User Adminstration",
-          "isPresent": true,
+          "isPresent": false,
           "startDate": "Jul 2019",
-          "endDate": null,
+          "endDate": "Dec 2019",
           "description": "Manage users and user roles etc"
         },
         {
           "title": "System Adminstration",
-          "isPresent": true,
+          "isPresent": false,
           "startDate": "Jul 2019",
-          "endDate": null,
+          "endDate": "Dec 2019",
           "description": "Manage system settings, journal template settings, toggle system features etc"
         },
         {
           "title": "Dashboards",
-          "isPresent": true,
+          "isPresent": false,
           "startDate": "Jul 2019",
-          "endDate": null,
+          "endDate": "Dec 2019",
           "description": "Allows system users to view activities and more detailed analysis on journals"
         }
       ],

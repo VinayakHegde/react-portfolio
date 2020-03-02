@@ -1,15 +1,14 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./Header.scss";
 
-const Header = ({route}) => (
+interface IHeaderProps {
+  route: string
+};
+
+const Header: React.FC<IHeaderProps> = ({route}) => (
   <header className="header">
     {route}
   </header>
 );
-
-Header.propTypes = {
-  route: PropTypes.string
-};
 
 export default Header;

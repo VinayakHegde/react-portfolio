@@ -1,6 +1,7 @@
 import React from "react";
+import 'core-js';
 import ReactDOM from "react-dom";
-import App from "../Components/App/App";
+import App from "../../Components/App/App";
 
 describe("App Component", () => {
   it("renders without crashing", () => {

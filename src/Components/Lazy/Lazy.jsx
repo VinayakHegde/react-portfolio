@@ -1,5 +1,5 @@
 import {lazy} from "react";
-import {pause} from 'Helpers/utils';
+import {pause} from 'Helpers/pause';
 
 const About = lazy(async () => {
   await pause();

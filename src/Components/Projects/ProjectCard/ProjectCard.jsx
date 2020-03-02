@@ -5,7 +5,7 @@ import Description from "Components/Description";
 import AnimatedVisibility from "Components/AnimatedVisibility";
 import Button from "Components/Button";
 import ProjectTitle from "Components/Projects/ProjectTitle";
-import { ICONTYPE } from "Helpers/Enums";
+import { ICONTYPE } from "Models/Enums";
 import Tags from "Components/Tags";
 import useCustomState from 'hooks/useCustomState';
 

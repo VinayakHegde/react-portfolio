@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Motion, StaggeredMotion, spring } from "react-motion";
 import PropTypes from "prop-types";
 
-import { MENU } from "Helpers/Enums";
+import { MENU } from "Models/Enums";
 import Icon from "Components/Icon";
 import Disc from "./Disc";
 import DiscGroup from "./DiscGroup";

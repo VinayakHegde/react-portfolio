@@ -20,7 +20,7 @@ import {
   faFileDownload
 } from "@fortawesome/free-solid-svg-icons";
 
-import { ICONTYPE, MENU } from "Helpers/Enums";
+import { ICONTYPE, MENU } from "Models/Enums";
 
 const Icon = ({ type }) => {
   let icon = "";
