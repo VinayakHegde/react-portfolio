@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-portfolio"]=this["webpackJsonpreact-portfolio"]||[]).push([[4],{76:function(o,a,i){o.exports=i.p+"static/media/vinayak.nandi@gmail.com.4da79502.doc"}}]);
+//# sourceMappingURL=resume.9d2eb74b.chunk.js.map
