@@ -1,4 +1,4 @@
-import {useState, Dispatch} from 'react';
+import { useState, Dispatch } from 'react';
 import { typeSBN } from 'Models/Types';
 
 export default (initialState: typeSBN = ''): [typeSBN, Function] => {

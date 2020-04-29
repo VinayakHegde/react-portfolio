@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const propTypes = {
   project: PropTypes.shape({
@@ -7,27 +7,25 @@ const propTypes = {
     startDate: PropTypes.string,
     endDate: PropTypes.string,
     isPresent: PropTypes.bool,
-    companyKey: PropTypes.string
-  }), 
-  className: PropTypes.string, 
-  theme: PropTypes.string
+    companyKey: PropTypes.string,
+  }),
+  className: PropTypes.string,
+  theme: PropTypes.string,
 };
 
 const defaultProps = {
-  project: {}, 
-  className: '', 
-  theme: ''
+  project: {},
+  className: '',
+  theme: '',
 };
 
-const ProjectTitle = ({project, className, theme}) => {
+const ProjectTitle = ({ project, className, theme }) => {
   if (project.title.length && project.startDate.length) {
-    const d1 = ` - ${project.isPresent ? "Present" : project.endDate}`;
+    const d1 = ` - ${project.isPresent ? 'Present' : project.endDate}`;
     return (
       <div className={className} style={{ background: `${theme}` }}>
         {project.title}
-        <small className="project__duration">
-          {` (${project.startDate}${project.companyKey ? d1 : ""})`}
-        </small>
+        <small className='project__duration'>{` (${project.startDate}${project.companyKey ? d1 : ''})`}</small>
       </div>
     );
   }

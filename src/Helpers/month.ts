@@ -1,17 +1,4 @@
-export const months: string[] = [
-  "JAN",
-  "FEB",
-  "MAR",
-  "APR",
-  "MAY",
-  "JUN",
-  "JUL",
-  "AUG",
-  "SEP",
-  "OCT",
-  "NOV",
-  "DEC"
-];
+export const months: string[] = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 
 export const monthDiff = (d1: Date, d2: Date) => {
   let diff = (d2.getFullYear() - d1.getFullYear()) * 12;

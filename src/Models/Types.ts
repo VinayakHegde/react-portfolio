@@ -1,1 +1,1 @@
-export type typeSBN = string | boolean| number;
+export type typeSBN = string | boolean | number;

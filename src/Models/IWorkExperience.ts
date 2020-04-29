@@ -1,22 +1,22 @@
 interface IAchievement {
-  details: string
-};
+  details: string;
+}
 
 interface IMisc {
-  theme: string
-};
+  theme: string;
+}
 export interface IWorkExperiencePart {
-  isPresent: boolean,
-  startDate: string,
-  endDate?: string
-};
+  isPresent: boolean;
+  startDate: string;
+  endDate?: string;
+}
 
 export interface IWorkExperience extends IWorkExperiencePart {
-  company: string,
-  office: string,
-  jobTitle: string,
-  description: string,
-  achievements: IAchievement[],
-  other: string,
-  misc: IMisc
-};
+  company: string;
+  office: string;
+  jobTitle: string;
+  description: string;
+  achievements: IAchievement[];
+  other: string;
+  misc: IMisc;
+}

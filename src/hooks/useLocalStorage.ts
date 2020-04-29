@@ -1,10 +1,10 @@
-import {useState} from 'react';
-import {ILocalStorage} from 'Models/ILocalStorage';
+import { useState } from 'react';
+import { ILocalStorage } from 'Models/ILocalStorage';
 
-export default (props: ILocalStorage): [string, Function] =>  {
-  const {key, initialValue} = props;
-  if(!key) {
-    throw Error("Key should not be empty");
+export default (props: ILocalStorage): [string, Function] => {
+  const { key, initialValue } = props;
+  if (!key) {
+    throw Error('Key should not be empty');
   }
   const [item, setItem] = useState((): string => {
     try {

@@ -59,13 +59,13 @@
   }
 }
 
-
 @keyframes anim-spinner {
-	50%{
-		filter: blur(2px);
-	}
-	90%, 100%{ 
-		transform: rotate(1turn);
-		filter: blur(0);
-	}
+  50% {
+    filter: blur(2px);
+  }
+  90%,
+  100% {
+    transform: rotate(1turn);
+    filter: blur(0);
+  }
 }

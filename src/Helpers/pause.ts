@@ -1,3 +1,3 @@
-const pause = (delay: number = 2000) => new Promise(resolve => setTimeout(resolve, delay));
+const pause = (delay: number = 2000) => new Promise((resolve) => setTimeout(resolve, delay));
 
-export {pause};
+export { pause };

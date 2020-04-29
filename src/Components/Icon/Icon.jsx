@@ -1,12 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedinIn,
-  faGithub,
-  faWhatsapp
-} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedinIn, faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import {
   faEnvelope,
   faLaptop,
@@ -17,13 +13,13 @@ import {
   faHome,
   faUserSecret,
   faMapMarked,
-  faFileDownload
-} from "@fortawesome/free-solid-svg-icons";
+  faFileDownload,
+} from '@fortawesome/free-solid-svg-icons';
 
-import { ICONTYPE, MENU } from "Models/Enums";
+import { ICONTYPE, MENU } from 'Models/Enums';
 
 const Icon = ({ type }) => {
-  let icon = "";
+  let icon = '';
   switch (type) {
     case ICONTYPE.PHONE:
       icon = faWhatsapp;
@@ -70,7 +66,7 @@ const Icon = ({ type }) => {
 };
 
 Icon.propTypes = {
-  type: PropTypes.string
+  type: PropTypes.string,
 };
 
 export default Icon;

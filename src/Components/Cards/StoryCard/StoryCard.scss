@@ -1,6 +1,6 @@
 @import 'Styles/color.scss';
 
-.storycard{
+.storycard {
   &__content {
     position: relative;
     margin-left: 30px;
@@ -16,7 +16,7 @@
       }
     }
     &:after {
-      content: "";
+      content: '';
       display: table;
       clear: both;
     }
@@ -52,7 +52,7 @@
       position: relative;
       height: 32px;
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         width: 8px;
         height: 8px;
@@ -78,7 +78,12 @@
         font-weight: 400;
       }
     }
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       margin: 0;
     }
   }
@@ -106,7 +111,6 @@
     cursor: pointer;
   }
 }
-
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */

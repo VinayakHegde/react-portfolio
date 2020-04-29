@@ -1,4 +1,4 @@
-import {monthDiff} from 'Helpers/month';
+import { monthDiff } from 'Helpers/month';
 
 describe('monthDiff', () => {
   it('should return diff as 0 - valid d1 and d2', () => {

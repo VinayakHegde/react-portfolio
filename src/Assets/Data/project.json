@@ -7,19 +7,8 @@
       "endDate": null,
       "description": "<q>Calvin Klein</q>",
       "subProjects": [],
-      "tags": [
-        "JavaScript",
-        "TypeScript",
-        "ReactJS",
-        "Redux",
-        "Jest/Enzyme",
-        "ESLints",
-        "Webpack",
-        "Jenkins",
-        "VS Code",
-        "Jira"
-      ]
-    }, 
+      "tags": ["JavaScript", "TypeScript", "ReactJS", "Redux", "Jest/Enzyme", "ESLints", "Webpack", "Jenkins", "VS Code", "Jira"]
+    },
     {
       "title": "Tommy Hilfiger - ecommerce website",
       "isPresent": true,
@@ -27,18 +16,7 @@
       "endDate": null,
       "description": "<q>Tommy Hilfiger</q>",
       "subProjects": [],
-      "tags": [
-        "JavaScript",
-        "TypeScript",
-        "ReactJS",
-        "Redux",
-        "Jest/Enzyme",
-        "ESLints",
-        "Webpack",
-        "Jenkins",
-        "VS Code",
-        "Jira"
-      ]
+      "tags": ["JavaScript", "TypeScript", "ReactJS", "Redux", "Jest/Enzyme", "ESLints", "Webpack", "Jenkins", "VS Code", "Jira"]
     }
   ],
   "07": [
@@ -85,19 +63,7 @@
           "description": "Allows system users to view activities and more detailed analysis on journals"
         }
       ],
-      "tags": [
-        "Javascript",
-        "ReactJS",
-        "Redux",
-        "Jest/Enzyme",
-        "ESLints",
-        "Webpack",
-        "Jenkins",
-        "VS Code",
-        "SonarCube",
-        "Selenium",
-        "Jira"
-      ]
+      "tags": ["Javascript", "ReactJS", "Redux", "Jest/Enzyme", "ESLints", "Webpack", "Jenkins", "VS Code", "SonarCube", "Selenium", "Jira"]
     }
   ],
   "06": [
@@ -123,17 +89,7 @@
           "description": "View live player activities and floor operation"
         }
       ],
-      "tags": [
-        "Javascript",
-        "AngularJS",
-        "FabricJS",
-        "UnderscoreJS",
-        "jQuery and plugins",
-        "TypeScript",
-        "VS Code",
-        "Visual Studio",
-        "SQL Server"
-      ]
+      "tags": ["Javascript", "AngularJS", "FabricJS", "UnderscoreJS", "jQuery and plugins", "TypeScript", "VS Code", "Visual Studio", "SQL Server"]
     },
     {
       "title": "Neon Analytics",
@@ -142,16 +98,7 @@
       "endDate": "Jul 2019",
       "description": "<q>Neon Analytics</q> is a data visualisation platform for casinos using the IGS' Neon service. It  integrates vast amounts of transactional data from disparate casino source cubes. It helps to run casinos business intelligence by retrieving, analyzing, transforming and reporting data.",
       "subProjects": [],
-      "tags": [
-        "Javascript",
-        "AngularJS",
-        "UnderscoreJS",
-        "jQuery and plugins",
-        "TypeScript",
-        "VS Code",
-        "Visual Studio",
-        "SQL Server"
-      ]
+      "tags": ["Javascript", "AngularJS", "UnderscoreJS", "jQuery and plugins", "TypeScript", "VS Code", "Visual Studio", "SQL Server"]
     },
     {
       "title": "Neon Touch",
@@ -160,16 +107,7 @@
       "endDate": "Jul 2019",
       "description": "Neon Touch is browser based app runs on touch device of the slot machines. App is developed using Angular and .net Core. <br/>App talks to service fabric microservices and web sockets.",
       "subProjects": [],
-      "tags": [
-        "Javascript",
-        "AngularJS",
-        "UnderscoreJS",
-        "jQuery and plugins",
-        "TypeScript",
-        "VS Code",
-        "Visual Studio",
-        "SQL Server"
-      ]
+      "tags": ["Javascript", "AngularJS", "UnderscoreJS", "jQuery and plugins", "TypeScript", "VS Code", "Visual Studio", "SQL Server"]
     },
     {
       "title": "Customer Query Builder",
@@ -178,16 +116,7 @@
       "endDate": "Jul 2019",
       "description": "Searching tool for large customer base for casinos",
       "subProjects": [],
-      "tags": [
-        "Javascript",
-        "AngularJS",
-        "UnderscoreJS",
-        "jQuery and plugins",
-        "TypeScript",
-        "VS Code",
-        "Visual Studio",
-        "SQL Server"
-      ]
+      "tags": ["Javascript", "AngularJS", "UnderscoreJS", "jQuery and plugins", "TypeScript", "VS Code", "Visual Studio", "SQL Server"]
     },
     {
       "title": "Neon Mix",
@@ -196,15 +125,7 @@
       "endDate": "Jul 2019",
       "description": "Neon Mix is browser based app runs on slot machines in kiosk mode. App is developed using Angular and .net Core. <br/>App talks to service fabric microservices and web sockets.",
       "subProjects": [],
-      "tags": [
-        "Javascript",
-        "AngularJS",
-        "UnderscoreJS",
-        "jQuery and plugins",
-        "VS Code",
-        "Visual Studio",
-        "SQL Server"
-      ]
+      "tags": ["Javascript", "AngularJS", "UnderscoreJS", "jQuery and plugins", "VS Code", "Visual Studio", "SQL Server"]
     },
     {
       "title": "TableLite",
@@ -213,14 +134,7 @@
       "endDate": "Sep 2018",
       "description": "<q>TableLite</q> is a modern browser based application built using technologies like AngularJS (v1.7) and .Net Core (v2.1). Application can be hosted on any platform (WIndows/Linux/OSX). Front end communicates with server over Restful API (Web API).<br/>The app helps the casinos to track the cash drops on a gambling table.",
       "subProjects": [],
-      "tags": [
-        "JavaScript",
-        "AngularJS",
-        "UnderscoreJS",
-        "HTML5 & CSS3",
-        "Visual Studio 2017",
-        "VS Code"
-      ]
+      "tags": ["JavaScript", "AngularJS", "UnderscoreJS", "HTML5 & CSS3", "Visual Studio 2017", "VS Code"]
     }
   ],
   "05": [
@@ -295,12 +209,7 @@
       "endDate": "Jun 2018",
       "description": "The tool is aimed to perform cloning the dashboard database entities into XML file then migrate them to another dashboard database. This provides entity portability, in turn, helps the existing Business intelligence software users to backup/build/enhance the migrated dashboards on their system.",
       "subProjects": [],
-      "tags": [
-        ".Net C#",
-        "WPF",
-        "Visual Studio Premium 2012",
-        "SQL Server 2012"
-      ]
+      "tags": [".Net C#", "WPF", "Visual Studio Premium 2012", "SQL Server 2012"]
     },
     {
       "title": "Security Filters and Dashboard API",
@@ -309,12 +218,7 @@
       "endDate": "Jul 2014",
       "description": "Aim of the security filter is to provide overall security to the data used by existing Business Intelligence software, where URL parameters are encrypted and passed across the servers and other security features at datasets level. A Test Harness (Windows application) is developed to test these security features. Also an API is developed for other developers of the other software to consume dashboard service.",
       "subProjects": [],
-      "tags": [
-        ".Net C#",
-        "WinForms",
-        "Visual Studio Premium 2012",
-        "SQL Server 2012"
-      ]
+      "tags": [".Net C#", "WinForms", "Visual Studio Premium 2012", "SQL Server 2012"]
     }
   ],
   "04": [
@@ -344,12 +248,7 @@
           "endDate": "Oct 2013"
         }
       ],
-      "tags": [
-        ".Net C#",
-        "JavaScript (jQuery and Ajax)",
-        "Visual Studio",
-        "SQL Studio"
-      ]
+      "tags": [".Net C#", "JavaScript (jQuery and Ajax)", "Visual Studio", "SQL Studio"]
     }
   ],
   "03": [],
@@ -365,14 +264,7 @@
       "subProjects": [],
       "source": "https://github.com/VinayakHegde/react-portfolio",
       "demo": "",
-      "tags": [
-        "ReactJS",
-        "create-react-app",
-        "JSX",
-        "HTML5 & CSS3",
-        "Visual Studio Code",
-        "git"
-      ]
+      "tags": ["ReactJS", "create-react-app", "JSX", "HTML5 & CSS3", "Visual Studio Code", "git"]
     },
     {
       "title": "Quote Gun",
@@ -383,14 +275,7 @@
       "subProjects": [],
       "source": "https://github.com/VinayakHegde/Quote-Gun",
       "demo": "https://vinayakhegde.github.io/Quote-Gun/",
-      "tags": [
-        "VueJS",
-        "vue-cli",
-        "Single file components",
-        "HTML5 & CSS3",
-        "Visual Studio Code",
-        "git"
-      ]
+      "tags": ["VueJS", "vue-cli", "Single file components", "HTML5 & CSS3", "Visual Studio Code", "git"]
     },
     {
       "title": "KeyCode Vuewer",
@@ -401,14 +286,7 @@
       "subProjects": [],
       "source": "https://github.com/VinayakHegde/KeyCode-Vuewer",
       "demo": "https://vinayakhegde.github.io/KeyCode-Vuewer/",
-      "tags": [
-        "VueJS",
-        "vue-cli",
-        "Single file components",
-        "HTML5 & CSS3",
-        "Visual Studio Code",
-        "git"
-      ]
+      "tags": ["VueJS", "vue-cli", "Single file components", "HTML5 & CSS3", "Visual Studio Code", "git"]
     },
     {
       "title": "Multi-Runner Game",
@@ -419,12 +297,7 @@
       "subProjects": [],
       "source": "https://github.com/VinayakHegde/multi-runner-time-tracker-app",
       "demo": "https://vinayakhegde.github.io/multi-runner-time-tracker-app/",
-      "tags": [
-        "Vanilla Javascript",
-        "HTML5 & CSS3",
-        "Visual Studio Code",
-        "git"
-      ]
+      "tags": ["Vanilla Javascript", "HTML5 & CSS3", "Visual Studio Code", "git"]
     },
     {
       "title": "Clicky Bucky Game",
@@ -435,14 +308,7 @@
       "subProjects": [],
       "source": "https://github.com/VinayakHegde/clickly-blocky-app",
       "demo": "https://vinayakhegde.github.io/clickly-blocky-app/",
-      "tags": [
-        "Vanilla Javascript",
-        "HTML5 & LESS",
-        "Gulp",
-        "Mocha",
-        "Visual Studio Code",
-        "git"
-      ]
+      "tags": ["Vanilla Javascript", "HTML5 & LESS", "Gulp", "Mocha", "Visual Studio Code", "git"]
     },
     {
       "title": "Image2PDF conveter",
@@ -453,14 +319,7 @@
       "subProjects": [],
       "source": "https://github.com/VinayakHegde/image-to-pdf-app",
       "demo": "https://vinayakhegde.github.io/image-to-pdf-app/",
-      "tags": [
-        "Vanilla Javascript",
-        "HTML5 & CSS3",
-        "Kendo UI",
-        "jQuery",
-        "Visual Studio Code",
-        "git"
-      ]
+      "tags": ["Vanilla Javascript", "HTML5 & CSS3", "Kendo UI", "jQuery", "Visual Studio Code", "git"]
     }
   ]
 }

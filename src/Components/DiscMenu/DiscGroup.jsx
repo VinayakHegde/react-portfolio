@@ -1,9 +1,9 @@
-import React from "react";
-import classNames from "classnames";
-import PropTypes from "prop-types";
+import React from 'react';
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 const DiscGroup = ({ active, style, children }) => (
-  <div className={classNames("disc-group", active)} {...{ style }}>
+  <div className={classNames('disc-group', active)} {...{ style }}>
     {children}
   </div>
 );
@@ -11,7 +11,7 @@ const DiscGroup = ({ active, style, children }) => (
 DiscGroup.propTypes = {
   active: PropTypes.string,
   style: PropTypes.object,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export default DiscGroup;
