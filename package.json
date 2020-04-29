@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "http://vinayakhegde.github.io/react-portfolio",
   "scripts": {
-    "clean": "rm -r build/*",
+    "clean": "rimraf -rf build/*",
     "start": "react-scripts start",
     "build": "npm run clean && react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -13,7 +13,7 @@
     "predeploy": "npm run build",
     "deploy": "npm run predeploy && npm run publish",
     "lint": "eslint --fix src",
-    "prettify": "prettier --write \"src/**/*.+(js|jsx|json|css|scss|md)\""
+    "prettify": "prettier --write \"src/**/*.+(ts|tsx|js|jsx|json|css|scss|md)\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -52,6 +52,7 @@
     "prop-types": "^15.7.2",
     "react-motion": "^0.5.2",
     "react-visibility-sensor": "^5.1.1",
+    "rimraf": "^3.0.2",
     "typescript": "^3.7.5"
   },
   "jest": {
